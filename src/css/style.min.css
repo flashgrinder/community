@@ -1,0 +1,466 @@
+/* Fonts */
+
+@font-face {
+  font-family: 'Roboto';
+  src: url("../fonts/Roboto/Roboto-Light.eot");
+  src: url("../fonts/Roboto/Roboto-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto/Roboto-Light.woff2") format("woff2"), url("../fonts/Roboto/Roboto-Light.woff") format("woff"), url("../fonts/Roboto/Roboto-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url("../fonts/Roboto/Roboto-Italic.eot");
+  src: url("../fonts/Roboto/Roboto-Italic.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto/Roboto-Italic.woff2") format("woff2"), url("../fonts/Roboto/Roboto-Italic.woff") format("woff"), url("../fonts/Roboto/Roboto-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url("../fonts/Roboto/Roboto-Regular.eot");
+  src: url("../fonts/Roboto/Roboto-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto/Roboto-Regular.woff2") format("woff2"), url("../fonts/Roboto/Roboto-Regular.woff") format("woff"), url("../fonts/Roboto/Roboto-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url("../fonts/Roboto/Roboto-Bold.eot");
+  src: url("../fonts/Roboto/Roboto-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto/Roboto-Bold.woff2") format("woff2"), url("../fonts/Roboto/Roboto-Bold.woff") format("woff"), url("../fonts/Roboto/Roboto-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url("../fonts/Roboto/Roboto-Black.eot");
+  src: url("../fonts/Roboto/Roboto-Black.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto/Roboto-Black.woff2") format("woff2"), url("../fonts/Roboto/Roboto-Black.woff") format("woff"), url("../fonts/Roboto/Roboto-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gotham Pro';
+  src: url("../fonts/GothamPro/GothamPro.eot");
+  src: url("../fonts/GothamPro/GothamPro.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamPro/GothamPro.woff2") format("woff2"), url("../fonts/GothamPro/GothamPro.woff") format("woff"), url("../fonts/GothamPro/GothamPro.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gotham Pro';
+  src: url("../fonts/GothamPro/GothamPro-Light.eot");
+  src: url("../fonts/GothamPro/GothamPro-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamPro/GothamPro-Light.woff2") format("woff2"), url("../fonts/GothamPro/GothamPro-Light.woff") format("woff"), url("../fonts/GothamPro/GothamPro-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gotham Pro';
+  src: url("../fonts/GothamPro/GothamPro-LightItalic.eot");
+  src: url("../fonts/GothamPro/GothamPro-LightItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamPro/GothamPro-LightItalic.woff2") format("woff2"), url("../fonts/GothamPro/GothamPro-LightItalic.woff") format("woff"), url("../fonts/GothamPro/GothamPro-LightItalic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gotham Pro';
+  src: url("../fonts/GothamPro/GothamPro-Medium.eot");
+  src: url("../fonts/GothamPro/GothamPro-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamPro/GothamPro-Medium.woff2") format("woff2"), url("../fonts/GothamPro/GothamPro-Medium.woff") format("woff"), url("../fonts/GothamPro/GothamPro-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gotham Pro';
+  src: url("../fonts/GothamPro/GothamPro-Bold.eot");
+  src: url("../fonts/GothamPro/GothamPro-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamPro/GothamPro-Bold.woff2") format("woff2"), url("../fonts/GothamPro/GothamPro-Bold.woff") format("woff"), url("../fonts/GothamPro/GothamPro-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gotham Pro';
+  src: url("../fonts/GothamPro/GothamPro-BoldItalic.eot");
+  src: url("../fonts/GothamPro/GothamPro-BoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamPro/GothamPro-BoldItalic.woff2") format("woff2"), url("../fonts/GothamPro/GothamPro-BoldItalic.woff") format("woff"), url("../fonts/GothamPro/GothamPro-BoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gotham Pro';
+  src: url("../fonts/GothamPro/GothamPro-Black.eot");
+  src: url("../fonts/GothamPro/GothamPro-Black.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamPro/GothamPro-Black.woff2") format("woff2"), url("../fonts/GothamPro/GothamPro-Black.woff") format("woff"), url("../fonts/GothamPro/GothamPro-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gotham Pro';
+  src: url("../fonts/GothamPro/GothamPro-BlackItalic.eot");
+  src: url("../fonts/GothamPro/GothamPro-BlackItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamPro/GothamPro-BlackItalic.woff2") format("woff2"), url("../fonts/GothamPro/GothamPro-BlackItalic.woff") format("woff"), url("../fonts/GothamPro/GothamPro-BlackItalic.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Variables */
+
+:root {
+  --color-yellow: #EEFF00;
+  --color-dark: #646464;
+  --color-white: #FFFFFF;
+  --color-black: #000000;
+  --color-black-low: #2B2A29;
+  --font-roboto: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-gotham: "GothamPro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* Base */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* Animation */
+
+/* Base Classes */
+
+/* Containers */
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.container-full {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+/* Hide */
+
+.hide {
+  display: none !important;
+}
+
+/* Position */
+
+.left {
+  text-align: left;
+}
+
+.center {
+  text-align: center;
+}
+
+.right {
+  text-align: right;
+}
+
+/* Background */
+
+.bg--white {
+  background-color: var(--color-white);
+}
+
+.bg--dark {
+  background-color: var(--color-dark);
+}
+
+.bg--black {
+  background-color: var(--color-black);
+}
+
+/* Links */
+
+.link {
+  text-decoration: none;
+  transition: ease .3s;
+}
+
+/* Title */
+
+.title {
+  font-family: var(--font-gotham);
+  font-style: normal;
+  margin: 0;
+}
+
+.title--big {
+  font-size: calc(30px + 20 * ((100vw - 576px) / 624));
+}
+
+@media screen and (min-width: 1200px) {
+
+  .title--big {
+    font-size: 50px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+
+  .title--big {
+    font-size: 30px;
+  }
+}
+
+.title--medium {
+  font-size: calc(18px + 2 * ((100vw - 576px) / 624));
+}
+
+@media screen and (min-width: 1200px) {
+
+  .title--medium {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+
+  .title--medium {
+    font-size: 18px;
+  }
+}
+
+.title--small {
+  font-size: 16px;
+}
+
+.title--tiny {
+  font-size: 14px;
+}
+
+.title--yellow {
+  color: var(--color-yellow);
+}
+
+.title--white {
+  color: var(--color-white);
+}
+
+.title--black-low {
+  color: var(--color-black-low);
+}
+
+.title--w-light {
+  font-weight: 300;
+}
+
+.title--w-normal {
+  font-weight: 400;
+}
+
+.title--w-medium {
+  font-weight: 500;
+}
+
+.title--w-bold {
+  font-weight: bold;
+}
+
+.title--w-black {
+  font-weight: 900;
+}
+
+.title--uppercase {
+  text-transform: uppercase;
+}
+
+.title--indent {
+  margin: 0 0 30px 0;
+}
+
+/* Text */
+
+.text {
+  font-family: var(--font-roboto);
+  font-style: normal;
+  margin: 0;
+}
+
+.text--black-low {
+  color: var(--color-black-gray);
+}
+
+.text--white {
+  color: var(--color-white);
+}
+
+.text--large {
+  font-size: calc(18px + 4 * ((100vw - 576px) / 624));
+}
+
+@media screen and (min-width: 1200px) {
+
+  .text--large {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+
+  .text--large {
+    font-size: 18px;
+  }
+}
+
+.text--normal {
+  font-size: calc(14px + 2 * ((100vw - 576px) / 624));
+}
+
+@media screen and (min-width: 1200px) {
+
+  .text--normal {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+
+  .text--normal {
+    font-size: 14px;
+  }
+}
+
+.text--small {
+  font-size: 12px;
+}
+
+.text--tiny {
+  font-size: 10px;
+}
+
+.text--w-light {
+  font-weight: 300;
+}
+
+.text--w-regular {
+  font-weight: normal;
+}
+
+.text--w-medium {
+  font-weight: 500;
+}
+
+.text--w-bold {
+  font-weight: 700;
+}
+
+.text--w-black {
+  font-weight: 900;
+}
+
+.text--italic {
+  font-style: italic;
+}
+
+.text--uppercase {
+  text-transform: uppercase;
+}
+
+/* Blocks */
+
+/* Page */
+
+.page {
+  position: relative;
+  margin: 0;
+  font-family: var(--font-roboto);
+  font-size: 16px;
+  line-height: 1.35;
+  overflow-x: hidden;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  -webkit-align-items: stretch;
+          align-items: stretch;
+  min-height: 100vh;
+}
+
+.page__container {
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+/* ANOTHER MODULES */
+
+/* ANOTHER MODULES */
+
+/* ANOTHER MODULES */
+
+/* Swiper Slider Examples*/
+
+/* ANOTHER MODULES */
+
+/* ANOTHER MODULES */
+
+/* ANOTHER MODULES */
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 1200px) {
+  .hide-large {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .hide-tablet {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .container-full {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .hide-mobile {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .container-full {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}

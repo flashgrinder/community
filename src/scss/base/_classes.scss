@@ -14,8 +14,8 @@
     display: none !important;
 }
 
-.hide-medium {
-	@include medium(display, none !important);
+.hide-large {
+	@include large(display, none !important);
 }
 
 .hide-tablet {
@@ -49,6 +49,9 @@
     &--dark {
         background-color: var(--color-dark);
     }
+    &--black {
+        background-color: var(--color-black);
+    }
 }
 
 /* Links */
@@ -58,10 +61,6 @@
     transition: ease .3s;
 }
 
-.link:hover {
-    color: var(--color-orange);
-}
-
 /* Title */
 
 .title {
@@ -69,32 +68,27 @@
     font-style: normal;
     margin: 0;
     &--big {
-		font-size: 45px;
-        font-size: responsive 16px 45px;
-        font-range: 320px 1440px;
-    }
-    &--large {
-        font-size: responsive 20px 26px;
-        font-range: 1024px 1440px;
+        font-size: responsive 30px 50px;
+        font-range: 576px 1200px;
     }
     &--medium {
-        font-size: responsive 18px 22px;
-        font-range: 1024px 1440px;
+        font-size: responsive 18px 20px;
+        font-range: 576px 1200px;
     }
     &--small {
         font-size: 16px;
     }
     &--tiny {
-        font-size: 12px;
+        font-size: 14px;
     }
-    &--orange {
-        color: var(--color-orange);
+    &--yellow {
+        color: var(--color-yellow);
     }
     &--white {
         color: var(--color-white);
 	}
-    &--black-gray {
-		color: var(--color-black-gray); 
+    &--black-low {
+		color: var(--color-black-low); 
 	}
 	&--w-light {
 		font-weight: 300;
@@ -117,9 +111,7 @@
 }
 
 .title--indent {
-    margin: 0 0 30px 50px;
-    @include tablet(margin, 0 0 20px 15px);
-    @include mobile(margin, 0 0 20px 0);
+    margin: 0 0 30px 0;
 }
 
 /* Text */
@@ -128,28 +120,19 @@
     font-family: var(--font-roboto);
     font-style: normal;
     margin: 0;
-	&--black-gray {
+	&--black-low {
 		color: var(--color-black-gray); 
-	}
-	&--orange {
-		color: var(--color-orange);
 	}
 	&--white {
 		color: var(--color-white);
 	}
-	&--big {
-		font-size: 22px;
-        font-size: responsive 20px 30px;
-        font-range: 320px 1440px;
-	}
 	&--large {
-		font-size: 22px;
-        font-size: responsive 14px 22px;
-        font-range: 320px 1440px;
+        font-size: responsive 18px 22px;
+        font-range: 576px 1200px;
 	}
 	&--normal {
-        font-size: responsive 12px 16px;
-        font-range: 1024px 1440px;
+        font-size: responsive 14px 16px;
+        font-range: 576px 1200px;
 	}
 	&--small {
 		font-size: 12px;
