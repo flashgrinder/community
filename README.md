@@ -1,1 +1,1 @@
-My html template for web.
+Онлайн галлерея Community. г. Санкт-Петербург
