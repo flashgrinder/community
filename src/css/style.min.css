@@ -496,6 +496,10 @@ img {
   border-bottom: 2px solid var(--color-yellow);
 }
 
+/* Gallery */
+
+/* Product-card */
+
 /* Authors */
 
 .authors {
@@ -530,6 +534,18 @@ img {
 
 .authors__item:hover::before {
   box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.25);
+}
+
+.authors__picture {
+  max-width: 306px;
+  max-height: 318px;
+  overflow: hidden;
+}
+
+.authors__photo {
+  display: block;
+  height: 100%;
+  width: 100%;
 }
 
 .authors__name {
