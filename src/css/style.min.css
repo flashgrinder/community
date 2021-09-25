@@ -409,6 +409,141 @@ img {
   overflow: hidden;
 }
 
+/* Header */
+
+.header {
+  background: var(--color-white);
+  padding: 12px 0;
+}
+
+.header__body {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+  -webkit-align-items: center;
+          align-items: center;
+}
+
+.header__inner {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+          align-items: center;
+}
+
+.header__basket-svg {
+  fill: var(--color-black-low);
+  transition: ease .2s;
+}
+
+.header__basket-svg:hover {
+  fill: var(--color-yellow);
+}
+
+.header__basket,
+.header__phone {
+  margin-left: 30px;
+}
+
+.header__phone {
+  font-family: var(--font-gotham);
+  font-size: 12px;
+  text-decoration: none;
+  font-weight: 900;
+  color: var(--color-black-low);
+  transition: ease .2s;
+}
+
+.header__phone:hover {
+  color: var(--color-yellow);
+}
+
+/* Menu */
+
+.menu__list {
+  display: -webkit-flex;
+  display: flex;
+  font-family: var(--font-gotham);
+  font-weight: bold;
+  font-size: 12px;
+  text-transform: uppercase;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+.menu__item ~ .menu__item {
+  margin-left: 30px;
+}
+
+.menu__link {
+  color: var(--color-black-low);
+  text-decoration: none;
+  padding-bottom: 2px;
+  border-bottom: 2px solid transparent;
+  transition: ease .3s;
+}
+
+.menu__link:hover {
+  border-bottom: 2px solid var(--color-yellow);
+}
+
+/* Footer */
+
+.footer {
+  background: var(--color-black);
+  padding: 12px 0;
+}
+
+.footer__body {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+  -webkit-align-items: center;
+          align-items: center;
+}
+
+.footer__inner {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+          align-items: center;
+}
+
+.footer__menu-link.menu__link {
+  color: var(--color-white);
+}
+
+.footer__basket-svg {
+  fill: var(--color-white);
+  transition: ease .2s;
+}
+
+.footer__basket-svg:hover {
+  fill: var(--color-yellow);
+}
+
+.footer__basket,
+.footer__phone {
+  margin-left: 30px;
+}
+
+.footer__phone {
+  font-family: var(--font-gotham);
+  font-size: 12px;
+  text-decoration: none;
+  font-weight: 900;
+  color: var(--color-white);
+  transition: ease .2s;
+}
+
+.footer__phone:hover {
+  color: var(--color-yellow);
+}
+
 /* ANOTHER MODULES */
 
 /* ANOTHER MODULES */

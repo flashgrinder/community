@@ -1,0 +1,27 @@
+.menu__list{
+    display: flex;
+    font-family: var(--font-gotham);
+    font-weight: bold;
+    font-size: 12px;
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+.menu__item ~ .menu__item {
+    margin-left: 30px;
+}
+
+.menu__link {
+    color: var(--color-black-low);
+    text-decoration: none;
+    padding-bottom: 2px;
+    border-bottom: 2px solid transparent;
+    transition: ease .3s;
+}
+
+.menu__link:hover {
+    border-bottom: 2px solid var(--color-yellow);
+}

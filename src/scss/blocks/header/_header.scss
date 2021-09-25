@@ -1,0 +1,42 @@
+.header {
+    background: var(--color-white);
+    padding: 12px 0;
+}
+
+.header__body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__inner {
+    display: flex;
+    align-items: center;
+}
+
+.header__basket-svg {
+    fill: var(--color-black-low);
+    transition: ease .2s;
+}
+
+.header__basket-svg:hover {
+    fill: var(--color-yellow);
+}
+
+.header__basket,
+.header__phone {
+    margin-left: 30px;
+}
+
+.header__phone {
+    font-family: var(--font-gotham);
+    font-size: 12px;
+    text-decoration: none;
+    font-weight: 900;
+    color: var(--color-black-low);
+    transition: ease .2s;
+}
+
+.header__phone:hover {
+    color: var(--color-yellow);
+}
