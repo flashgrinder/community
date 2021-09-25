@@ -1,0 +1,10 @@
+.gallery {
+    padding-bottom: 90px;
+}
+
+.gallery__cards {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(200px, 306px));
+    justify-content: space-between;
+    grid-gap: 60px 50px;
+}
