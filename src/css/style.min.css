@@ -715,6 +715,7 @@ img {
 
 .wysiwyg {
   font-family: var(--font-roboto);
+  color: var(--color-black-low);
 }
 
 .wysiwyg h1,
@@ -843,6 +844,12 @@ img {
   text-decoration: underline;
   color: var(--color-black-low);
   transition: ease 0.3s;
+}
+
+/* Content */
+
+.content__heading {
+  margin-bottom: 30px;
 }
 
 /* Footer */
