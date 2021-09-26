@@ -1,0 +1,69 @@
+.wysiwyg {
+    font-family: var(--font-roboto);
+}
+
+.wysiwyg h1,
+.wysiwyg h2,
+.wysiwyg h3,
+.wysiwyg h4,
+.wysiwyg h5,
+.wysiwyg h6 {
+    font-weight: 400;
+    margin: 30px 0;
+}
+
+.wysiwyg h2 {
+    font-size: responsive 18px 22px;
+    font-range: 320px 1440px;
+}
+
+.wysiwyg h3 {
+    font-size: responsive 16px 20px;
+    font-range: 320px 1440px;
+}
+
+.wysiwyg h4 {
+    font-size: responsive 14px 18px;
+    font-range: 320px 1440px;
+}
+
+.wysiwyg ul {
+    padding-left: 40px;
+    font-size: responsive 12px 16px;
+    font-range: 320px 1024px;
+    @include mobileXS-block {
+        padding-left: 20px;
+    }
+}
+
+.wysiwyg ul li ~ li {
+    margin-top: 20px;
+}
+
+.wysiwyg ul li {
+    position: relative;
+    list-style-type: none;
+}
+
+.wysiwyg ul li::before {
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    top: 10px;
+    left: -17px;
+    background: var(--color-black-low);
+    border-radius: 50%;
+}
+
+.wysiwyg p {
+    margin: 20px 0;
+    font-size: responsive 14px 16px;
+    font-range: 320px 1024px;
+}
+
+.wysiwyg a {
+    text-decoration: underline;
+    color: var(--color-black-low);
+    transition: ease .3s;
+}

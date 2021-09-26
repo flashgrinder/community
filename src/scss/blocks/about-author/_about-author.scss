@@ -1,0 +1,26 @@
+.about-author {
+    padding-top: 60px;
+}
+
+.about-author__content {
+    display: grid;
+    grid-template-columns: minmax(0, 520px) minmax(0, 776px);
+    justify-content: space-between;
+    grid-gap: 100px;
+    padding-bottom: 60px;
+    border-bottom: 1px solid #C4C4C4;
+}
+
+.about-author__img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.about-author__headline {
+    margin-top: 15px;
+}
+
+.about-author__text {
+    margin-top: 20px;
+}
