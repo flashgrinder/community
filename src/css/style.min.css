@@ -656,6 +656,81 @@ img {
   margin-top: 20px;
 }
 
+/* About-product */
+
+.about-product {
+  padding-top: 60px;
+}
+
+.about-product__content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: minmax(0, 520px) 100px minmax(0, 776px);
+  grid-template-columns: minmax(0, 520px) minmax(0, 776px);
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+  grid-gap: 100px;
+  padding-bottom: 60px;
+  border-bottom: 1px solid #C4C4C4;
+}
+
+.about-product__img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.about-product__headline {
+  margin-top: 15px;
+}
+
+.about-product__text {
+  margin-top: 20px;
+}
+
+.about-product__swiper-full {
+  height: 520px;
+  border: 1px solid #CAC7C7;
+}
+
+.about-product__zoom {
+  position: absolute;
+  bottom: 10px;
+  right: 16px;
+  z-index: 100;
+  pointer-events: none;
+}
+
+.about-product__swiper-thumb {
+  margin-top: 30px;
+}
+
+.about-product__swiper-thumb.swiper-container {
+  height: 100px;
+}
+
+.about-product__swiper-thumb .about-product__swiper-slide-thumb {
+  position: relative;
+  transition: border 0.3s ease;
+  border: 1px solid #CAC7C7;
+  cursor: pointer;
+  overflow: hidden;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+          justify-content: center;
+}
+
+.about-product__slide-photo-thumb {
+  display: block;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.about-product__swiper-thumb .swiper-slide-thumb-active {
+  border: 1px solid var(--color-black-low);
+}
+
 /* Slider-nav */
 
 .slider-nav {
@@ -1091,6 +1166,49 @@ img {
   -webkit-scroll-snap-type: y mandatory;
       -ms-scroll-snap-type: y mandatory;
           scroll-snap-type: y mandatory;
+}
+
+.swiper-container-fade.swiper-container-free-mode .swiper-slide {
+  transition-timing-function: ease-out;
+}
+
+.swiper-container-fade .swiper-slide {
+  pointer-events: none;
+  transition-property: opacity;
+}
+
+.swiper-container-fade .swiper-slide .swiper-slide {
+  pointer-events: none;
+}
+
+.swiper-container-fade .swiper-slide-active,
+.swiper-container-fade .swiper-slide-active .swiper-slide-active {
+  pointer-events: auto;
+}
+
+.swiper-zoom-container {
+  width: 100%;
+  height: 100%;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-align-items: center;
+          align-items: center;
+  text-align: center;
+}
+
+.swiper-zoom-container > img,
+.swiper-zoom-container > svg,
+.swiper-zoom-container > canvas {
+  max-width: 100%;
+  max-height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.swiper-slide-zoomed {
+  cursor: move;
 }
 
 /* ANOTHER MODULES */
