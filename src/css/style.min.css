@@ -496,6 +496,63 @@ img {
   border-bottom: 2px solid var(--color-yellow);
 }
 
+/* Buttons */
+
+.button {
+  font-family: var(--font-gotham);
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  font-style: normal;
+  text-decoration: none;
+  text-align: center;
+  font-size: 18px;
+  line-height: 18px;
+  padding: 13px 23px;
+  max-width: 260px;
+  width: 100%;
+  z-index: 10;
+  transition: background 0.3s ease-in-out, color 0.3s ease-in-out, border 0.3s ease-in-out;
+}
+
+.button--yellow {
+  font-weight: bold;
+  background: var(--color-yellow);
+  color: var(--color-black-low);
+  border: 1px solid var(--color-yellow);
+  box-shadow: 9px 9px 18px rgba(10, 40, 53, 0.15);
+}
+
+.button--yellow:hover {
+  color: var(--color-yellow);
+  background: var(--color-black);
+}
+
+.button--transparent {
+  font-weight: bold;
+  background: transparent;
+  color: var(--color-yellow);
+  border: 1px solid var(--color-yellow);
+}
+
+.button--transparent:hover {
+  color: var(--color-white);
+  border: 1px solid var(--color-white);
+}
+
+.button--basket {
+  font-size: 16px;
+  line-height: 16px;
+  padding: 14px 23px;
+  border: 1px solid var(--color-black);
+  color: var(--color-black);
+}
+
+.button--basket:hover {
+  background: var(--color-black);
+  color: var(--color-yellow);
+}
+
 /* Gallery */
 
 .gallery {
@@ -729,6 +786,16 @@ img {
 
 .about-product__swiper-thumb .swiper-slide-thumb-active {
   border: 1px solid var(--color-black-low);
+}
+
+.about-product__footer {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+  -webkit-align-items: center;
+          align-items: center;
+  margin-top: 40px;
 }
 
 /* Slider-nav */

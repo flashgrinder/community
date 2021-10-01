@@ -64,3 +64,10 @@
 .about-product__swiper-thumb .swiper-slide-thumb-active {
     border: 1px solid var(--color-black-low);
 }
+
+.about-product__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+}
