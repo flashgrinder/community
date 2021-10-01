@@ -438,17 +438,24 @@ img {
           align-items: center;
 }
 
-.header__basket-svg {
-  fill: var(--color-black-low);
-  transition: ease 0.2s;
+.header__search {
+  cursor: pointer;
 }
 
-.header__basket-svg:hover {
+.header__basket-svg,
+.header__search-svg {
+  fill: var(--color-black-low);
+  transition: fill 0.2s ease;
+}
+
+.header__basket-svg:hover,
+.header__search-svg:hover {
   fill: var(--color-yellow);
 }
 
 .header__basket,
-.header__phone {
+.header__phone,
+.header__search {
   margin-left: 30px;
 }
 
@@ -458,7 +465,7 @@ img {
   text-decoration: none;
   font-weight: 900;
   color: var(--color-black-low);
-  transition: ease 0.2s;
+  transition: color 0.2s ease;
 }
 
 .header__phone:hover {
@@ -1022,17 +1029,24 @@ img {
   color: var(--color-white);
 }
 
-.footer__basket-svg {
-  fill: var(--color-white);
-  transition: ease 0.2s;
+.footer__search {
+  cursor: pointer;
 }
 
-.footer__basket-svg:hover {
+.footer__basket-svg,
+.footer__search-svg {
+  fill: var(--color-white);
+  transition: fill 0.2s ease;
+}
+
+.footer__basket-svg:hover,
+.footer__search-svg:hover {
   fill: var(--color-yellow);
 }
 
 .footer__basket,
-.footer__phone {
+.footer__phone,
+.footer__search {
   margin-left: 30px;
 }
 
@@ -1042,7 +1056,7 @@ img {
   text-decoration: none;
   font-weight: 900;
   color: var(--color-white);
-  transition: ease 0.2s;
+  transition: color 0.2s ease;
 }
 
 .footer__phone:hover {

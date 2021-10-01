@@ -14,17 +14,24 @@
     align-items: center;
 }
 
-.header__basket-svg {
-    fill: var(--color-black-low);
-    transition: ease .2s;
+.header__search {
+    cursor: pointer;
 }
 
-.header__basket-svg:hover {
+.header__basket-svg,
+.header__search-svg {
+    fill: var(--color-black-low);
+    transition: fill .2s ease;
+}
+
+.header__basket-svg:hover,
+.header__search-svg:hover {
     fill: var(--color-yellow);
 }
 
 .header__basket,
-.header__phone {
+.header__phone,
+.header__search {
     margin-left: 30px;
 }
 
@@ -34,7 +41,7 @@
     text-decoration: none;
     font-weight: 900;
     color: var(--color-black-low);
-    transition: ease .2s;
+    transition: color .2s ease;
 }
 
 .header__phone:hover {

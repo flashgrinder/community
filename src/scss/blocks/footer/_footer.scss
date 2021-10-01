@@ -18,17 +18,24 @@
     color: var(--color-white);
 }
 
-.footer__basket-svg {
-    fill: var(--color-white);
-    transition: ease .2s;
+.footer__search {
+    cursor: pointer;
 }
 
-.footer__basket-svg:hover {
+.footer__basket-svg,
+.footer__search-svg {
+    fill: var(--color-white);
+    transition: fill .2s ease;
+}
+
+.footer__basket-svg:hover,
+.footer__search-svg:hover {
     fill: var(--color-yellow);
 }
 
 .footer__basket,
-.footer__phone {
+.footer__phone,
+.footer__search {
     margin-left: 30px;
 }
 
@@ -38,7 +45,7 @@
     text-decoration: none;
     font-weight: 900;
     color: var(--color-white);
-    transition: ease .2s;
+    transition: color .2s ease;
 }
 
 .footer__phone:hover {
