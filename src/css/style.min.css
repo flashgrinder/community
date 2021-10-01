@@ -1002,6 +1002,29 @@ img {
   margin-bottom: 30px;
 }
 
+/* 404 */
+
+.page-404__wrapp {
+  height: 100%;
+}
+
+.page-404__picture {
+  position: relative;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+          justify-content: center;
+}
+
+.page-404__img {
+  display: block;
+}
+
+.page-404__button {
+  position: absolute;
+  bottom: 40px;
+}
+
 /* Footer */
 
 .footer {
