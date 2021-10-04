@@ -362,7 +362,7 @@ img {
 
 .link {
   text-decoration: none;
-  transition: ease 0.3s;
+  transition: color 0.3s ease;
 }
 
 /* Title */
@@ -1106,6 +1106,147 @@ img {
 .main-screen__animation-svg {
   width: 1100px;
   height: auto;
+}
+
+/* Workshop */
+
+.workshop {
+  position: relative;
+  padding: 60px 0 100px;
+}
+
+.workshop__body {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: minmax(0, 600px) 80px minmax(0, 750px);
+  grid-template-columns: minmax(0, 600px) minmax(0, 750px);
+  grid-gap: 80px;
+}
+
+.workshop__headline {
+  margin-bottom: 20px;
+}
+
+.workshop__text {
+  margin-bottom: 30px;
+}
+
+.workshop__pic-bg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.workshop__bg-photo {
+  display: block;
+}
+
+.workshop__content--right {
+  position: relative;
+}
+
+.workshop__decor {
+  position: absolute;
+  left: -50px;
+  top: 0;
+  pointer-events: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  z-index: 1;
+}
+
+.workshop__item {
+  position: relative;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-justify-content: flex-end;
+          justify-content: flex-end;
+  margin-top: 30px;
+}
+
+.workshop__item ~ .workshop__item {
+  margin-top: 60px;
+}
+
+.workshop__tagline {
+  margin-right: 50px;
+}
+
+.workshop__content-action {
+  position: relative;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  -webkit-align-items: stretch;
+          align-items: stretch;
+  z-index: 1;
+}
+
+.workshop__content-action--main {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  width: 100%;
+}
+
+.workshop__content-action-btn {
+  margin-top: 40px;
+}
+
+.workshop__pic {
+  min-width: 500px;
+}
+
+.workshop__photo {
+  display: block;
+}
+
+/* Contacts */
+
+.contacts__info {
+  margin-top: 60px;
+}
+
+.contacts__wrapp {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+          justify-content: center;
+}
+
+.contacts__phone,
+.contacts__email {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+          align-items: center;
+}
+
+.contacts__email:hover .contacts__text-email,
+.contacts__phone:hover .contacts__text-number {
+  color: var(--color-yellow);
+}
+
+.contacts__text-email,
+.contacts__text-number {
+  transition: color 0.3s ease;
+}
+
+.contacts__phone {
+  margin-right: 90px;
+}
+
+.contacts__icon {
+  margin-right: 20px;
+}
+
+.contact__address {
+  margin-top: 25px;
 }
 
 /* Gallery */

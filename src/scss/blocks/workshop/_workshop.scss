@@ -1,0 +1,85 @@
+.workshop {
+    position: relative;
+    padding: 60px 0 100px;
+}
+
+.workshop__body {
+    display: grid;
+    grid-template-columns: minmax(0, 600px) minmax(0, 750px);
+    grid-gap: 80px;
+}
+
+.workshop__headline {
+    margin-bottom: 20px;
+}
+
+.workshop__text {
+    margin-bottom: 30px;
+}
+
+.workshop__pic-bg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.workshop__bg-photo {
+    display: block;
+}
+
+.workshop__content--right {
+    position: relative;
+}
+
+.workshop__decor {
+    position: absolute;
+    left: -50px;
+    top: 0;
+    pointer-events: none;
+    user-select: none;
+    z-index: 1;
+}
+
+.workshop__item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 30px;
+}
+
+.workshop__item ~ .workshop__item {
+    margin-top: 60px;
+}
+
+.workshop__tagline {
+    margin-right: 50px;
+}
+
+.workshop__content-action {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    z-index: 1;
+}
+
+.workshop__content-action--main {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 100%;
+
+}
+
+.workshop__content-action-btn {
+    margin-top: 40px;
+}
+
+.workshop__pic {
+    min-width: 500px;
+}
+
+.workshop__photo {
+    display: block;
+}

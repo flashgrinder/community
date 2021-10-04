@@ -1,0 +1,36 @@
+.contacts__info {
+    margin-top: 60px;
+}
+
+.contacts__wrapp {
+    display: flex;
+    justify-content: center;
+}
+
+.contacts__phone,
+.contacts__email {
+    display: flex;
+    align-items: center;
+}
+
+.contacts__email:hover .contacts__text-email,
+.contacts__phone:hover .contacts__text-number {
+    color: var(--color-yellow);
+}
+
+.contacts__text-email,
+.contacts__text-number {
+    transition: color .3s ease;
+}
+
+.contacts__phone {
+    margin-right: 90px;
+}
+
+.contacts__icon {
+    margin-right: 20px;
+}
+
+.contact__address {
+    margin-top: 25px;
+}
