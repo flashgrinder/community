@@ -1,0 +1,109 @@
+.form {
+    max-width: 470px;
+}
+
+.form__field ~ .form__field {
+    margin-top: 30px;
+}
+
+.form__input {
+    width: 100%;
+    padding: 17px 18px 16px;
+    background: transparent;
+    border: 1px solid var(--color-white);
+    color: var(--color-white);
+}
+
+.form__input--textarea {
+    min-height: 150px;
+}
+
+.form__input:focus,
+.form__input:target,
+.form__input:active {
+    outline: 1px solid var(--color-yellow);
+    border: 1px solid var(--color-yellow);
+}
+
+.form__input::placeholder {
+    color: var(--color-white);
+}
+
+.form__upload,
+.form__actions {
+    margin-top: 30px;
+}
+
+.form__agree-text {
+    margin-top: 18px;
+}
+
+.form__agree-text .wpcf7-acceptance .wpcf7-list-item {
+    font-family: var(--font-roboto);
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--color-white);
+    text-decoration: underline;
+    display: flex;
+    justify-content: center;
+}
+
+.form__agree-text .wpcf7-acceptance label {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.form__checkbox--agree {
+    margin-right: 25px;
+    position: relative;
+    z-index: -1;
+    opacity: 0;
+}
+
+.form__agree-text .wpcf7-acceptance label>span::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    z-index: 1;
+    opacity: 1;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 80%;
+    border: 2px solid var(--color-white);
+    width: 20px;
+    height: 20px;
+}
+
+.form__agree-text .form__agree-text .wpcf7-acceptance label > span:hover::before {
+    border: 2px solid var(--color-yellow);
+}
+
+.form__agree-text .wpcf7-acceptance label > .form__checkbox--agree:focus + span::before {
+    border: 2px solid var(--color-yellow);
+}
+
+.form__agree-text .wpcf7-acceptance label > .form__checkbox--agree:focus:not(:checked) + span::before {
+    border: 2px solid var(--color-yellow);
+}
+
+.form__agree-text .wpcf7-acceptance label > .form__checkbox--agree:disabled + span::before {
+    border: 2px solid var(--color-dark);
+}
+
+.form__agree-text .wpcf7-acceptance label > .form__checkbox--agree:checked + span::before{
+    border: 2px solid var(--color-yellow);
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTciIGhlaWdodD0iMTIiIHZpZXdCb3g9IjAgMCAxNyAxMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGxpbmUgeDE9IjEuMjQxNTMiIHkxPSI0LjQxNDk2IiB4Mj0iNy43OTExNSIgeTI9IjEwLjk2NDYiIHN0cm9rZT0id2hpdGUiIHN0cm9rZS13aWR0aD0iMiIvPgo8bGluZSB4MT0iNi4zNzY4OCIgeTE9IjEwLjk2NDUiIHgyPSIxNi4yMDEzIiB5Mj0iMS4xNDAxIiBzdHJva2U9IndoaXRlIiBzdHJva2Utd2lkdGg9IjIiLz4KPC9zdmc+Cg==");
+}
+
+.form .wpcf7-not-valid-tip {
+    text-align: center;
+    font-family: var(--font-roboto);
+    font-size: 12px;
+    display: inline-block;
+    margin-top: 5px;
+    color: var(--color-invalid);
+}
