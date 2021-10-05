@@ -1212,6 +1212,15 @@ img {
   overflow: visible;
 }
 
+.news-slider__navigation {
+  margin-bottom: 20px;
+  z-index: 101;
+}
+
+.news-slider__navigation--reverse {
+  margin-bottom: -55px;
+}
+
 .news-slider__inner {
   margin-top: 20px;
 }
