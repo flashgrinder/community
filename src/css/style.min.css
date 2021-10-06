@@ -2048,6 +2048,48 @@ img {
   margin-bottom: 30px;
 }
 
+/* Price-workshop */
+
+.price-workshop__table {
+  margin-left: 50px;
+  margin-top: 50px;
+}
+
+/* Table-workshop */
+
+.table-workshop {
+  font-family: var(--font-roboto);
+  font-size: calc(12px + 4 * ((100vw - 576px) / 624));
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+}
+
+@media screen and (min-width: 1200px) {
+
+  .table-workshop {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+
+  .table-workshop {
+    font-size: 12px;
+  }
+}
+
+.table-workshop__thead {
+  font-weight: bold;
+}
+
+.table-workshop__tbody .table-workshop__td:first-child {
+  font-weight: bold;
+}
+
+.table-workshop__thead .table-workshop__td,
+.table-workshop__tbody .table-workshop__td {
+  padding: 20px 30px;
+}
+
 /* 404 */
 
 .page-404__wrapp {
