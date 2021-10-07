@@ -9,6 +9,7 @@
     animation: cursorAnim 1s infinite alternate;
     pointer-events: none;
     z-index: 10000;
+    @include tablet(display, none);
 }
 
 .cursor::after {

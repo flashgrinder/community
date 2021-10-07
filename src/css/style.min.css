@@ -2530,6 +2530,10 @@ img {
   .hide-tablet {
     display: none !important;
   }
+
+  .cursor {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 768px) {
