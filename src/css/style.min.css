@@ -1979,7 +1979,7 @@ img {
 }
 
 .wysiwyg ul {
-  padding-left: 40px;
+  padding-left: 20px;
   font-size: calc(12px + 4 * ((100vw - 320px) / 704));
 }
 
@@ -2541,6 +2541,12 @@ img {
     max-width: 100%;
   }
 
+  .about-author__content {
+    -ms-grid-columns: minmax(0, 400px) 50px minmax(0, 676px);
+    grid-template-columns: minmax(0, 400px) minmax(0, 676px);
+    grid-gap: 50px;
+  }
+
   .cursor {
     display: none;
   }
@@ -2568,6 +2574,13 @@ img {
   .authors__list {
     -ms-grid-columns: minmax(200px, 350px) 50px minmax(200px, 350px);
     grid-template-columns: repeat(2, minmax(200px, 350px));
+  }
+
+  .about-author__content {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    grid-gap: 30px;
+    padding-bottom: 30px;
   }
 }
 

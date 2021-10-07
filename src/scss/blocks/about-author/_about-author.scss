@@ -9,6 +9,15 @@
     grid-gap: 100px;
     padding-bottom: 60px;
     border-bottom: 1px solid #C4C4C4;
+    @include tablet-block {
+        grid-template-columns: minmax(0, 400px) minmax(0, 676px);
+        grid-gap: 50px;
+    }
+    @include mobile-block {
+        grid-template-columns: 1fr;
+        grid-gap: 30px;
+        padding-bottom: 30px;
+    }
 }
 
 .about-author__img {
