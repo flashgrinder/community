@@ -2050,9 +2050,39 @@ img {
 
 /* Price-workshop */
 
+.price-workshop__content ~ .price-workshop__content {
+  margin-top: 60px;
+}
+
+.price-workshop__headline {
+  display: inline-block;
+  padding: 12px 22px;
+  background: var(--color-black);
+}
+
+.price-workshop__tables {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+
 .price-workshop__table {
-  margin-left: 50px;
-  margin-top: 50px;
+  margin-top: 25px;
+  margin-right: 50px;
+  margin-bottom: 25px;
+}
+
+.price-workshop__footer {
+  margin-top: 60px;
+}
+
+.price-workshop__actions {
+  margin-top: 30px;
+}
+
+.price-workshop__btn + .price-workshop__btn {
+  margin-left: 60px;
 }
 
 /* Table-workshop */
@@ -2078,6 +2108,7 @@ img {
 }
 
 .table-workshop__thead {
+  text-align: center;
   font-weight: bold;
 }
 
@@ -2088,6 +2119,7 @@ img {
 .table-workshop__thead .table-workshop__td,
 .table-workshop__tbody .table-workshop__td {
   padding: 20px 30px;
+  min-width: 100px;
 }
 
 /* 404 */

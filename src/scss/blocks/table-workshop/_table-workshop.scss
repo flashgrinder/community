@@ -6,6 +6,7 @@
 }
 
 .table-workshop__thead {
+    text-align: center;
     font-weight: bold;
 }
 
@@ -16,4 +17,5 @@
 .table-workshop__thead .table-workshop__td,
 .table-workshop__tbody .table-workshop__td {
     padding: 20px 30px;
+    min-width: 100px;
 }
