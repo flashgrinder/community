@@ -7,4 +7,15 @@
     grid-template-columns: repeat(4, minmax(200px, 306px));
     justify-content: space-between;
     grid-gap: 60px 50px;
+    @include tablet-block {
+        grid-template-columns: repeat(3, minmax(200px, 350px));
+        grid-gap: 50px;
+    }
+    @include mobile-block {
+        grid-template-columns: repeat(3, minmax(200px, 1fr));
+        grid-gap: 20px;
+    }
+    @include mobileXS-block {
+        grid-template-columns: repeat(2, minmax(124px, 1fr));
+    }
 }

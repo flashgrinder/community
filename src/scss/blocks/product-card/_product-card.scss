@@ -15,6 +15,12 @@
     top: -15px;
     bottom: -15px;
     transition: ease .3s;
+    @include mobileXS-block {
+        left: -10px;
+        right: -10px;
+        top: -10px;
+        bottom: -10px;
+    }
 }
 
 .product-card:hover:before {
@@ -40,6 +46,13 @@
 .product-card__author,
 .product-card__price {
     margin-top: 10px;
+}
+
+.product-card__name,
+.product-card__author,
+.product-card__price {
+    font-size: responsive 12px 20px;
+    font-range: 576px 1200px;
 }
 
 .product-card.product-card--slider,
