@@ -2531,6 +2531,16 @@ img {
     display: none !important;
   }
 
+  .authors__list {
+    -ms-grid-columns: minmax(200px, 350px) 50px minmax(200px, 350px) 50px minmax(200px, 350px);
+    grid-template-columns: repeat(3, minmax(200px, 350px));
+    grid-gap: 50px;
+  }
+
+  .authors__picture {
+    max-width: 100%;
+  }
+
   .cursor {
     display: none;
   }
@@ -2553,6 +2563,11 @@ img {
 
   .modal__body {
     max-width: 450px;
+  }
+
+  .authors__list {
+    -ms-grid-columns: minmax(200px, 350px) 50px minmax(200px, 350px);
+    grid-template-columns: repeat(2, minmax(200px, 350px));
   }
 }
 
@@ -2584,6 +2599,11 @@ img {
 
   .modal__actions .ajax-loader {
     margin: 0 10px;
+  }
+
+  .authors__list {
+    -ms-grid-columns: minmax(200px, 1fr);
+    grid-template-columns: repeat(1, minmax(200px, 1fr));
   }
 
   .wysiwyg ul {
