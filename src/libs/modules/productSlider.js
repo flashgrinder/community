@@ -5,10 +5,9 @@ function init() {
     Swiper.use([Navigation]);
 
     const productSlider = new Swiper(".product-slider__swiper", {
-        slidesPerView: 2,
-        slidesPerColumn: 1,
-        slidesPerColumnFill: 'row',
-        spaceBetween: 40,
+        slidesPerView: 1,
+        loop: true,
+        spaceBetween: 50,
         navigation: {
             nextEl: '.product-slider__arrow--next',
             prevEl: '.product-slider__arrow--prev'
@@ -27,6 +26,9 @@ function init() {
                 spaceBetween: 20
             },
             1024: {
+                slidesPerView: 3
+            },
+            1200: {
                 slidesPerView: 4,
                 spaceBetween: 50
             }
