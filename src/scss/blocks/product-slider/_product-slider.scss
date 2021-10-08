@@ -1,6 +1,7 @@
 .product-slider.product-slider--works {
     padding-top: 30px;
     padding-bottom: 90px;
+    @include mobile(padding-bottom, 30px);
 }
 
 .product-slider__heading {

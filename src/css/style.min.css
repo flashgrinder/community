@@ -2651,6 +2651,10 @@ img {
   .about-product__swiper-thumb.swiper-container {
     height: 70px;
   }
+
+  .product-slider.product-slider--works {
+    padding-bottom: 30px;
+  }
 }
 
 @media screen and (max-width: 576px) {
