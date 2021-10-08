@@ -2611,6 +2611,10 @@ img {
     display: none !important;
   }
 
+  .block-padding {
+    padding: 30px 0;
+  }
+
   .modal__body {
     max-width: 450px;
   }

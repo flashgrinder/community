@@ -57,6 +57,7 @@
 /* Block-padding */
 .block-padding {
     padding: 60px 0;
+    @include mobile(padding, 30px 0);
 }
 
 /* Links */
