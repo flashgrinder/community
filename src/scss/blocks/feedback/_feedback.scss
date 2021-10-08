@@ -2,14 +2,45 @@
     position: relative;
 }
 
-.feedback__bg-img {
+.feedback__bg-pic {
     position: absolute;
     bottom: 0;
     right: 0;
+    @include tablet-block {
+        max-width: 500px;
+    }
+    @include mobile-block {
+        max-width: 360px;
+    }
 }
 
 .feedback__bg-decor {
     position: absolute;
     top: 110px;
     right:18%;
+    @include to(1366px) {
+        right: 8%;
+    }
+    @include tablet-block {
+        max-width: 400px;
+        top: auto;
+        right: 26%;
+        bottom: 24%;
+    }
+    @include mobile-block {
+        max-width: 280px;
+        bottom: 17%;
+    }
+}
+
+.feedback__bg-pic,
+.feedback__bg-decor {
+    pointer-events: none;
+    user-select: none;
+    @include mobileXS(display, none);
+}
+
+.feedback__bg-img,
+.feedback__bg-svg {
+    display: block;
 }

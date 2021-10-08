@@ -1,5 +1,6 @@
 .form {
     max-width: 470px;
+    z-index: 101;
 }
 
 .form__field ~ .form__field {
@@ -32,10 +33,16 @@
 .form__upload,
 .form__actions {
     margin-top: 30px;
+    @include mobileXS(text-align, center);
 }
 
 .form__agree-text {
     margin-top: 18px;
+    @include mobileXS-block {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 260px;
+    }
 }
 
 .form__agree-text .wpcf7-acceptance .wpcf7-list-item {
