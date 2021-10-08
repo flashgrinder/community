@@ -10,6 +10,11 @@ function init() {
         spaceBetween: 25,
         watchSlidesVisibility: true,
         watchSlidesProgress: true,
+        breakpoints: {
+            320: {
+                spaceBetween: 10
+            }
+        }
     });
 
     const aboutProductSliderFull = new Swiper(".about-product__swiper-full", {
