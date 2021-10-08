@@ -2714,6 +2714,21 @@ img {
     max-width: 450px;
   }
 
+  .contacts__wrapp {
+    -webkit-flex-direction: column;
+            flex-direction: column;
+    -webkit-align-items: center;
+            align-items: center;
+  }
+
+  .contacts__phone {
+    margin-right: 0;
+  }
+
+  .contacts__email {
+    margin-top: 20px;
+  }
+
   .gallery__cards {
     -ms-grid-columns: minmax(200px, 1fr) 20px minmax(200px, 1fr) 20px minmax(200px, 1fr);
     grid-template-columns: repeat(3, minmax(200px, 1fr));

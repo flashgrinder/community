@@ -5,6 +5,10 @@
 .contacts__wrapp {
     display: flex;
     justify-content: center;
+    @include mobile-block {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .contacts__phone,
@@ -26,6 +30,11 @@
 
 .contacts__phone {
     margin-right: 90px;
+    @include mobile(margin-right, 0);
+}
+
+.contacts__email {
+    @include mobile(margin-top, 20px);
 }
 
 .contacts__icon {
