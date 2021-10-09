@@ -24,6 +24,10 @@
         grid-template-columns: minmax(0, 450px) minmax(0, 450px);
         grid-gap: 60px;
     }
+    @include mobile-block {
+        grid-template-columns: 1fr;
+        grid-gap: 30px;
+    }
 }
 
 .workshop__body--one {
@@ -77,6 +81,7 @@
     pointer-events: none;
     user-select: none;
     z-index: 1;
+    @include mobile(left, 0);
 }
 
 .workshop__item {
@@ -86,6 +91,9 @@
     justify-content: flex-end;
     margin-top: 30px;
     @include large(margin-top, 60px);
+    @include mobile-block {
+        justify-content: space-between;
+    }
 }
 
 .workshop__item ~ .workshop__item {
@@ -99,6 +107,7 @@
 .workshop__item-text {
     margin-right: 50px;
     @include large(margin-right, 30px);
+    @include mobile(margin-left, 20px);
 }
 
 .workshop__content-action {
@@ -114,6 +123,13 @@
     top: 30px;
     left: 0;
     width: 100%;
+    @include mobile-block {
+        position: relative;
+        top: auto;
+        left: auto;
+        margin-right: 30px;
+        margin-left: 20px;
+    }
 
 }
 
@@ -136,6 +152,11 @@
     @include tablet-block {
         min-width: 300px;
         max-width: 300px;
+    }
+    @include mobile-block {
+        min-width: 470px;
+        max-width: 470px;
+        margin-right: -90px;
     }
 }
 

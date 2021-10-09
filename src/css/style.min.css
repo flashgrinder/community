@@ -2827,6 +2827,39 @@ img {
     max-width: 450px;
   }
 
+  .workshop__body {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    grid-gap: 30px;
+  }
+
+  .workshop__decor {
+    left: 0;
+  }
+
+  .workshop__item {
+    -webkit-justify-content: space-between;
+            justify-content: space-between;
+  }
+
+  .workshop__item-text {
+    margin-left: 20px;
+  }
+
+  .workshop__content-action--main {
+    position: relative;
+    top: auto;
+    left: auto;
+    margin-right: 30px;
+    margin-left: 20px;
+  }
+
+  .workshop__pic {
+    min-width: 470px;
+    max-width: 470px;
+    margin-right: -90px;
+  }
+
   .news-slider__decor {
     top: 50%;
     right: 0.5%;
