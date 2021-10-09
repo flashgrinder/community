@@ -1365,6 +1365,10 @@ img {
 
 /* News-slider */
 
+.news-slider--reverse {
+  padding-top: 60px;
+}
+
 .news-slider__swiper.swiper-container {
   overflow: visible;
 }
@@ -1384,9 +1388,11 @@ img {
 
 .news-slider__decor {
   position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 10;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 2;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
@@ -1397,26 +1403,28 @@ img {
 .news-slider__item {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: minmax(0, 432px) minmax(0, 967px);
-  grid-template-columns: minmax(0, 432px) minmax(0, 967px);
-  padding: 50px 0;
+  -ms-grid-columns: minmax(0, 614px) 50px minmax(0, 690px);
+  grid-template-columns: minmax(0, 614px) minmax(0, 690px);
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+  grid-gap: 50px;
 }
 
 .news-slider--reverse .news-slider__item {
-  -ms-grid-columns: minmax(0, 967px) minmax(0, 432px);
-  grid-template-columns: minmax(0, 967px) minmax(0, 432px);
+  -ms-grid-columns: minmax(0, 690px) 50px minmax(0, 614px);
+  grid-template-columns: minmax(0, 690px) minmax(0, 614px);
   padding: 50px 0 0;
 }
 
 .news-slider__text {
   position: relative;
   z-index: 101;
-  margin-left: 130px;
   width: 100%;
 }
 
 .news-slider--reverse .news-slider__text {
-  margin-left: -142px;
   padding-bottom: 50px;
 }
 
@@ -1430,22 +1438,21 @@ img {
 
 .news-slider__pic {
   position: relative;
-  right: -270px;
-  width: 967px;
-  max-width: 967px;
+  max-height: 350px;
+  overflow: hidden;
+  z-index: 1;
 }
 
 .news-slider--reverse .news-slider__pic {
   -webkit-order: -1;
           order: -1;
-  left: -270px;
 }
 
 .news-slider__thumbnail {
   display: block;
   width: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 /* Feedback */
@@ -2669,6 +2676,31 @@ img {
     display: flex;
   }
 
+  .news-slider--reverse {
+    padding-top: 0px;
+  }
+
+  .news-slider__navigation--reverse {
+    margin-bottom: 20px;
+  }
+
+  .news-slider__decor {
+    max-width: 530px;
+    width: 100%;
+  }
+
+  .news-slider__item {
+    -ms-grid-columns: minmax(0, 452px) 30px minmax(0, 650px);
+    grid-template-columns: minmax(0, 452px) minmax(0, 650px);
+    grid-gap: 30px;
+  }
+
+  .news-slider--reverse .news-slider__item {
+    padding: 0;
+    -ms-grid-columns: minmax(0, 650px) 30px minmax(0, 452px);
+    grid-template-columns: minmax(0, 650px) minmax(0, 452px);
+  }
+
   .feedback__bg-pic {
     max-width: 500px;
   }
@@ -2744,6 +2776,30 @@ img {
 
   .modal__body {
     max-width: 450px;
+  }
+
+  .news-slider__decor {
+    top: 50%;
+    right: 0.5%;
+    left: auto;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    max-width: 350px;
+  }
+
+  .news-slider__decor--reverse {
+    left: 0.5%;
+  }
+
+  .news-slider__item {
+    -ms-grid-columns: minmax(0, 340px) 20px minmax(0, 370px);
+    grid-template-columns: minmax(0, 340px) minmax(0, 370px);
+    grid-gap: 20px;
+  }
+
+  .news-slider--reverse .news-slider__item {
+    -ms-grid-columns: minmax(0, 370px) 20px minmax(0, 340px);
+    grid-template-columns: minmax(0, 370px) minmax(0, 340px);
   }
 
   .feedback__bg-pic {
@@ -2862,6 +2918,41 @@ img {
     margin: 0 10px;
   }
 
+  .news-slider__decor {
+    top: auto;
+    left: 50%;
+    bottom: 5%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+
+  .news-slider__item {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+
+  .news-slider--reverse .news-slider__item {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+
+  .news-slider--reverse .news-slider__text {
+    padding-bottom: 0;
+  }
+
+  .news-slider__pic {
+    max-height: 230px;
+  }
+
+  .news-slider--reverse .news-slider__pic {
+    -webkit-order: 1;
+            order: 1;
+  }
+
+  .news-slider__thumbnail {
+    height: 100%;
+  }
+
   .feedback__bg-pic,
   .feedback__bg-decor {
     display: none;
@@ -2939,5 +3030,11 @@ img {
 
   .about-product__action {
     margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .news-slider__decor {
+    bottom: 2%;
   }
 }
