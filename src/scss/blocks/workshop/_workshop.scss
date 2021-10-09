@@ -11,6 +11,19 @@
     display: grid;
     grid-template-columns: minmax(0, 600px) minmax(0, 750px);
     grid-gap: 80px;
+    justify-content: space-between;
+    @include to(1366px) {
+        grid-template-columns: minmax(0, 500px) minmax(0, 750px);
+        grid-gap: 60px;
+    }
+    @include large-block {
+        grid-template-columns: minmax(0, 470px) minmax(0, 550px);
+        grid-gap: 70px;
+    }
+    @include tablet-block {
+        grid-template-columns: minmax(0, 450px) minmax(0, 450px);
+        grid-gap: 60px;
+    }
 }
 
 .workshop__body--one {
@@ -44,6 +57,8 @@
     position: absolute;
     bottom: 0;
     left: 0;
+    user-select: none;
+    @include tablet(max-width, 500px);
 }
 
 .workshop__bg-photo {
@@ -58,6 +73,7 @@
     position: absolute;
     left: -50px;
     top: 0;
+    width: 100%;
     pointer-events: none;
     user-select: none;
     z-index: 1;
@@ -69,6 +85,7 @@
     align-items: center;
     justify-content: flex-end;
     margin-top: 30px;
+    @include large(margin-top, 60px);
 }
 
 .workshop__item ~ .workshop__item {
@@ -81,6 +98,7 @@
 
 .workshop__item-text {
     margin-right: 50px;
+    @include large(margin-right, 30px);
 }
 
 .workshop__content-action {
@@ -109,6 +127,16 @@
 
 .workshop__pic {
     min-width: 500px;
+    max-width: 500px;
+    width: 100%;
+    @include large-block {
+        min-width: 385px;
+        max-width: 385px;
+    }
+    @include tablet-block {
+        min-width: 300px;
+        max-width: 300px;
+    }
 }
 
 .workshop__photo {

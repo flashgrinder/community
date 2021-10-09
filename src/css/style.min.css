@@ -1251,6 +1251,8 @@ img {
   -ms-grid-columns: minmax(0, 600px) 80px minmax(0, 750px);
   grid-template-columns: minmax(0, 600px) minmax(0, 750px);
   grid-gap: 80px;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
 }
 
 .workshop__body--one {
@@ -1284,6 +1286,10 @@ img {
   position: absolute;
   bottom: 0;
   left: 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .workshop__bg-photo {
@@ -1298,6 +1304,7 @@ img {
   position: absolute;
   left: -50px;
   top: 0;
+  width: 100%;
   pointer-events: none;
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -1357,6 +1364,8 @@ img {
 
 .workshop__pic {
   min-width: 500px;
+  max-width: 500px;
+  width: 100%;
 }
 
 .workshop__photo {
@@ -2614,6 +2623,12 @@ img {
 /* MEDIA QUERIES */
 
 @media screen and (max-width: 1366px) {
+  .workshop__body {
+    -ms-grid-columns: minmax(0, 500px) 60px minmax(0, 750px);
+    grid-template-columns: minmax(0, 500px) minmax(0, 750px);
+    grid-gap: 60px;
+  }
+
   .feedback__bg-decor {
     right: 8%;
   }
@@ -2622,6 +2637,25 @@ img {
 @media screen and (max-width: 1200px) {
   .hide-large {
     display: none !important;
+  }
+
+  .workshop__body {
+    -ms-grid-columns: minmax(0, 470px) 70px minmax(0, 550px);
+    grid-template-columns: minmax(0, 470px) minmax(0, 550px);
+    grid-gap: 70px;
+  }
+
+  .workshop__item {
+    margin-top: 60px;
+  }
+
+  .workshop__item-text {
+    margin-right: 30px;
+  }
+
+  .workshop__pic {
+    min-width: 385px;
+    max-width: 385px;
   }
 
   .about-product__content {
@@ -2674,6 +2708,21 @@ img {
   .burger-menu {
     display: -webkit-flex;
     display: flex;
+  }
+
+  .workshop__body {
+    -ms-grid-columns: minmax(0, 450px) 60px minmax(0, 450px);
+    grid-template-columns: minmax(0, 450px) minmax(0, 450px);
+    grid-gap: 60px;
+  }
+
+  .workshop__pic-bg {
+    max-width: 500px;
+  }
+
+  .workshop__pic {
+    min-width: 300px;
+    max-width: 300px;
   }
 
   .news-slider--reverse {
