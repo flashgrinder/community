@@ -1,6 +1,7 @@
 .workshop {
     position: relative;
     padding: 60px 0 100px;
+    @include mobile(padding, 30px 0 60px);
 }
 
 .workshop--one-block {
@@ -94,10 +95,20 @@
     @include mobile-block {
         justify-content: space-between;
     }
+    @include mobileXS(margin-top, 30px);
+    @include mobileXSS(margin-top, 20px);
+}
+
+.workshop__item--pos {
+    @include mobileXSS-block {
+        justify-content: flex-end;
+    }
 }
 
 .workshop__item ~ .workshop__item {
     margin-top: 60px;
+    @include mobileXS(margin-top, 30px);
+    @include mobileXSS(margin-top, 20px);
 }
 
 .workshop__item-descr {
@@ -130,11 +141,18 @@
         margin-right: 30px;
         margin-left: 20px;
     }
-
+    @include mobileXSS-block {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        max-width: 260px;
+        margin: 0;
+    }
 }
 
 .workshop__content-action-btn {
     margin-top: 40px;
+    @include mobile(margin-top, 0);
 }
 
 .workshop__content-action-btn + .workshop__content-action-btn {
@@ -157,6 +175,16 @@
         min-width: 470px;
         max-width: 470px;
         margin-right: -90px;
+    }
+    @include mobileXS-block {
+        min-width: 320px;
+        max-width: 320px;
+        margin-right: -100px;
+    }
+    @include mobileXSS-block {
+        min-width: 300px;
+        max-width: 300px;
+        margin-right: -100px;
     }
 }
 
