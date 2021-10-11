@@ -683,11 +683,8 @@ img {
 /* Modals */
 
 .modal {
-  display: none;
   background-color: transparent;
   overflow-y: hidden;
-  -webkit-transform: scale(0);
-          transform: scale(0);
   z-index: 999;
   top: 0;
   bottom: 0;
@@ -698,36 +695,24 @@ img {
   background-color: rgba(0, 0, 0, 0.75);
   -webkit-backdrop-filter: blur(20px);
           backdrop-filter: blur(20px);
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  transition-delay: 0.3s;
+  position: fixed;
 }
 
 .modal.is-open {
-  display: block;
+  visibility: visible;
+  opacity: 1;
   position: fixed;
-  -webkit-transform: scaleY(0.01) scaleX(0);
-          transform: scaleY(0.01) scaleX(0);
-  -webkit-animation: unfoldIn 1s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
-          animation: unfoldIn 1s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+  transition-delay: 0s;
 }
 
-.modal.is-open .modal__body {
-  -webkit-transform: scale(0);
-          transform: scale(0);
-  -webkit-animation: zoomIn 0.5s 0.8s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
-          animation: zoomIn 0.5s 0.8s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
-}
-
-.modal.is-out {
-  display: block;
-  position: fixed;
-  -webkit-transform: scale(1);
-          transform: scale(1);
-  -webkit-animation: unfoldOut 1s 0.3s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
-          animation: unfoldOut 1s 0.3s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
-}
-
-.modal.is-out .modal__body {
-  -webkit-animation: zoomOut 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
-          animation: zoomOut 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+.modal__field--anim {
+  opacity: 0;
+  -webkit-transform: translateX(-100px);
+          transform: translateX(-100px);
 }
 
 .modal__body {
@@ -741,6 +726,8 @@ img {
   padding: 42px 34px 42px;
   top: 50%;
   left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .modal__close {

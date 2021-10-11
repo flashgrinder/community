@@ -6,7 +6,6 @@ const phone = document.querySelector('.js-phone');
 const search = document.querySelector('.js-search');
 const modals = document.querySelectorAll('.js-modal');
 let isOpen = burger.classList.contains('is-open');
-// let isOpenModals = modals.classList.contains('is-open');
 
 let tl = gsap.timeline({defaults: {duration: .2, ease: 'power3.out'}});
 

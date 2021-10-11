@@ -1,8 +1,6 @@
 .modal {
-    display: none;
     background-color: transparent;
     overflow-y: hidden;
-    transform: scale(0);
     z-index: 999;
     top: 0;
     bottom: 0;
@@ -12,29 +10,23 @@
     height: 100%;
     background-color: rgba(0,0,0,0.75);
     backdrop-filter: blur(20px);
+    visibility: hidden;
+    opacity: 0;
+    transition:  visibility .3s ease-in-out, opacity .3s ease-in-out;
+    transition-delay: .3s;
+    position: fixed;
 }
 
 .modal.is-open {
-    display: block;
+    visibility: visible;
+    opacity: 1;
     position: fixed;
-    transform: scaleY(.01) scaleX(0);
-    animation: unfoldIn 1s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+    transition-delay: 0s;
 }
 
-.modal.is-open .modal__body {
-    transform: scale(0);
-    animation: zoomIn .5s .8s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
-}
-
-.modal.is-out {
-    display: block;
-    position: fixed;
-    transform: scale(1);
-    animation: unfoldOut 1s .3s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
-}
-
-.modal.is-out .modal__body {
-    animation: zoomOut .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+.modal__field--anim {
+    opacity: 0;
+    transform: translateX(-100px);
 }
 
 .modal__body {
@@ -46,6 +38,7 @@
     padding: 42px 34px 42px;
     top: 50%;
     left: 50%;
+    transform: translate(-50%, -50%);
     @include mobileXS-block {
         padding: 16px 15px 30px;
         max-width: 320px;
