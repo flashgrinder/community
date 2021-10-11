@@ -6,6 +6,22 @@
 
 .workshop--one-block {
     padding: 60px 0 0;
+    @include mobile(padding, 30px 0 0);
+}
+
+.workshop--page .workshop__body {
+    @include to(1366px) {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 60px;
+    }
+    @include tablet-block {
+        grid-template-columns: minmax(0, 450px) minmax(0, 450px);
+        grid-gap: 60px;
+    }
+    @include mobile-block {
+        grid-template-columns: 1fr;
+        grid-gap: 30px;
+    }
 }
 
 .workshop__body {
@@ -34,6 +50,7 @@
 .workshop__body--one {
     padding-bottom: 60px;
     border-bottom: 1px solid #C4C4C4;
+    @include mobile(border-bottom, none);
 }
 
 .workshop__heading {
@@ -43,6 +60,7 @@
 
 .workshop__heading--two {
     margin-top: 100px;
+    @include mobile(margin-top, auto);
 }
 
 .workshop__descr {
@@ -68,6 +86,10 @@
 
 .workshop__bg-photo {
     display: block;
+}
+
+.workshop__action {
+    @include mobile(text-align, center);
 }
 
 .workshop__content--right {
@@ -100,7 +122,7 @@
 }
 
 .workshop__item--pos {
-    @include mobileXSS-block {
+    @include mobile-block {
         justify-content: flex-end;
     }
 }
@@ -141,7 +163,7 @@
         margin-right: 30px;
         margin-left: 20px;
     }
-    @include mobileXSS-block {
+    @include mobile-block {
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
@@ -157,6 +179,32 @@
 
 .workshop__content-action-btn + .workshop__content-action-btn {
     margin-top: 20px;
+}
+
+.workshop--page .workshop__pic {
+    @include large-block {
+        min-width: 500px;
+        max-width: 500px;
+    }
+    @include tablet-block {
+        min-width: 300px;
+        max-width: 300px;
+    }
+    @include mobile-block {
+        min-width: 470px;
+        max-width: 470px;
+        margin-right: -90px;
+    }
+    @include mobileXS-block {
+        min-width: 320px;
+        max-width: 320px;
+        margin-right: -100px;
+    }
+    @include mobileXSS-block {
+        min-width: 300px;
+        max-width: 300px;
+        margin-right: -100px;
+    }
 }
 
 .workshop__pic {
