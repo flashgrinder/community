@@ -38,11 +38,6 @@
 }
 
 .modal__body {
-    @include mobileXS-block {
-        padding: 16px 15px 30px;
-        max-width: 320px;
-    }
-    @include mobile(max-width, 450px);
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -51,13 +46,14 @@
     padding: 42px 34px 42px;
     top: 50%;
     left: 50%;
+    @include mobileXS-block {
+        padding: 16px 15px 30px;
+        max-width: 320px;
+    }
+    @include mobile(max-width, 450px);
 }
 
 .modal__close {
-    @include mobileXS-block {
-        top: 2px;
-        right: 2px;
-    }
     display: inline-block;
     position: absolute;
     right: 20px;
@@ -65,16 +61,22 @@
     width: 30px;
     height: 30px;
     cursor: pointer;
+    @include mobileXS-block {
+        right: 20px;
+        top: 75px;
+        width: 21px;
+        height: 21px;
+    }
 }
 
 .modal__close-svg {
+    width: 30px;
+    height: 30px;
+    fill: var(--color-white);
     @include mobileXS-block {
         width: 21px;
         height: 21px;
     }
-    width: 30px;
-    height: 30px;
-    fill: var(--color-white);
 }
 
 .modal__form {

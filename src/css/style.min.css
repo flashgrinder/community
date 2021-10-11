@@ -3150,8 +3150,10 @@ img {
   }
 
   .modal__close {
-    top: 2px;
-    right: 2px;
+    right: 20px;
+    top: 75px;
+    width: 21px;
+    height: 21px;
   }
 
   .modal__close-svg {
