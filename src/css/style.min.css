@@ -1015,7 +1015,7 @@ img {
           align-items: center;
 }
 
-.header__inner {
+.header__menu {
   display: -webkit-flex;
   display: flex;
   -webkit-align-items: center;
@@ -2622,6 +2622,14 @@ img {
 
 /* MEDIA QUERIES */
 
+@media screen and (min-width: 1024px) {
+  .header__menu-item {
+    opacity: 1 !important;
+    -webkit-transform: translateX(0px) !important;
+            transform: translateX(0px) !important;
+  }
+}
+
 @media screen and (max-width: 1366px) {
   .workshop--page .workshop__body {
     -ms-grid-columns: 1fr 60px 1fr;
@@ -2699,21 +2707,72 @@ img {
     background: rgba(0, 0, 0, 0.9);
     width: 100%;
     z-index: 101;
-    -webkit-transform: scale(1) scaleZ(1) rotateX(-90deg) rotateY(0deg);
-            transform: scale(1) scaleZ(1) rotateX(-90deg) rotateY(0deg);
-    -webkit-transform-origin: 0% 0%;
-            transform-origin: 0% 0%;
-    transition: ease-in-out 0.4s;
-    transition-delay: 1s;
+    opacity: 0;
+    visibility: hidden;
+    transition: ease-in-out 0.3s;
+    transition-delay: 0.5s;
+    -webkit-flex-direction: column;
+            flex-direction: column;
+    -webkit-justify-content: center;
+            justify-content: center;
   }
 
   .header__menu.is-open {
     opacity: 1;
-    -webkit-transform: scale(1) scaleZ(1) rotateX(0deg) rotateY(0deg);
-            transform: scale(1) scaleZ(1) rotateX(0deg) rotateY(0deg);
-    -webkit-transform-origin: 50% 0%;
-            transform-origin: 50% 0%;
+    visibility: visible;
     transition-delay: 0s;
+  }
+
+  .header__menu-list {
+    -webkit-flex-direction: column;
+            flex-direction: column;
+    font-size: 20px;
+  }
+
+  .header__menu-item {
+    opacity: 0;
+    -webkit-transform: translateX(-100px);
+            transform: translateX(-100px);
+  }
+
+  .header__menu-item ~ .header__menu-item {
+    margin-left: 0;
+    margin-top: 30px;
+  }
+
+  .header__menu-link {
+    color: var(--color-white);
+  }
+
+  .header__search {
+    right: 35px;
+  }
+
+  .header__basket-svg,
+  .header__search-svg {
+    fill: var(--color-white);
+  }
+
+  .header__phone {
+    color: var(--color-white);
+    font-size: 20px;
+    left: 35px;
+    margin-left: 0;
+  }
+
+  .header__phone,
+  .header__search {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 20px;
+    transition: opacity 0.2s ease, visibility 0.2s ease;
+  }
+
+  .header__phone.is-open,
+  .header__search.is-open {
+    opacity: 1;
+    visibility: visible;
   }
 
   .burger-menu {
@@ -2847,6 +2906,15 @@ img {
 
   .modal__body {
     max-width: 450px;
+  }
+
+  .header {
+    padding: 8px 0 4px;
+  }
+
+  .header__logo {
+    display: inline-block;
+    max-width: 160px;
   }
 
   .workshop {

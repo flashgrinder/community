@@ -5,6 +5,9 @@
     background: var(--color-white);
     padding: 12px 0;
     z-index: 1001;
+    @include mobile-block {
+        padding: 8px 0 4px;
+    }
 }
 
 .header__body {
@@ -13,7 +16,16 @@
     align-items: center;
 }
 
+.header__logo {
+    @include mobile-block {
+        display: inline-block;
+        max-width: 160px;
+    }
+}
+
 .header__menu {
+    display: flex;
+    align-items: center;
     @include tablet-block {
         position: absolute;
         top: 100%;
@@ -24,35 +36,64 @@
         background: rgba(0, 0, 0, 0.9);
         width: 100%;
         z-index: 101;
-        transform: scale(1) scaleZ(1) rotateX(-90deg) rotateY(0deg);
-        transform-origin: 0% 0%;
-        transition: ease-in-out .4s;
-        transition-delay: 1s;
+        opacity: 0;
+        visibility: hidden;
+        transition: ease-in-out .3s;
+        transition-delay: .5s;
+        flex-direction: column;
+        justify-content: center;
     }
 }
 
 .header__menu.is-open {
     @include tablet-block {
         opacity: 1;
-        transform: scale(1) scaleZ(1) rotateX(0deg) rotateY(0deg);
-        transform-origin: 50% 0%;
+        visibility: visible;
         transition-delay: 0s;
     }
 }
 
-.header__inner {
-    display: flex;
-    align-items: center;
+.header__menu-list {
+    @include tablet-block {
+        flex-direction: column;
+        font-size: 20px;
+    }
+}
+
+.header__menu-item {
+    @include from(1024px) {
+        opacity: 1 !important;
+        transform: translateX(0px) !important;
+    }
+    @include tablet-block {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+}
+
+.header__menu-item ~ .header__menu-item {
+    @include tablet-block {
+        margin-left: 0;
+        margin-top: 30px;
+    }
+}
+
+.header__menu-link {
+    @include tablet-block {
+        color: var(--color-white);
+    }
 }
 
 .header__search {
     cursor: pointer;
+    @include tablet(right, 35px);
 }
 
 .header__basket-svg,
 .header__search-svg {
     fill: var(--color-black-low);
     transition: fill .2s ease;
+    @include tablet(fill, var(--color-white));
 }
 
 .header__basket-svg:hover,
@@ -73,8 +114,33 @@
     font-weight: 900;
     color: var(--color-black-low);
     transition: color .2s ease;
+    @include tablet-block {
+        color: var(--color-white);
+        font-size: 20px;
+        left: 35px;
+        margin-left: 0;
+    }
 }
 
 .header__phone:hover {
     color: var(--color-yellow);
+}
+
+.header__phone,
+.header__search {
+    @include tablet-block {
+        opacity: 0;
+        visibility: hidden;
+        position: absolute;
+        top: 20px;
+        transition: opacity .2s ease, visibility .2s ease;
+    }
+}
+
+.header__phone.is-open,
+.header__search.is-open {
+    @include tablet-block {
+        opacity: 1;
+        visibility: visible;
+    }
 }
