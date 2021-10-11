@@ -101,7 +101,7 @@ function js() {
     return browserify({
         entries: [jsFolder + entry]
     })
-    .transform(babelify, {presets: ['@babel/preset-env']})
+    .transform(babelify, {presets: ['@babel/preset-env'], global: true})
     .bundle()
     .pipe(vss(entry))
     .pipe(rename({extname: '.min.js'}))
