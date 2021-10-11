@@ -2908,6 +2908,20 @@ img {
     max-width: 450px;
   }
 
+  .modal__form.modal__form--search {
+    -webkit-flex-direction: column;
+            flex-direction: column;
+    -webkit-justify-content: center;
+            justify-content: center;
+    -webkit-align-items: center;
+            align-items: center;
+  }
+
+  .modal__actions.modal__actions--search {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+
   .header {
     padding: 8px 0 4px;
   }

@@ -92,6 +92,11 @@
     display: flex;
     align-items: flex-start;
     max-width: 670px;
+    @include mobile-block {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 .modal__field.modal__field--search {
@@ -102,6 +107,10 @@
 .modal__actions.modal__actions--search {
     margin-top: 0;
     margin-left: 20px;
+    @include mobile-block {
+        margin-left: 0;
+        margin-top: 20px;
+    }
 }
 
 .modal__btn.modal__btn--search {
