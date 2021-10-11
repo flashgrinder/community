@@ -33,7 +33,7 @@ const modalService = () => {
 
                         modal.classList.remove('is-open')
                         
-                    }, 300);
+                    }, 600);
                 } )
 
                 modal.addEventListener('click', () => {
@@ -44,7 +44,7 @@ const modalService = () => {
     
                         modal.classList.remove('is-open');
     
-                    }, 300);
+                    }, 600);
                 } )
                 
                 body.addEventListener('keydown', (e) => {
@@ -57,7 +57,7 @@ const modalService = () => {
     
                             modal.classList.remove('is-open');
         
-                        }, 300);
+                        }, 600);
                     }
 
                 });
@@ -66,8 +66,6 @@ const modalService = () => {
             function openTrigger() {
 
                 modal.classList.add('is-open');
-
-                
 
                 setTimeout(() => {
 
