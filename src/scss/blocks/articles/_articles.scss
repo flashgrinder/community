@@ -1,0 +1,13 @@
+.articles__posts {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+    grid-gap: 50px;
+    @include mobile-block {
+        grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    }
+}
+
+.articles__actions {
+    margin-top: 60px;
+    text-align: center;
+}
