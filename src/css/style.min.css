@@ -2118,6 +2118,16 @@ img {
   color: var(--color-white);
 }
 
+/* Post-slider */
+
+.post-slider__heading {
+  margin-bottom: 30px;
+}
+
+.post-slider__navigation {
+  margin-bottom: 20px;
+}
+
 /* Post */
 
 .post {

@@ -4,6 +4,7 @@ import mainScreenSlider from '../libs/modules/mainScreenSlider.js';
 import productSlider from '../libs/modules/productSlider.js';
 import newsSlider from '../libs/modules/newsSlider.js';
 import aboutProductSlider from '../libs/modules/aboutProductSlider.js';
+import postSlider from '../libs/modules/postSlider.js';
 import modal from '../libs/modules/modal.js';
 import gsReveal from '../libs/modules/gsReveal.js';
 
@@ -16,6 +17,7 @@ document.addEventListener('DOMContentLoaded', function(e) {
     productSlider.init();
     newsSlider.init();
     aboutProductSlider.init();
+    postSlider.init();
     gsReveal.init();
     
 });
