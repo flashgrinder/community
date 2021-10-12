@@ -1,6 +1,9 @@
 .post {
-    padding-bottom: 60px;
-    @include mobile(padding-bottom, 30px);
+    padding-bottom: 30px;
+}
+
+.post__body {
+    border-bottom: 1px solid #C4C4C4;
 }
 
 .post__article {
