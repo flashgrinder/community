@@ -7,6 +7,7 @@ import aboutProductSlider from '../libs/modules/aboutProductSlider.js';
 import postSlider from '../libs/modules/postSlider.js';
 import modal from '../libs/modules/modal.js';
 import gsReveal from '../libs/modules/gsReveal.js';
+import indexAnimation from '../libs/modules/index-animation.js';
 
 document.addEventListener('DOMContentLoaded', function(e) {
     
@@ -19,5 +20,6 @@ document.addEventListener('DOMContentLoaded', function(e) {
     aboutProductSlider.init();
     postSlider.init();
     gsReveal.init();
+    indexAnimation.init();
     
 });
