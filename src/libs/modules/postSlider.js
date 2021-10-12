@@ -14,7 +14,6 @@ function init() {
         },
         breakpoints: {
             320: {
-                slidesPerView: 2,
                 spaceBetween: 10
             },
             576: {
@@ -22,7 +21,7 @@ function init() {
                 spaceBetween: 10
             },
             768: {
-                slidesPerView: 3,
+                slidesPerView: 2,
                 spaceBetween: 20
             },
             1024: {
