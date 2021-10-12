@@ -33,7 +33,7 @@ const modalService = () => {
 
                         modal.classList.remove('is-open')
                         
-                    }, 600);
+                    }, 400);
                 } )
 
                 modal.addEventListener('click', () => {
@@ -44,7 +44,7 @@ const modalService = () => {
     
                         modal.classList.remove('is-open');
     
-                    }, 600);
+                    }, 400);
                 } )
                 
                 body.addEventListener('keydown', (e) => {
@@ -57,7 +57,7 @@ const modalService = () => {
     
                             modal.classList.remove('is-open');
         
-                        }, 600);
+                        }, 400);
                     }
 
                 });
@@ -71,7 +71,7 @@ const modalService = () => {
 
                     tl.play();
 
-                }, 600)
+                }, 400)
                 
             }
 
