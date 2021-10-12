@@ -6,7 +6,7 @@ function animateFrom(elem, direction) {
     var x = 0,
         y = direction * 100;
     if(elem.classList.contains("gs-reveal--from-left")) {
-      x = -100;
+      x = -150;
       y = 0;
     } else if (elem.classList.contains("gs-reveal--from-right")) {
       x = 100;
