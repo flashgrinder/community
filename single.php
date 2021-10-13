@@ -3,53 +3,31 @@
 <!-- Post -->
 <section class="post bg--white">
     <div class="post__body container">
+        <?php the_post(); ?>
         <article class="post__article">
             <header class="post__header">
                 <figure class="post__figure gs-reveal">
-                    <img src="<?php echo STANDART_DIR; ?>img/upload/news-image-1.jpg" alt="" class="post__img">
+                    <?php
+                        $default_attr = [
+                            'class'	=> "post__img",
+                            'alt'   => get_the_title()
+                        ];
+                        
+                        echo get_the_post_thumbnail( $post->ID, 'full', $default_attr ) ?>
                 </figure>
                 <div class="post__info">
                     <h1 class="post__title title title--large title--white title--w-black gs-reveal gs-reveal--from-left">
-                        Открытие онлайн галереи произойдёт в 2023 году
+                        <?php the_title(); ?>
                     </h1>
                     <div class="post__meta gs-reveal gs-reveal--from-left">
                         <span class="post__date text text--normal text--w-regular">
-                            25 августа 2021 года
+                            <?php the_date('j F Y', $before); ?>
                         </span>
                     </div>
                 </div>
             </header>
             <div class="post__content wysiwyg gs-reveal">
-                <h3>
-                    Текста строчка если ты возвращайся встретил?
-                </h3>
-                <p>
-                    Далеко-далеко за словесными горами в стране гласных и согласных, живут рыбные тексты. Заголовок составитель свою деревни ему ipsum строчка на берегу путь свой взобравшись это? Большой пунктуация которое то своего переулка взгляд снова парадигматическая осталось строчка, семь запятой себя большого вопрос букв, предупредила своих коварных родного напоивший пор сбить?
-                </p>
-                <p>
-                    Всемогущая ее ты проектах заманивший, пунктуация путь, снова точках маленький страна даль вопрос своего подпоясал бросил прямо над которое запятой грамматики заголовок несколько использовало безопасную? Наш маленькая составитель взгляд его переписывается знаках заманивший что рекламных о переписали оксмокс решила грамматики, послушавшись речью пунктуация необходимыми, встретил живет текста, свой несколько!
-                </p>
-                <p>
-                    Безорфографичный она власти от всех великий lorem, переписали маленький он эта даль подзаголовок, знаках проектах ты алфавит живет повстречался использовало свой.
-                </p>
-                <p>
-                    Переписывается маленький рыбного несколько силуэт подзаголовок пунктуация повстречался имени, если встретил диких взобравшись гор, оксмокс реторический букв назад снова подпоясал не. Текст, дороге встретил?
-                </p>
-                <p>
-                    Снова агентство языкового одна своих переулка жаренные буквенных, несколько реторический пунктуация о вопрос встретил там текстами которое. Бросил, снова! Букв ты точках это заглавных большого великий взгляд имени инициал грустный. Не оксмокс пор деревни подзаголовок продолжил ведущими они коварный заглавных возвращайся коварных, журчит несколько предупреждал единственное его использовало, лучше вскоре щеке рот ручеек родного инициал?
-                </p> 
-                <ul>
-                    <li>Пункт с текстом 1</li>
-                    <li>Пункт с текстом 2</li>
-                    <li>Пункт с текстом 3</li>
-                    <li>Пункт с текстом 4</li>
-                    <li>Пункт с текстом 5</li>
-                    <li>Пункт с текстом 6</li>
-                    <li>Пункт с текстом 7</li>
-                    <li>Пункт с текстом 8</li>
-                    <li>Пункт с текстом 9</li>
-                    <li>Пункт с текстом 10</li>
-                </ul>
+                <?php the_content(); ?>
             </div>
         </article>
     </div>
@@ -65,204 +43,67 @@
         </div>
         <div class="post-slider__swiper swiper-container gs-reveal gs-reveal--from-right">
             <div class="post-slider__swiper-wrapper swiper-wrapper">
-                <div class="post-slider__swiper-slide swiper-slide">
-                    <!-- Post-card -->
-                    <article class="post-card">
-                        <aside class="post-card__aside">
-                            <a href="single.html" class="post-card__link">
-                                <figure class="post-card__figure">
-                                    <img src="<?php echo STANDART_DIR; ?>img/upload/news-image-1.jpg" alt="" class="post-card__img">
-                                </figure>
-                            </a>
-                        </aside>
-                        <header class="post-card__header">
-                            <a href="single.html" class="post-card__link">
-                                <h3 class="post-card__title title title--medium title--black-low title--w-black">
-                                    Заголовок новости
-                                </h3>
-                            </a>
-                        </header>
-                        <div class="post-card__body">
-                            <p class="post-card__excerpt text text--black-low text--normal text--w-regular">
-                                Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Города снова ручеек гор, о последний предупредила букв! Встретил безопасную, букв даль страну грустный коварных.
-                            </p>
-                        </div>
-                        <footer class="post-card__footer">
-                            <a href="single.html" class="post-card__more text text--normal text--yellow text--w-bold bg--black link">
-                                Читать подробнее
-                            </a>
-                            <div class="post-card__date text text--small text--dark text--w-regular">
-                                29.09.2021
+            <?php
+
+                $post_id = $wp_query->get_queried_object_id();
+
+                $args = array(
+                    'post__not_in' => [$post_id],
+                    'posts_per_page' => 9,
+                    'orderby'     => 'date',
+                    'order'       => 'DESC',
+                    'suppress_filters' => true
+                );
+
+                $wp_query = new WP_Query( $args );
+
+
+                if( have_posts() ) : 
+                    while( have_posts() ) : 
+                        the_post();
+                ?>
+                    <div class="post-slider__swiper-slide swiper-slide">
+                        <!-- Post-card -->
+                        <article class="post-card">
+                            <aside class="post-card__aside">
+                                <a href="<?php the_permalink(); ?>" class="post-card__link">
+                                    <figure class="post-card__figure">
+                                        <?php
+                                            $default_attr = [
+                                                'class'	=> "post-card__img",
+                                                'alt'   => get_the_title()
+                                            ];
+                                            
+                                            echo get_the_post_thumbnail( $post->ID, 'full', $default_attr ) ?>
+                                    </figure>
+                                </a>
+                            </aside>
+                            <header class="post-card__header">
+                                <a href="<?php the_permalink(); ?>" class="post-card__link">
+                                    <h3 class="post-card__title title title--medium title--black-low title--w-black">
+                                        <?php the_title(); ?>
+                                    </h3>
+                                </a>
+                            </header>
+                            <div class="post-card__body">
+                                <p class="post-card__excerpt text text--black-low text--normal text--w-regular">
+                                    <?php the_excerpt(); ?>
+                                </p>
                             </div>
-                        </footer>
-                    </article>
-                    <!-- /. Post-card -->
-                </div>
-                <div class="post-slider__swiper-slide swiper-slide">
-                    <!-- Post-card -->
-                    <article class="post-card">
-                        <aside class="post-card__aside">
-                            <a href="single.html" class="post-card__link">
-                                <figure class="post-card__figure">
-                                    <img src="<?php echo STANDART_DIR; ?>img/upload/news-image-1.jpg" alt="" class="post-card__img">
-                                </figure>
-                            </a>
-                        </aside>
-                        <header class="post-card__header">
-                            <a href="single.html" class="post-card__link">
-                                <h3 class="post-card__title title title--medium title--black-low title--w-black">
-                                    Заголовок новости
-                                </h3>
-                            </a>
-                        </header>
-                        <div class="post-card__body">
-                            <p class="post-card__excerpt text text--black-low text--normal text--w-regular">
-                                Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Города снова ручеек гор, о последний предупредила букв! Встретил безопасную, букв даль страну грустный коварных.
-                            </p>
-                        </div>
-                        <footer class="post-card__footer">
-                            <a href="single.html" class="post-card__more text text--normal text--yellow text--w-bold bg--black link">
-                                Читать подробнее
-                            </a>
-                            <div class="post-card__date text text--small text--dark text--w-regular">
-                                29.09.2021
-                            </div>
-                        </footer>
-                    </article>
-                    <!-- /. Post-card -->
-                </div>
-                <div class="post-slider__swiper-slide swiper-slide">
-                    <!-- Post-card -->
-                    <article class="post-card">
-                        <aside class="post-card__aside">
-                            <a href="single.html" class="post-card__link">
-                                <figure class="post-card__figure">
-                                    <img src="<?php echo STANDART_DIR; ?>img/upload/news-image-1.jpg" alt="" class="post-card__img">
-                                </figure>
-                            </a>
-                        </aside>
-                        <header class="post-card__header">
-                            <a href="single.html" class="post-card__link">
-                                <h3 class="post-card__title title title--medium title--black-low title--w-black">
-                                    Заголовок новости
-                                </h3>
-                            </a>
-                        </header>
-                        <div class="post-card__body">
-                            <p class="post-card__excerpt text text--black-low text--normal text--w-regular">
-                                Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Города снова ручеек гор, о последний предупредила букв! Встретил безопасную, букв даль страну грустный коварных.
-                            </p>
-                        </div>
-                        <footer class="post-card__footer">
-                            <a href="single.html" class="post-card__more text text--normal text--yellow text--w-bold bg--black link">
-                                Читать подробнее
-                            </a>
-                            <div class="post-card__date text text--small text--dark text--w-regular">
-                                29.09.2021
-                            </div>
-                        </footer>
-                    </article>
-                    <!-- /. Post-card -->
-                </div>
-                <div class="post-slider__swiper-slide swiper-slide">
-                    <!-- Post-card -->
-                    <article class="post-card">
-                        <aside class="post-card__aside">
-                            <a href="single.html" class="post-card__link">
-                                <figure class="post-card__figure">
-                                    <img src="<?php echo STANDART_DIR; ?>img/upload/news-image-1.jpg" alt="" class="post-card__img">
-                                </figure>
-                            </a>
-                        </aside>
-                        <header class="post-card__header">
-                            <a href="single.html" class="post-card__link">
-                                <h3 class="post-card__title title title--medium title--black-low title--w-black">
-                                    Заголовок новости
-                                </h3>
-                            </a>
-                        </header>
-                        <div class="post-card__body">
-                            <p class="post-card__excerpt text text--black-low text--normal text--w-regular">
-                                Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Города снова ручеек гор, о последний предупредила букв! Встретил безопасную, букв даль страну грустный коварных.
-                            </p>
-                        </div>
-                        <footer class="post-card__footer">
-                            <a href="single.html" class="post-card__more text text--normal text--yellow text--w-bold bg--black link">
-                                Читать подробнее
-                            </a>
-                            <div class="post-card__date text text--small text--dark text--w-regular">
-                                29.09.2021
-                            </div>
-                        </footer>
-                    </article>
-                    <!-- /. Post-card -->
-                </div>
-                <div class="post-slider__swiper-slide swiper-slide">
-                    <!-- Post-card -->
-                    <article class="post-card">
-                        <aside class="post-card__aside">
-                            <a href="single.html" class="post-card__link">
-                                <figure class="post-card__figure">
-                                    <img src="<?php echo STANDART_DIR; ?>img/upload/news-image-1.jpg" alt="" class="post-card__img">
-                                </figure>
-                            </a>
-                        </aside>
-                        <header class="post-card__header">
-                            <a href="single.html" class="post-card__link">
-                                <h3 class="post-card__title title title--medium title--black-low title--w-black">
-                                    Заголовок новости
-                                </h3>
-                            </a>
-                        </header>
-                        <div class="post-card__body">
-                            <p class="post-card__excerpt text text--black-low text--normal text--w-regular">
-                                Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Города снова ручеек гор, о последний предупредила букв! Встретил безопасную, букв даль страну грустный коварных.
-                            </p>
-                        </div>
-                        <footer class="post-card__footer">
-                            <a href="single.html" class="post-card__more text text--normal text--yellow text--w-bold bg--black link">
-                                Читать подробнее
-                            </a>
-                            <div class="post-card__date text text--small text--dark text--w-regular">
-                                29.09.2021
-                            </div>
-                        </footer>
-                    </article>
-                    <!-- /. Post-card -->
-                </div>
-                <div class="post-slider__swiper-slide swiper-slide">
-                    <!-- Post-card -->
-                    <article class="post-card">
-                        <aside class="post-card__aside">
-                            <a href="single.html" class="post-card__link">
-                                <figure class="post-card__figure">
-                                    <img src="<?php echo STANDART_DIR; ?>img/upload/news-image-1.jpg" alt="" class="post-card__img">
-                                </figure>
-                            </a>
-                        </aside>
-                        <header class="post-card__header">
-                            <a href="single.html" class="post-card__link">
-                                <h3 class="post-card__title title title--medium title--black-low title--w-black">
-                                    Заголовок новости
-                                </h3>
-                            </a>
-                        </header>
-                        <div class="post-card__body">
-                            <p class="post-card__excerpt text text--black-low text--normal text--w-regular">
-                                Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Города снова ручеек гор, о последний предупредила букв! Встретил безопасную, букв даль страну грустный коварных.
-                            </p>
-                        </div>
-                        <footer class="post-card__footer">
-                            <a href="single.html" class="post-card__more text text--normal text--yellow text--w-bold bg--black link">
-                                Читать подробнее
-                            </a>
-                            <div class="post-card__date text text--small text--dark text--w-regular">
-                                29.09.2021
-                            </div>
-                        </footer>
-                    </article>
-                    <!-- /. Post-card -->
-                </div>
+                            <footer class="post-card__footer">
+                                <a href="<?php the_permalink(); ?>" class="post-card__more text text--normal text--yellow text--w-bold bg--black link">
+                                    Читать подробнее
+                                </a>
+                                <div class="post-card__date text text--small text--dark text--w-regular">
+                                    <?php echo get_the_date('j F Y', $before); ?>
+                                </div>
+                            </footer>
+                        </article>
+                        <!-- /. Post-card -->
+                    </div>
+                    <?php endwhile; ?>
+                <?php endif;?>
+                <?php wp_reset_postdata(); ?>
             </div>
         </div>
     </div>
