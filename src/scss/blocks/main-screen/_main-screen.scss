@@ -2,10 +2,6 @@
     position: relative;
 }
 
-.main-screen__swiper-slide {
-    height: calc(100vh - 83px);
-}
-
 .main-screen__slide-pic {
     position: relative;
 }
@@ -23,6 +19,7 @@
     width: 100%;
     display: block;
     object-fit: cover;
+    @include mobileXS(height, calc(100vh - 56px));
 }
 
 .main-screen__slogan {
@@ -31,34 +28,49 @@
     left: 18%;
     z-index: 10;
     max-width: 636px;
+    @include to(1366px) {
+        left: 13%;
+    }
+    @include large(max-width, 600px);
+    @include tablet(left, 3%);
+    @include mobile(left, 2%);
+    @include mobileXS-block {
+        width: 100%;
+        max-width: 320px;
+        bottom: 30px;
+        font-size: 16px;
+    }
 }
 
 .main-screen__animation-block {
     position: absolute;
-    top: 70px;
+    top: 43%;
     z-index: 10;
-    right: 18%;
+    left: 50%;
+    transform: translate(-50%, -43%);
 }
 
-.main-screen__animation-svg {
-    width: 1100px;
-    height: auto;
-}
-
-.index-screen-svg {
-    width: 56vw;
+.main-screen__index-screen {
+    width: 60vw;
     height: 0;
     padding-top: 66%;
     position: relative;
-    svg {
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        width: 100%;
-        max-width: 100%;
-        height: 100%;
-        max-height: 100%;
+    @include to(1440px) {
+        width: 75vw;
     }
+    @include tablet(width, 85vw);
+    @include mobile(width, 90vw);
+    @include mobileXS(width, 95vw);
+}
+
+.main-screen__index-screen-svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    max-height: 100%;
 }

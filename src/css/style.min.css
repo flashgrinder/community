@@ -681,6 +681,10 @@ img {
   color: var(--color-white);
 }
 
+.modal__input::-ms-input-placeholder {
+  color: var(--color-white);
+}
+
 .modal__input::placeholder {
   color: var(--color-white);
 }
@@ -1027,10 +1031,6 @@ img {
   position: relative;
 }
 
-.main-screen__swiper-slide {
-  height: calc(100vh - 83px);
-}
-
 .main-screen__slide-pic {
   position: relative;
 }
@@ -1061,24 +1061,21 @@ img {
 
 .main-screen__animation-block {
   position: absolute;
-  top: 70px;
+  top: 43%;
   z-index: 10;
-  right: 18%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -43%);
+          transform: translate(-50%, -43%);
 }
 
-.main-screen__animation-svg {
-  width: 1100px;
-  height: auto;
-}
-
-.index-screen-svg {
-  width: 56vw;
+.main-screen__index-screen {
+  width: 60vw;
   height: 0;
   padding-top: 66%;
   position: relative;
 }
 
-.index-screen-svg svg {
+.main-screen__index-screen-svg {
   position: absolute;
   top: 0;
   left: 0;
@@ -1391,6 +1388,10 @@ img {
 }
 
 .form__input:-ms-input-placeholder {
+  color: var(--color-white);
+}
+
+.form__input::-ms-input-placeholder {
   color: var(--color-white);
 }
 
@@ -2611,7 +2612,17 @@ img {
   }
 }
 
+@media screen and (max-width: 1440px) {
+  .main-screen__index-screen {
+    width: 75vw;
+  }
+}
+
 @media screen and (max-width: 1366px) {
+  .main-screen__slogan {
+    left: 13%;
+  }
+
   .workshop--page .workshop__body {
     -ms-grid-columns: 1fr 60px 1fr;
     grid-template-columns: 1fr 1fr;
@@ -2632,6 +2643,10 @@ img {
 @media screen and (max-width: 1200px) {
   .hide-large {
     display: none !important;
+  }
+
+  .main-screen__slogan {
+    max-width: 600px;
   }
 
   .workshop__body {
@@ -2759,6 +2774,14 @@ img {
   .burger-menu {
     display: -webkit-flex;
     display: flex;
+  }
+
+  .main-screen__slogan {
+    left: 3%;
+  }
+
+  .main-screen__index-screen {
+    width: 85vw;
   }
 
   .workshop--page .workshop__body {
@@ -2910,6 +2933,14 @@ img {
   .header__logo {
     display: inline-block;
     max-width: 160px;
+  }
+
+  .main-screen__slogan {
+    left: 2%;
+  }
+
+  .main-screen__index-screen {
+    width: 90vw;
   }
 
   .workshop {
@@ -3152,6 +3183,21 @@ img {
 
   .modal__actions .ajax-loader {
     margin: 0 10px;
+  }
+
+  .main-screen__slide-img {
+    height: calc(100vh - 56px);
+  }
+
+  .main-screen__slogan {
+    width: 100%;
+    max-width: 320px;
+    bottom: 30px;
+    font-size: 16px;
+  }
+
+  .main-screen__index-screen {
+    width: 95vw;
   }
 
   .workshop__item {
