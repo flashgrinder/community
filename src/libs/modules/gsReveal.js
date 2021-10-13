@@ -39,8 +39,8 @@ function init() {
         ScrollTrigger.create({
             trigger: elem,
             onEnter: function() { animateFrom(elem) }, 
-            onEnterBack: function() { animateFrom(elem, -1) },
-            onLeave: function() { hide(elem) }
+            // onEnterBack: function() { animateFrom(elem, -1) },
+            // onLeave: function() { hide(elem) }
         });
     });
 
