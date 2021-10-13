@@ -1,6 +1,7 @@
 .form {
     max-width: 470px;
     z-index: 101;
+    @include mobileXS(max-width, 100%);
 }
 
 .form__field ~ .form__field {
@@ -30,10 +31,97 @@
     color: var(--color-white);
 }
 
+.form__actions {
+    position: relative;
+}
+
 .form__upload,
 .form__actions {
     margin-top: 30px;
     @include mobileXS(text-align, center);
+}
+
+.form__upload .wpcf7-images-optimize-upload-wrap .images-optimize-upload-handler {
+    text-align: initial;
+    padding: 0;
+    border: none;
+    border-radius: initial;
+    background: transparent;
+    @include mobileXS(text-align, center);
+}
+
+.form__upload .form__btn.form__btn--upload {
+    font-family: var(--font-gotham);
+    background: transparent;
+    color: var(--color-yellow);
+    padding: 13px 23px;
+}
+
+.form__upload .form__btn.form__btn--upload:hover {
+    background: transparent;
+    color: var(--color-white);
+}
+
+.form__upload .wpcf7-images-optimize-upload-wrap .list {
+    display: flex;
+    margin: 0 0 50px 0;
+    @include mobileXS(justify-content, center);
+}
+
+.form__upload .wpcf7-images-optimize-upload-wrap .list li {
+    border: none;
+    line-height: 1;
+    margin: 0;
+    position: relative;
+    height: auto;
+    display: block;
+    border-radius: 0;
+    overflow: visible;
+}
+
+.form__upload .wpcf7-images-optimize-upload-wrap .list li ~ li {
+    margin-left: 20px;
+}
+
+.form__upload .wpcf7-images-optimize-upload-wrap .list li .thumbnail {
+    width: 50px;
+    height: 52px;
+    border-top: none;
+    border-left: none;
+    border-bottom: none;
+    margin: 0;
+}
+
+.form__upload .wpcf7-images-optimize-upload-wrap .list li .thumbnail img {
+    width: 100%;
+    height: 100%;
+}
+
+.form__upload .wpcf7-images-optimize-upload-wrap .list li del {
+    top: auto;
+    right: auto;
+    width: 23px;
+    height: 23px;
+    margin: 0;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: transparent;
+    background: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjEiIHZpZXdCb3g9IjAgMCAyMCAyMSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3QgeD0iMC41IiB5PSIwLjU1ODU5NCIgd2lkdGg9IjE5IiBoZWlnaHQ9IjE5IiByeD0iOS41IiBzdHJva2U9IndoaXRlIi8+CjxwYXRoIGQ9Ik02LjI3ODMyIDYuNzgwNzZIMTQuMTY3MlYxMy4wNTg1QzE0LjE2NzIgMTQuNDM5MiAxMy4wNDc5IDE1LjU1ODUgMTEuNjY3MiAxNS41NTg1SDguNzc4MzJDNy4zOTc2MSAxNS41NTg1IDYuMjc4MzIgMTQuNDM5MiA2LjI3ODMyIDEzLjA1ODVWNi43ODA3NloiIHN0cm9rZT0id2hpdGUiLz4KPHBhdGggZD0iTTEyLjc3NjEgNi4yMjUzNEMxMi41NTAzIDUuMjY5NzggMTEuNjkxOSA0LjU1ODY4IDEwLjY2NzQgNC41NTg2OEg5Ljc3ODQ4QzguNzUzOTUgNC41NTg2OCA3Ljg5NTUxIDUuMjY5NzcgNy42Njk3OSA2LjIyNTM0SDEyLjc3NjFaIiBzdHJva2U9IndoaXRlIi8+CjxsaW5lIHgxPSI0Ljg4OTE2IiB5MT0iNi4yMjUzNCIgeDI9IjE1LjU1NTgiIHkyPSI2LjIyNTM0IiBzdHJva2U9IndoaXRlIi8+CjxsaW5lIHgxPSI4LjM4OTE2IiB5MT0iMTQuMjgwOCIgeDI9IjguMzg5MTYiIHkyPSI4LjA1ODU0IiBzdHJva2U9IndoaXRlIi8+CjxsaW5lIHgxPSIxMC4xNjciIHkxPSIxNC4yODA4IiB4Mj0iMTAuMTY3IiB5Mj0iOC4wNTg1NCIgc3Ryb2tlPSJ3aGl0ZSIvPgo8bGluZSB4MT0iMTEuOTQ0OCIgeTE9IjE0LjI4MDgiIHgyPSIxMS45NDQ4IiB5Mj0iOC4wNTg1NCIgc3Ryb2tlPSJ3aGl0ZSIvPgo8L3N2Zz4K") center no-repeat;
+    background-size: 23px 23px;
+}
+
+.form__upload .wpcf7-images-optimize-upload-wrap .list li del:hover:before,
+.form__upload .wpcf7-images-optimize-upload-wrap .list li del:hover:after {
+    content: none;
+}
+
+.form__upload .images-optimize-upload-error,
+.form.wpcf7-form .wpcf7-response-output {
+    color: var(--color-white);
+    margin: 2em 0 0;
+    padding: 15px;
+    border: 2px solid var(--color-invalid);
 }
 
 .form__agree-text {
@@ -113,4 +201,31 @@
     display: inline-block;
     margin-top: 5px;
     color: var(--color-invalid);
+}
+
+.form__actions .wpcf7-spinner {
+    position: absolute;
+    top: 50%;
+    background-color: transparent;
+    transform: translateY(-50%);
+    opacity: 1;
+    width: 20px;
+    height: 20px;
+    @include mobileXSS-block {
+        margin: 0 4px;
+    }
+}
+
+.form__actions .wpcf7-spinner:before {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: transparent;
+    transform: translateY(-50%);
+    width: 15px;
+    height: 15px;
+    border: 3px solid var(--color-yellow);
+    border-top: 3px solid #595959;
+    transform-origin: center;
+    animation: rotate 1s infinite linear;
 }

@@ -451,52 +451,7 @@
             <img src="<?php echo STANDART_DIR; ?>img/feedback/feedback-bg-svg.svg" alt="" class="feedback__bg-svg">
         </div>
         <!-- Form -->
-        <form action="/#wpcf7-f130-o1" method="post" class="feedback__form form form--main wpcf7-form invalid">
-            <div class="form__field gs-reveal gs-reveal--from-left">
-                <span class="wpcf7-form-control-wrap text-811">
-                    <input type="text" name="text-811" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required form__input wpcf7-not-valid" placeholder="Имя">
-                    <span class="wpcf7-not-valid-tip" aria-hidden="true">Поле обязательно для заполнения.</span>
-                </span>
-            </div>
-            <div class="form__field gs-reveal gs-reveal--from-left">
-                <span class="wpcf7-form-control-wrap email-431">
-                    <input type="email" name="email-431" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email form__input wpcf7-not-valid" placeholder="E-mail">
-                    <span class="wpcf7-not-valid-tip" aria-hidden="true">Поле обязательно для заполнения.</span>
-                </span>
-            </div>
-            <div class="form__field gs-reveal gs-reveal--from-left">
-                <span class="wpcf7-form-control-wrap tel-75">
-                    <input name="tel-75" class="wpcf7-form-control wpcf7-text wpcf7-tel wpcf7-validates-as-required wpcf7-validates-as-tel form__input wpcf7-not-valid" placeholder="Номер телефона">
-                    <span class="wpcf7-not-valid-tip" aria-hidden="true">Поле обязательно для заполнения.</span>
-                </span>
-            </div>
-            <div class="form__field gs-reveal gs-reveal--from-left">
-                <span class="wpcf7-form-control-wrap tel-75">
-                    <textarea type="tel" name="textarea-742" class="wpcf7-form-control wpcf7-text wpcf7-textarea wpcf7-validates-as-required wpcf7-validates-as-textarea form__input form__input--textarea wpcf7-not-valid" placeholder="Комментарий"></textarea>
-                    <span class="wpcf7-not-valid-tip" aria-hidden="true">Поле обязательно для заполнения.</span>
-                </span>
-            </div>
-            <div class="form__upload gs-reveal gs-reveal--from-left">
-                <input type="submit" value="Прикрепить файлы" class="wpcf7-form-control wpcf7-submit form__btn button button--transparent">
-            </div>
-            <div class="form__agree-text gs-reveal gs-reveal--from-left">
-                <span class="wpcf7-form-control-wrap acceptance-666">
-                    <span class="wpcf7-form-control wpcf7-acceptance">
-                        <span class="wpcf7-list-item">
-                            <label>
-                                <input type="checkbox" name="acceptance-666" value="1" class="form__checkbox form__checkbox--agree">
-                                <span class="wpcf7-list-item-label">Подтверждаю своё согласие на обработку персональных данных в рамках данного проекта.</span>
-                            </label>
-                        </span>
-                    </span>
-                </span>
-            </div>
-            <div class="form__actions gs-reveal gs-reveal--from-left">
-                <input type="submit" value="Отправить" class="wpcf7-form-control wpcf7-submit form__btn button button--yellow">
-                <span class="ajax-loader"></span>
-            </div>
-            <div class="wpcf7-response-output">Одно или несколько полей содержат ошибочные данные. Пожалуйста, проверьте их и попробуйте ещё раз.</div>
-        </form>
+        <?php echo do_shortcode('[contact-form-7 id="33" title="Контактная форма на главной" html_class="feedback__form form form--main"]'); ?>
         <!-- /. Form -->
     </div>
 </div>
