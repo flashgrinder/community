@@ -7,45 +7,28 @@
             Результаты поиска
         </h2>
         <h3 class="search-page__headline text text--normal text--black-low text--w-regular title--indent gs-reveal gs-reveal--from-left">
-            Результаты поиска по запросу: <span class="search-page__result-word text text--normal text--black-low text--w-bold">«Печать»</span>
+            Результаты поиска по запросу: <span class="search-page__result-word text text--normal text--black-low text--w-bold">«<?php the_search_query() ?>»</span>
         </h3>
         <div class="search-page__results">
+        <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
             <div class="search-page__result gs-reveal gs-reveal--from-left">
-                <a href="" class="search-page__result-title title title--medium title--black-low title--w-black">
-                   <span class="search-page__highlight">Печать</span> POS-материалов
+                <a href="<?php the_permalink(); ?>" class="search-page__result-title title title--medium title--black-low title--w-black">
+                   <?php the_title(); ?>
                 </a>
                 <p class="search-page__result-excerpt text text--normal text--black-low text--w-regular">
-                    Базовая стоимость печати шелкографией на бумаге в 1 цвет*...
+                    <?php the_excerpt(); ?>
                 </p>
                 <div class="search-page__result-date text text--normal text--dark text--w-regular">
-                    Дата добавления: 26.07.2021
+                    Дата добавления: <?php the_date('d.m.Y', $before); ?>
                 </div>
             </div>
-            <div class="search-page__result gs-reveal gs-reveal--from-left">
-                <a href="" class="search-page__result-title title title--medium title--black-low title--w-black">
-                    Широкоформатная <span class="search-page__highlight">печать</span>
-                </a>
-                <p class="search-page__result-excerpt text text--normal text--black-low text--w-regular">
-                    Базовая стоимость широкоформатной печати в зависимости от размера бумаги и выполнения в ч/б и цветном изображении в руб/1 шт...
-                </p>
-                <div class="search-page__result-date text text--normal text--dark text--w-regular">
-                    Дата добавления: 14.03.2021
-                </div>
-            </div>
-            <div class="search-page__result gs-reveal gs-reveal--from-left">
-                <a href="" class="search-page__result-title title title--medium title--black-low title--w-black">
-                   <span class="search-page__highlight">Печать</span> на бумаге
-                </a>
-                <p class="search-page__result-excerpt text text--normal text--black-low text--w-regular">
-                    Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Не приставка свою деревни рукопись...
-                </p>
-                <div class="search-page__result-date text text--normal text--dark text--w-regular">
-                    Дата добавления: 11.05.2021
-                </div>
-            </div>
+        <?php endwhile; ?>
+        <?php else : ?>
             <div class="search-page__no-found text text--normal text--black-low text--w-black gs-reveal gs-reveal--from-left">
                 По вашему запросу ничего не найдено.
             </div>
+        <?php endif; ?>
+		 <?php wp_reset_postdata();?>
         </div>
     </div>
 </section>
