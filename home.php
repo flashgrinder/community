@@ -1,3 +1,4 @@
+<?php /* Template Name: Домашняя страница */?>
 <?php get_header(); ?>
 
 <!-- Main-screen -->
