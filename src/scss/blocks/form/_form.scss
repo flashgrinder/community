@@ -200,7 +200,7 @@
     font-size: 12px;
     display: inline-block;
     margin-top: 5px;
-    color: var(--color-invalid);
+    color: var(--color-yellow);
 }
 
 .form__actions .wpcf7-spinner {
@@ -211,6 +211,9 @@
     opacity: 1;
     width: 20px;
     height: 20px;
+    @include mobileXS-block {
+        margin: 0 10px;
+    }
     @include mobileXSS-block {
         margin: 0 4px;
     }

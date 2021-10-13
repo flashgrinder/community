@@ -794,7 +794,7 @@ img {
   cursor: pointer;
 }
 
-.modal__actions .ajax-loader {
+.modal__actions .wpcf7-spinner {
   position: absolute;
   top: 50%;
   background-color: transparent;
@@ -805,17 +805,17 @@ img {
   height: 20px;
 }
 
-.modal__actions .ajax-loader:before {
+.modal__actions .wpcf7-spinner:before {
   position: absolute;
-  top: -4px;
-  left: -5px;
+  top: 0px;
+  left: 0px;
   background-color: transparent;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  width: 20px;
-  height: 20px;
-  border: 4px solid var(--color-yellow);
-  border-top: 4px solid #595959;
+  width: 15px;
+  height: 15px;
+  border: 3px solid var(--color-yellow);
+  border-top: 3px solid #595959;
   -webkit-transform-origin: center;
           transform-origin: center;
   -webkit-animation: rotate 1s infinite linear;
@@ -847,7 +847,7 @@ img {
 
 .modal .wpcf7 form.invalid .wpcf7-response-output,
 .modal .wpcf7 form.unaccepted .wpcf7-response-output {
-  border: 2px solid var(--color-invalid);
+  border: 2px solid var(--color-yellow);
 }
 
 .modal__form .wpcf7-not-valid-tip {
@@ -1590,7 +1590,7 @@ img {
   font-size: 12px;
   display: inline-block;
   margin-top: 5px;
-  color: var(--color-invalid);
+  color: var(--color-yellow);
 }
 
 .form__actions .wpcf7-spinner {
@@ -3319,7 +3319,7 @@ img {
     height: 21px;
   }
 
-  .modal__actions .ajax-loader {
+  .modal__actions .wpcf7-spinner {
     margin: 0 10px;
   }
 
@@ -3422,6 +3422,10 @@ img {
     max-width: 260px;
   }
 
+  .form__actions .wpcf7-spinner {
+    margin: 0 10px;
+  }
+
   .gallery__cards {
     -ms-grid-columns: minmax(124px, 1fr) 20px minmax(124px, 1fr);
     grid-template-columns: repeat(2, minmax(124px, 1fr));
@@ -3483,6 +3487,10 @@ img {
 }
 
 @media screen and (max-width: 400px) {
+  .modal__actions .wpcf7-spinner {
+    margin: 0 4px;
+  }
+
   .workshop__item {
     margin-top: 20px;
   }
