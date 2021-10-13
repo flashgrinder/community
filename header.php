@@ -77,7 +77,7 @@
     <!-- Modal-search -->
     
     <!-- Header -->
-    <header class="header">
+    <header class="header js-header">
         <div class="header__body container">
             <a href="<?php echo home_url(); ?>" class="header__logo">
                 <img src="<?php echo STANDART_DIR; ?>img/logo-header.svg" alt="" class="header__logo-img">
