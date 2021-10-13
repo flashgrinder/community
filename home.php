@@ -4,7 +4,7 @@
 <!-- Main-screen -->
 <section class="main-screen bg--white">
     <div class="main-screen__body">
-        <div class="main-screen__swiper swiper-container">
+        <div class="main-screen__swiper swiper-container js-index-slider">
             <div class="main-screen__swiper-wrapper swiper-wrapper">
                 <div class="main-screen__swiper-slide swiper-slide">
                     <div class="main-screen__slide-pic">
@@ -34,71 +34,65 @@
             </div>
         </div>
         <div class="main-screen__inner container">
-            <p class="main-screen__slogan title title--large title--white title--w-medium">
+            <p class="main-screen__slogan title title--large title--white title--w-medium js-index-descr">
                 Сообщество российских художников, работающих методом шелкографии. Современная печатная мастерская и галерея художественных работ.
             </p>
             <div class="main-screen__animation-block">
-                <svg class="main-screen__animation-svg" viewBox="0 0 1100 726" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <g>
-                        <path d="M1073 699.587V634.079" stroke="#EEFF00" stroke-width="4"/>
-                        <path d="M880 709H897" stroke="#EEFF00" stroke-width="4"/>
-                        <path d="M914 709H948" stroke="#EEFF00" stroke-width="4"/>
-                        <path d="M965 709H1075" stroke="#EEFF00" stroke-width="4"/>
-                        <path d="M966.041 408.206H938.938V390.765H1017.62V408.206H990.522H988.522V410.206V487.051H968.041V410.206V408.206H966.041Z" stroke="white" stroke-width="4"/>
-                        <path d="M1025.57 564.664L988.66 622.879L988.349 623.369V623.95V660.613H968.211V623.95V623.372L967.902 622.882L931.148 564.664H952.754L976.652 604.384L978.372 607.242L980.083 604.378L1003.81 564.664H1025.57Z" stroke="white" stroke-width="4"/>
-                        <path d="M1073 510L1073 357" stroke="#EEFF00" stroke-width="4"/>
-                        <path d="M1073 510L1073 358" stroke="#EEFF00" stroke-width="4"/>
-                        <path d="M1073 597.106V580.223" stroke="#EEFF00" stroke-width="4"/>
-                        <path d="M894 530L894 357" stroke="#EEFF00" stroke-width="4"/>
-                    </g>
-                    <g clip-path="url(#clip0)">
-                        <path d="M359 121.166V86.8271" stroke="#EEFF00" stroke-width="4"/>
-                        <path d="M0 0.759766H17.1194" stroke="#EEFF00" stroke-width="4"/>
-                        <path d="M34.2383 0.759766H68.4775" stroke="#EEFF00" stroke-width="4"/>
-                        <path d="M86 1C122.709 1 143.291 1 180 1" stroke="#EEFF00" stroke-width="4"/>
-                        <path d="M179 183L179 -4" stroke="#EEFF00" stroke-width="4"/>
-                        <path d="M210.4 181.259H227.52" stroke="#EEFF00" stroke-width="4"/>
-                        <path d="M245 180H359" stroke="#EEFF00" stroke-width="4"/>
-                        <path d="M359 182L359 138" stroke="#EEFF00" stroke-width="4"/>
-                        <path d="M359 69.6568V-4" stroke="#EEFF00" stroke-width="4"/>
-                        <path d="M360.882 0.759766H511.363" stroke="#EEFF00" stroke-width="4"/>
-                        <path d="M535 13.1695V-4" stroke="#EEFF00" stroke-width="4"/>
-                        <path d="M386.561 179.76H537.042" stroke="#EEFF00" stroke-width="4"/>
-                        <path d="M114.939 115.86C115.069 115.729 115.197 115.591 115.323 115.449L130.465 128.364C130.201 128.635 129.916 128.938 129.645 129.27C119.596 139.313 107.463 144.233 93.4713 144.233C79.2804 144.233 67.2953 139.294 57.2303 129.203C47.3269 119.102 42.4004 107.072 42.4004 93.0077C42.4004 78.7556 47.3374 66.5628 57.2243 56.6472C67.2905 46.5517 79.2776 41.6108 93.4713 41.6108C106.993 41.6108 118.777 46.2049 128.624 55.578L114.553 69.4079C108.627 63.3011 101.568 60.2745 93.4713 60.2745C85.0287 60.2745 77.8171 63.4339 71.9633 69.8552C66.1366 76.2467 63.2239 83.9435 63.2239 92.836C63.2239 101.884 66.1267 109.593 71.9728 115.827C77.8037 122.218 85.0027 125.569 93.4713 125.569C101.775 125.569 108.956 122.214 114.939 115.86Z" stroke="white" stroke-width="4"/>
-                        <path d="M238.876 129.208L238.87 129.202L238.864 129.197C228.795 119.098 223.869 107.073 223.869 93.0077C223.869 78.7577 228.804 66.5712 238.853 56.6588L238.864 56.6472L238.876 56.6354C248.764 46.5532 260.744 41.6108 274.94 41.6108C289.134 41.6108 301.121 46.5517 311.187 56.6472C321.074 66.5628 326.011 78.7556 326.011 93.0077C326.011 107.072 321.085 119.102 311.182 129.202C301.116 139.294 289.131 144.233 274.94 144.233C260.744 144.233 248.764 139.291 238.876 129.208ZM253.453 69.8326L253.442 69.8438L253.432 69.8552C247.605 76.2467 244.693 83.9435 244.693 92.836C244.693 101.889 247.599 109.601 253.452 115.838L253.453 115.839C259.439 122.207 266.627 125.569 274.94 125.569C283.409 125.569 290.608 122.218 296.438 115.827C302.285 109.593 305.187 101.884 305.187 92.836C305.187 83.9435 302.275 76.2467 296.448 69.8552C290.594 63.4339 283.383 60.2745 274.94 60.2745C266.657 60.2745 259.461 63.4414 253.453 69.8326Z" stroke="white" stroke-width="4"/>
-                        <path d="M488.41 43.8413H505.083V141.999H484.944V84.7649V78.4778L481.312 83.6093L451.101 126.287L420.891 83.6093L417.259 78.4778V84.7649V141.999H397.12V43.8413H413.793L449.487 92.6417L451.101 94.8487L452.716 92.6417L488.41 43.8413Z" stroke="white" stroke-width="4"/>
-                        <path d="M535 367V-4" stroke="#EEFF00" stroke-width="4"/>
-                    </g>
-                    <g clip-path="url(#clip1)">
-                        <path d="M386 180H536.482" stroke="#EEFF00" stroke-width="4"/>
-                        <path d="M545.038 359.246H669.84" stroke="#EEFF00" stroke-width="4"/>
-                        <path d="M686.96 359.246H704.08" stroke="#EEFF00" stroke-width="4"/>
-                        <path d="M721.199 359.246H846.001" stroke="#EEFF00" stroke-width="4"/>
-                        <path d="M721.199 180H738.319" stroke="#EEFF00" stroke-width="4"/>
-                        <path d="M755.439 180H789.678" stroke="#EEFF00" stroke-width="4"/>
-                        <path d="M806.798 180H1073.52" stroke="#EEFF00" stroke-width="4"/>
-                        <path d="M914.48 359.246H948.72" stroke="#EEFF00" stroke-width="4"/>
-                        <path d="M965.839 359.246H1073.52" stroke="#EEFF00" stroke-width="4"/>
-                        <path d="M880 359H896" stroke="#EEFF00" stroke-width="4"/>
-                        <path d="M1073.52 261.335V244.166" stroke="#EEFF00" stroke-width="4"/>
-                        <path d="M1073.52 226.995V209.826" stroke="#EEFF00" stroke-width="4"/>
-                        <path d="M1073.52 209.826V192.656" stroke="#EBF729" stroke-width="4"/>
-                        <path d="M386 359H420.239" stroke="#EEFF00" stroke-width="4"/>
-                        <path d="M487.85 223.329H504.522V321.487H484.383V264.252V257.965L480.751 263.097L450.541 305.775L420.331 263.097L416.698 257.965V264.252V321.487H396.56V223.329H413.232L448.927 272.129L450.541 274.336L452.155 272.129L487.85 223.329Z" stroke="white" stroke-width="4"/>
-                        <path d="M646.675 280.22V222.298H667.327V281.593C667.327 292.923 663.421 302.533 655.428 310.385L655.421 310.392L655.414 310.399C647.387 318.449 637.791 322.517 626.699 322.517C615.432 322.517 605.837 318.446 597.814 310.399C589.966 302.528 585.9 292.905 585.9 281.593V222.298H606.724V280.22C606.724 287.18 608.277 292.791 611.707 296.746C615.167 300.738 620.255 302.719 626.614 302.993L626.699 302.996L626.785 302.993C633.144 302.719 638.232 300.738 641.692 296.746C645.122 292.791 646.675 287.18 646.675 280.22Z" stroke="white" stroke-width="4"/>
-                        <path d="M826.09 281.25V223.672H846.4V321.315H830.189L783.026 262.147L779.462 257.676V263.394V321.315H759.323V223.329H775.532L822.524 282.494L826.09 286.984V281.25Z" stroke="white" stroke-width="4"/>
-                        <path d="M968.695 223.501H989.176V321.315H968.695V223.501Z" stroke="white" stroke-width="4"/>
-                        <path d="M535 359L535 180" stroke="#EEFF00" stroke-width="4"/>
-                    </g>
-                    <defs>
-                        <clipPath id="clip0">
-                            <rect width="541" height="186" fill="white"/>
-                        </clipPath>
-                        <clipPath id="clip1">
-                            <rect width="688" height="190" fill="white" transform="translate(391 179)"/>
-                        </clipPath>
-                    </defs>
-                </svg>
+                <div class="main-screen__index-screen">
+                    <svg class="main-screen__index-screen-svg" width="1075" height="712" viewBox="0 0 1075 712" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g class="js-words-first">
+                            <path class="js-word-letter" d="M114.939 116.86C115.069 116.729 115.197 116.592 115.323 116.449L130.465 129.365C130.201 129.635 129.916 129.939 129.645 130.27C119.596 140.314 107.463 145.233 93.4713 145.233C79.2804 145.233 67.2953 140.294 57.2303 130.203C47.3269 120.103 42.4004 108.073 42.4004 94.0082C42.4004 79.7561 47.3374 67.5633 57.2243 57.6477C67.2905 47.5522 79.2776 42.6113 93.4713 42.6113C106.993 42.6113 118.777 47.2054 128.624 56.5785L114.553 70.4084C108.627 64.3016 101.568 61.275 93.4713 61.275C85.0287 61.275 77.8171 64.4344 71.9633 70.8556C66.1366 77.2471 63.2239 84.944 63.2239 93.8365C63.2239 102.884 66.1268 110.593 71.9731 116.828C77.8039 123.219 85.0028 126.57 93.4713 126.57C101.775 126.57 108.957 123.215 114.939 116.86ZM129.738 57.6675L129.739 57.6682L129.739 57.6688L129.738 57.6675ZM129.718 57.6477C129.718 57.6477 129.718 57.6477 129.718 57.6477L129.718 57.6477Z" fill="black" stroke="transparent" stroke-width="4"/>
+                            <path class="js-word-letter" d="M238.876 130.209L238.871 130.203L238.865 130.197C228.796 120.099 223.87 108.073 223.87 94.0082C223.87 79.7582 228.805 67.5717 238.853 57.6593L238.865 57.6477L238.876 57.6359C248.765 47.5536 260.744 42.6113 274.94 42.6113C289.134 42.6113 301.121 47.5522 311.187 57.6477C321.074 67.5633 326.011 79.7561 326.011 94.0082C326.011 108.073 321.085 120.103 311.182 130.203C301.117 140.294 289.131 145.233 274.94 145.233C260.744 145.233 248.765 140.291 238.876 130.209ZM253.453 70.8331L253.443 70.8443L253.433 70.8556C247.606 77.2471 244.693 84.944 244.693 93.8365C244.693 102.889 247.599 110.602 253.452 116.839L253.453 116.84C259.44 123.208 266.628 126.57 274.94 126.57C283.409 126.57 290.608 123.219 296.439 116.828C302.285 110.593 305.188 102.884 305.188 93.8365C305.188 84.944 302.275 77.2471 296.448 70.8556C290.595 64.4344 283.383 61.275 274.94 61.275C266.658 61.275 259.462 64.4419 253.453 70.8331Z" fill="black" stroke="transparent" stroke-width="4"/>
+                            <path class="js-word-letter" d="M488.41 44.8418H505.083V143H484.944V85.7654V79.4783L481.312 84.6098L451.101 127.288L420.891 84.6098L417.259 79.4783V85.7654V143H397.12V44.8418H413.793L449.487 93.6422L451.101 95.8491L452.716 93.6422L488.41 44.8418Z" fill="black" stroke="transparent" stroke-width="4"/>
+                            <path class="js-word-path-ver" d="M535 181V0" stroke="#EEFF00" stroke-width="4"/>
+                            <path class="js-word-path-ver" d="M359 122.166V87.8271" stroke="#EEFF00" stroke-width="4"/>
+                            <path class="js-word-path-hor" d="M0 2H17.1194" stroke="#EEFF00" stroke-width="4"/>
+                            <path class="js-word-path-hor" d="M34 2H68.2393" stroke="#EEFF00" stroke-width="4"/>
+                            <path class="js-word-path-hor" d="M86 2C122.709 2 143.291 2 180 2" stroke="#EEFF00" stroke-width="4"/>
+                            <path class="js-word-path-ver" d="M180 183V0" stroke="#EEFF00" stroke-width="4"/>
+                            <path class="js-word-path-hor" d="M211 181H228.12" stroke="#EEFF00" stroke-width="4"/>
+                            <path class="js-word-path-hor" d="M245 181H359" stroke="#EEFF00" stroke-width="4"/>
+                            <path class="js-word-path-ver" d="M359 183L359 139" stroke="#EEFF00" stroke-width="4"/>
+                            <path class="js-word-path-ver" d="M359 71V0" stroke="#EEFF00" stroke-width="4"/>
+                            <path class="js-word-path-hor" d="M361 2H511.481" stroke="#EEFF00" stroke-width="4"/>
+                            <path class="js-word-path-ver" d="M535 14V2" stroke="#EEFF00" stroke-width="4"/>
+                            <path class="js-word-path-hor" d="M386 181H536.482" stroke="#EEFF00" stroke-width="4"/>
+                        </g>
+                        <g class="js-words-second">
+                            <path class="js-word-letter" d="M487.85 224.328H504.522V322.487H484.383V265.252V258.965L480.751 264.096L450.541 306.774L420.331 264.096L416.698 258.965V265.252V322.487H396.56V224.328H413.232L448.927 273.129L450.541 275.336L452.155 273.129L487.85 224.328Z" fill="black" stroke="transparent" stroke-width="4"/>
+                            <path class="js-word-letter" d="M646.675 281.219V223.298H667.327V282.593C667.327 293.922 663.421 303.532 655.428 311.384L655.421 311.391L655.414 311.399C647.387 319.448 637.791 323.516 626.699 323.516C615.432 323.516 605.837 319.445 597.814 311.399C589.966 303.528 585.9 293.904 585.9 282.593V223.298H606.724V281.219C606.724 288.179 608.277 293.791 611.707 297.746C615.167 301.737 620.255 303.719 626.614 303.992L626.699 303.996L626.785 303.992C633.144 303.719 638.232 301.737 641.692 297.746C645.122 293.791 646.675 288.179 646.675 281.219Z" fill="black" stroke="transparent" stroke-width="4"/>
+                            <path class="js-word-letter" d="M826.09 282.25V224.672H846.4V322.315H830.19L783.026 263.147L779.462 258.676V264.393V322.315H759.324V224.328H775.532L822.524 283.493L826.09 287.983V282.25Z" fill="black" stroke="transparent" stroke-width="4"/>
+                            <path class="js-word-letter" d="M968.695 224.501H989.176V322.315H968.695V224.501Z" fill="black" stroke="transparent" stroke-width="4"/>
+                            <path class="js-word-path-hor" d="M386 181H536.482" stroke="#EEFF00" stroke-width="4"/>
+                            <path class="js-word-path-hor" d="M545 360H669.802" stroke="#EEFF00" stroke-width="4"/>
+                            <path class="js-word-path-hor" d="M686.96 360.246H704.08" stroke="#EEFF00" stroke-width="4"/>
+                            <path class="js-word-path-hor" d="M721.199 360.246H846.001" stroke="#EEFF00" stroke-width="4"/>
+                            <path class="js-word-path-hor" d="M721.199 181H738.319" stroke="#EEFF00" stroke-width="4"/>
+                            <path class="js-word-path-hor" d="M755.439 181H789.678" stroke="#EEFF00" stroke-width="4"/>
+                            <path class="js-word-path-hor" d="M807 181H1075" stroke="#EEFF00" stroke-width="4"/>
+                            <path class="js-word-path-hor" d="M915 360H949.24" stroke="#EEFF00" stroke-width="4"/>
+                            <path class="js-word-path-hor" d="M966 360H1073.68" stroke="#EEFF00" stroke-width="4"/>
+                            <path class="js-word-path-hor" d="M880 360H896" stroke="#EEFF00" stroke-width="4"/>
+                            <path class="js-word-path-ver" d="M1073 262.17V245" stroke="#EEFF00" stroke-width="4"/>
+                            <path class="js-word-path-ver" d="M1073 228.17V211" stroke="#EEFF00" stroke-width="4"/>
+                            <path class="js-word-path-ver" d="M1073 201.17V184" stroke="#EBF729" stroke-width="4"/>
+                            <path class="js-word-path-hor" d="M386 360H420.239" stroke="#EEFF00" stroke-width="4"/>
+                            <path class="js-word-path-ver" d="M535 362L535 181" stroke="#EEFF00" stroke-width="4"/>
+                        </g>
+                        <g class="js-words-third">
+                            <path class="js-word-letter" d="M966.041 409.206H938.938V391.765H1017.63V409.206H990.522H988.522V411.206V488.051H968.041V411.206V409.206H966.041Z" fill="black" stroke="transparent" stroke-width="4"/>
+                            <path class="js-word-letter" d="M1025.57 565.664L988.66 623.879L988.349 624.37V624.95V661.613H968.211V624.95V624.372L967.902 623.883L931.148 565.664H952.754L976.652 605.384L978.372 608.242L980.083 605.379L1003.81 565.664H1025.57Z" fill="black" stroke="transparent" stroke-width="4"/>
+                            <path id="ver" d="M1073 700.586V635.079" stroke="#EEFF00" stroke-width="4"/>
+                            <path id="hor" d="M880 710H897" stroke="#EEFF00" stroke-width="4"/>
+                            <path class="js-word-path-hor" d="M914 710H948" stroke="#EEFF00" stroke-width="4"/>
+                            <path class="js-word-path-hor" d="M965 710H1075" stroke="#EEFF00" stroke-width="4"/>
+                            <path class="js-word-path-ver" d="M1073 511L1073 358" stroke="#EEFF00" stroke-width="4"/>
+                            <path class="js-word-path-ver" d="M1073 511L1073 359" stroke="#EEFF00" stroke-width="4"/>
+                            <path class="js-word-path-ver" d="M1073 598.106V581.223" stroke="#EEFF00" stroke-width="4"/>
+                            <path class="js-word-path-ver" d="M894 531L894 358" stroke="#EEFF00" stroke-width="4"/>
+                        </g>
+                    </svg>
+                </div>
             </div>
         </div>
     </div>
