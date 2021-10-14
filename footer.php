@@ -9,30 +9,15 @@
             </a>
             <div class="footer__inner">
                 <div class="footer__menu js-menu">
-                    <nav class="menu">
-                        <ul class="menu__list footer__menu-list">
-                            <li class="menu__item footer__menu-item">
-                                <a href="#services" class="menu__link footer__menu-link">
-                                    Галерея
-                                </a>
-                            </li>
-                            <li class="menu__item footer__menu-item">
-                                <a href="#thechnique" class="menu__link footer__menu-link">
-                                    Мастерская
-                                </a>
-                            </li>
-                            <li class="menu__item footer__menu-item">
-                                <a href="#about" class="menu__link footer__menu-link">
-                                    Присоедениться
-                                </a>
-                            </li>
-                            <li class="menu__item footer__menu-item">
-                                <a href="#managment" class="menu__link footer__menu-link">
-                                    Контакты
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
+                    <?php
+                        wp_nav_menu([
+                            'theme_location'  => 'footer-menu',
+                            'container'       => 'nav',
+                            'container_class' => 'menu',
+                            'menu_class'      => '',
+                            'items_wrap'      => '<ul class="%2$s menu__list footer__menu-list">%3$s</ul>'
+                        ]);
+                    ?>
                 </div>
                 <div class="footer__actions">
                     <div class="footer__search" data-modal-trigger="modal-search">

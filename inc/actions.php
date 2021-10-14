@@ -13,6 +13,15 @@
 
     add_action( 'after_setup_theme', function(){
 
+        // Регистрируем главное меню
+		register_nav_menu('header-menu', 'Меню в шапке');
+
+		// Регистрируем меню в подвале
+		register_nav_menu('footer-menu', 'Меню в подвале');
+
+        // Смена логотипа
+		add_theme_support('custom-logo');
+
         /* Добавляем возможность ставить постам миниатюры */
         add_theme_support('post-thumbnails');
 

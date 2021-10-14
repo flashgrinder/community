@@ -36,34 +36,24 @@
     <header class="header js-header">
         <div class="header__body container">
             <a href="<?php echo home_url(); ?>" class="header__logo">
-                <img src="<?php echo STANDART_DIR; ?>img/logo-header.svg" alt="" class="header__logo-img">
+                <?php $custom_logo__url = wp_get_attachment_image_src( get_theme_mod( 'custom_logo' ), 'full' ); ?>
+                <?php if( !empty($custom_logo__url[0])) : ?>
+                    <img src="<?php echo $custom_logo__url[0]; ?>" alt="Логотип" class="header__logo-img">
+                <?php else : ?>
+                    <img src="<?php echo STANDART_DIR; ?>img/logo-header.svg" alt="Логотип" class="header__logo-img">
+                <?php endif; ?>
             </a>
             <div class="header__inner">
                 <div class="header__menu js-menu">
-                    <nav class="menu">
-                        <ul class="menu__list header__menu-list">
-                            <li class="menu__item header__menu-item">
-                                <a href="./archive-product.html" class="menu__link header__menu-link">
-                                    Галерея
-                                </a>
-                            </li>
-                            <li class="menu__item header__menu-item">
-                                <a href="./page-workshop.html" class="menu__link header__menu-link">
-                                    Мастерская
-                                </a>
-                            </li>
-                            <li class="menu__item header__menu-item">
-                                <a href="./home.html#join" class="menu__link header__menu-link">
-                                    Присоединиться
-                                </a>
-                            </li>
-                            <li class="menu__item header__menu-item">
-                                <a href="./home.html#contacts" class="menu__link header__menu-link">
-                                    Контакты
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
+                    <?php
+                        wp_nav_menu([
+                            'theme_location'  => 'header-menu',
+                            'container'       => 'nav',
+                            'container_class' => 'menu',
+                            'menu_class'      => '',
+                            'items_wrap'      => '<ul class="%2$s menu__list header__menu-list">%3$s</ul>'
+                        ]);
+                    ?>
                     <div class="header__search js-search" data-modal-trigger="modal-search">
                         <div class="header__search-icon">
                             <svg class="header__search-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
