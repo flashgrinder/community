@@ -128,6 +128,7 @@
     width: 100%;
     height: 100%;
     object-position: center;
+    max-height: 350px;
     object-fit: cover;
     @include mobileXS-block {
         height: 100%;
