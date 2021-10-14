@@ -13,3 +13,5 @@
     include_once(__DIR__ . '/inc/filters.php');
     /* Post Type Paintings */
     include_once(__DIR__ . '/inc/post-type_paintings.php');
+    /* Post Type Artists */
+    include_once(__DIR__ . '/inc/post-type_artists.php');
