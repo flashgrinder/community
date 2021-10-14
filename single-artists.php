@@ -6,7 +6,6 @@
         <?php the_post(); ?>
         <div class="about-author__content">
             <div class="about-author__photo gs-reveal gs-reveal--from-left">
-                <img src="<?php echo STANDART_DIR; ?><?php echo STANDART_DIR; ?>img/upload/about-author-1.jpg" alt="" class="about-author__img">
                 <?php
                     $default_attr = [
                         'class'	=> "about-author__img",
