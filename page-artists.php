@@ -1,4 +1,4 @@
-<?php /* Template Name: Авторы */?>
+<?php /* Template Name: Художники */?>
 <?php get_header(); ?>
 
 <!-- Authors -->
