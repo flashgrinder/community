@@ -337,42 +337,48 @@
                     <img src="<?php echo STANDART_DIR; ?>img/news-slider/news-slider-decor-1.svg" alt="Декоротивное изображение слайдера" class="news-slider__decor-img">
                 </div>
                 <div class="news-slider__swiper-wrapper swiper-wrapper gs-reveal gs-reveal--from-right">
-                    <div class="news-slider__swiper-slide swiper-slide">
-                        <div class="news-slider__item">
-                            <div class="news-slider__text">
-                                <h3 class="news-slider__title title title--medium title--black-low title--w-black">
-                                    Открытие сайта галлереи в 2021 году
-                                </h3>
-                                <div class="news-slider__excerpt text text--normal text--black-low text--w-regular">
-                                    Бывает что во сне испытываешь чувство перманентного ожидания или непреодолимости какого то препятствия. Воплощением таких ощущений, может быть лифт, который никуда...
-                                </div>
-                                <div class="news-slider__date text text--normal text--black-low text--w-regular">
-                                    Год: 2020
+                <?php
+
+                    $args = array(
+                        'posts_per_page' => 3,
+                        'orderby'     => 'date',
+                        'order'       => 'DESC',
+                        'suppress_filters' => true
+                    );
+
+                    $wp_query = new WP_Query( $args );
+
+
+                    if( have_posts() ) : while( have_posts() ) : the_post(); ?>
+                            <div class="news-slider__swiper-slide swiper-slide">
+                                <div class="news-slider__item">
+                                    <div class="news-slider__text">
+                                        <a href="<?php the_permalink(); ?>" class="news-slider__link link">
+                                            <h3 class="news-slider__title title title--medium title--black-low title--w-black">
+                                                <?php the_title(); ?>
+                                            </h3>
+                                        </a>
+                                        <div class="news-slider__excerpt text text--normal text--black-low text--w-regular">
+                                            <?php the_excerpt(); ?>
+                                        </div>
+                                        <div class="news-slider__date text text--normal text--black-low text--w-regular">
+                                            Год: <?php the_date('Y'); ?>
+                                        </div>
+                                    </div>
+                                    <div class="news-slider__pic">
+                                        <?php
+                                            $default_attr = [
+                                                'class'	=> "news-slider__thumbnail",
+                                                'alt'   => get_the_title()
+                                            ];
+                                            
+                                            echo get_the_post_thumbnail( $post->ID, 'thumbnail', $default_attr ) ?>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="news-slider__pic">
-                                <img src="<?php echo STANDART_DIR; ?>img/upload/news-image-1.jpg" alt="" class="news-slider__thumbnail">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="news-slider__swiper-slide swiper-slide">
-                        <div class="news-slider__item">
-                            <div class="news-slider__text">
-                                <h3 class="news-slider__title title title--medium title--black-low title--w-black">
-                                    Великое открытие Страдевари в СПБ
-                                </h3>
-                                <div class="news-slider__excerpt text text--normal text--black-low text--w-regular">
-                                    Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Жизни ручеек лучше составитель толку назад? Подпоясал о коварных возвращайся...
-                                </div>
-                                <div class="news-slider__date text text--normal text--black-low text--w-regular">
-                                    Год: 2021
-                                </div>
-                            </div>
-                            <div class="news-slider__pic">
-                                <img src="<?php echo STANDART_DIR; ?>img/upload/news-image-2.jpg" alt="" class="news-slider__thumbnail">
-                            </div>
-                        </div>
-                    </div>
+                        <?php endwhile; ?>
+                    <?php endif; ?>
+                    <?php wp_reset_postdata(); ?>
                 </div>
             </div>
         </div>
@@ -393,42 +399,48 @@
                     <img src="<?php echo STANDART_DIR; ?>img/news-slider/news-slider-decor-2.svg" alt="Декоротивное изображение слайдера" class="news-slider__decor-img">
                 </div>
                 <div class="news-slider__swiper-wrapper swiper-wrapper gs-reveal gs-reveal--from-left">
-                    <div class="news-slider__swiper-slide swiper-slide">
-                        <div class="news-slider__item">
-                            <div class="news-slider__text">
-                                <h3 class="news-slider__title title title--medium title--black-low title--w-black">
-                                    Открытие сайта галлереи в 2023 году
-                                </h3>
-                                <div class="news-slider__excerpt text text--normal text--black-low text--w-regular">
-                                    Бывает что во сне испытываешь чувство перманентного ожидания или непреодолимости какого то препятствия. Воплощением таких ощущений, может быть лифт, который никуда...
-                                </div>
-                                <div class="news-slider__date text text--normal text--black-low text--w-regular">
-                                    Год: 2023
+                    <?php
+
+                        $args = array(
+                            'posts_per_page' => 3,
+                            'orderby'     => 'date',
+                            'order'       => 'DESC',
+                            'suppress_filters' => true,
+                            'offset' => 3
+                        );
+
+                        $wp_query = new WP_Query( $args );
+                        
+                        if( have_posts() ) : while( have_posts() ) : the_post(); ?>
+                            <div class="news-slider__swiper-slide swiper-slide">
+                                <div class="news-slider__item">
+                                    <div class="news-slider__text">
+                                        <a href="<?php the_permalink(); ?>" class="news-slider__link link">
+                                            <h3 class="news-slider__title title title--medium title--black-low title--w-black">
+                                                <?php the_title(); ?>
+                                            </h3>
+                                        </a>
+                                        <div class="news-slider__excerpt text text--normal text--black-low text--w-regular">
+                                            <?php the_excerpt(); ?>
+                                        </div>
+                                        <div class="news-slider__date text text--normal text--black-low text--w-regular">
+                                            Год: <?php the_date('Y'); ?>
+                                        </div>
+                                    </div>
+                                    <div class="news-slider__pic">
+                                        <?php
+                                            $default_attr = [
+                                                'class'	=> "news-slider__thumbnail",
+                                                'alt'   => get_the_title()
+                                            ];
+                                            
+                                            echo get_the_post_thumbnail( $post->ID, 'thumbnail', $default_attr ) ?>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="news-slider__pic">
-                                <img src="<?php echo STANDART_DIR; ?>img/main-screen/main-screen-slide-2.jpg" alt="" class="news-slider__thumbnail">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="news-slider__swiper-slide swiper-slide">
-                        <div class="news-slider__item">
-                            <div class="news-slider__text">
-                                <h3 class="news-slider__title title title--medium title--black-low title--w-black">
-                                    Немосква не за горами
-                                </h3>
-                                <div class="news-slider__excerpt text text--normal text--black-low text--w-regular">
-                                    Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Ему возвращайся одна большого текста образ текстами подпоясал...
-                                </div>
-                                <div class="news-slider__date text text--normal text--black-low text--w-regular">
-                                    Год: 2019
-                                </div>
-                            </div>
-                            <div class="news-slider__pic">
-                                <img src="<?php echo STANDART_DIR; ?>img/main-screen/main-screen-slide-4.jpg" alt="" class="news-slider__thumbnail">
-                            </div>
-                        </div>
-                    </div>
+                            <?php endwhile; ?>
+                        <?php endif; ?>
+                    <?php wp_reset_postdata(); ?>
                 </div>
             </div>
         </div>
