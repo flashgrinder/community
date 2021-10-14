@@ -58,7 +58,7 @@
                 if( have_posts() ) : 
                     while( have_posts() ) : the_post(); ?>
                     <div class="product-slider__swiper-slide swiper-slide">
-                        <a href="#" class="product-card product-card--slider">
+                        <a href="<?php the_permalink(); ?>" class="product-card product-card--slider">
                             <div class="product-card__picture">
                                 <?php
                                     $default_attr = [
