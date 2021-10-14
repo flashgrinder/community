@@ -126,6 +126,8 @@
 .news-slider__thumbnail {
     display: block;
     width: 100%;
+    height: 100%;
+    object-position: center;
     object-fit: cover;
     @include mobileXS-block {
         height: 100%;
