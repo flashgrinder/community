@@ -2003,6 +2003,10 @@ img {
   margin-bottom: 20px;
 }
 
+.product-slider .product-card__photo {
+  min-height: 318px;
+}
+
 /* Wysiwyg */
 
 .wysiwyg {
@@ -3263,6 +3267,10 @@ img {
     padding-bottom: 30px;
   }
 
+  .product-slider .product-card__photo {
+    min-height: 245px;
+  }
+
   .price-workshop__actions {
     text-align: center;
   }
@@ -3467,6 +3475,10 @@ img {
     margin-top: 15px;
   }
 
+  .product-slider .product-card__photo {
+    min-height: 200px;
+  }
+
   .wysiwyg ul {
     padding-left: 20px;
   }
@@ -3534,10 +3546,18 @@ img {
   .about-product__action {
     margin-top: 20px;
   }
+
+  .product-slider .product-card__photo {
+    min-height: 180px;
+  }
 }
 
 @media screen and (max-width: 360px) {
   .news-slider__decor {
     bottom: 2%;
+  }
+
+  .product-slider .product-card__photo {
+    min-height: 160px;
   }
 }
