@@ -67,7 +67,7 @@
                         <?php echo get_field('product-card_price'); ?> ₽
                     </div>
                     <div class="about-product__action gs-reveal gs-reveal--from-right">
-                        <a href="javascript:;" class="about-product__button button button--black">
+                        <a href="javascript:;" class="about-product__button button button--black" data-modal-trigger="modal-form">
                             Сделать заказ
                         </a>
                     </div>
