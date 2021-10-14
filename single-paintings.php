@@ -3,6 +3,7 @@
 <!-- about-product -->
 <section class="about-product bg-white">
     <div class="about-product__body container">
+        <?php the_post(); ?>
         <div class="about-product__content">
             <div class="about-product__gallery">
                 <div class="about-product__swiper-full swiper-container gs-reveal gs-reveal--from-left">
@@ -53,39 +54,20 @@
             </div>
             <div class="about-product__description">
                 <h2 class="about-product__name title title--medium title--black-low title--w-black gs-reveal gs-reveal--from-right">
-                    “Путник”
+                    “<?php the_title(); ?>”
                 </h2>
                 <h3 class="about-product__headline title title--small title--black-low title--w-normal gs-reveal gs-reveal--from-right">
-                    Алла Рой
+                    <?php echo get_field('product-card_artist'); ?>
                 </h3>
                 <div class="about-product__text wysiwyg gs-reveal gs-reveal--from-right">
-                    <p>
-                        Далеко-далеко, за словесными горами в стране гласных и согласных живут рыбные тексты. Взгляд подзаголовок сих речью он маленькая большой власти необходимыми безопасную пустился снова мир рыбными маленький переписали образ, собрал даль которое свое, языкового, одна себя. Подзаголовок залетают меня оксмокс своих предупреждал, пунктуация использовало агентство приставка раз власти инициал предложения маленький послушавшись.
-                    </p>
-                    <p>
-                        Далеко-далеко за словесными, горами в стране гласных и согласных живут рыбные тексты. Точках которое что семь безорфографичный продолжил по всей назад, переписали живет коварных до напоивший меня коварный оксмокс большой обеспечивает ему составитель.
-                    </p>
-                    <ul>
-                        <li>
-                            Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты.
-                        </li>
-                        <li>
-                            Далеко-далеко за словесными горами в стране.
-                        </li>
-                        <li>
-                            Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Строчка, снова.
-                        </li>
-                        <li>
-                            Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Большой гор одна заманивший своих!
-                        </li>
-                    </ul>
+                    <?php the_content(); ?>
                 </div>
                 <div class="about-product__footer gs-reveal gs-reveal--from-right">
                     <div class="about-product__price title title--medium title--black-low title--w-black">
-                        20 000 ₽
+                        <?php echo get_field('product-card_price'); ?> ₽
                     </div>
                     <div class="about-product__action gs-reveal gs-reveal--from-right">
-                        <a href="" class="about-product__button button button--black">
+                        <a href="javascript:;" class="about-product__button button button--black">
                             Сделать заказ
                         </a>
                     </div>
@@ -108,102 +90,46 @@
         </div>
         <div class="product-slider__swiper swiper-container">
             <div class="product-slider__swiper-wrapper swiper-wrapper gs-reveal gs-reveal--from-right">
-                <div class="product-slider__swiper-slide swiper-slide">
-                    <a href="#" class="product-card product-card--slider">
-                        <div class="product-card__picture">
-                            <img src="<?php echo STANDART_DIR; ?>img/upload/product-photo-1.jpg" alt="" class="product-card__photo">
-                        </div>
-                        <div class="product-card__name title title--medium title--black-low title--w-black">
-                            Стирка
-                        </div>
-                        <div class="product-card__author title title--small title--black-low title--w-normal">
-                            Алла Рой
-                        </div>
-                        <div class="product-card__price title title--medium title--black-low title--w-black">
-                            25 000 ₽
-                        </div>
-                    </a>
-                </div>
-                <div class="product-slider__swiper-slide swiper-slide">
-                    <a href="#" class="product-card product-card--slider">
-                        <div class="product-card__picture">
-                            <img src="<?php echo STANDART_DIR; ?>img/upload/product-photo-2.jpg" alt="" class="product-card__photo">
-                        </div>
-                        <div class="product-card__name title title--medium title--black-low title--w-black">
-                            Гордыня
-                        </div>
-                        <div class="product-card__author title title--small title--black-low title--w-normal">
-                            Анисия Теплякова
-                        </div>
-                        <div class="product-card__price title title--medium title--black-low title--w-black">
-                            16 000 ₽
-                        </div>
-                    </a>
-                </div>
-                <div class="product-slider__swiper-slide swiper-slide">
-                    <a href="#" class="product-card product-card--slider">
-                        <div class="product-card__picture">
-                            <img src="<?php echo STANDART_DIR; ?>img/upload/product-photo-3.jpg" alt="" class="product-card__photo">
-                        </div>
-                        <div class="product-card__name title title--medium title--black-low title--w-black">
-                            LEBEDEV 1
-                        </div>
-                        <div class="product-card__author title title--small title--black-low title--w-normal">
-                            Екатерина Романова
-                        </div>
-                        <div class="product-card__price title title--medium title--black-low title--w-black">
-                            999 999 999 ₽
-                        </div>
-                    </a>
-                </div>
-                <div class="product-slider__swiper-slide swiper-slide">
-                    <a href="#" class="product-card product-card--slider">
-                        <div class="product-card__picture">
-                            <img src="<?php echo STANDART_DIR; ?>img/upload/product-photo-4.jpg" alt="" class="product-card__photo">
-                        </div>
-                        <div class="product-card__name title title--medium title--black-low title--w-black">
-                            Несчастный случай 2
-                        </div>
-                        <div class="product-card__author title title--small title--black-low title--w-normal">
-                            Алла Рой
-                        </div>
-                        <div class="product-card__price title title--medium title--black-low title--w-black">
-                            20 000 ₽
-                        </div>
-                    </a>
-                </div>
-                <div class="product-slider__swiper-slide swiper-slide">
-                    <a href="#" class="product-card product-card--slider">
-                        <div class="product-card__picture">
-                            <img src="<?php echo STANDART_DIR; ?>img/upload/product-photo-5.jpg" alt="" class="product-card__photo">
-                        </div>
-                        <div class="product-card__name title title--medium title--black-low title--w-black">
-                            Алчность
-                        </div>
-                        <div class="product-card__author title title--small title--black-low title--w-normal">
-                            Анисия Теплякова
-                        </div>
-                        <div class="product-card__price title title--medium title--black-low title--w-black">
-                            15 000 ₽
-                        </div>
-                    </a>
-                </div>
-                <div class="product-slider__swiper-slide swiper-slide">
-                    <a href="#" class="product-card product-card--slider">
-                        <div class="product-card__picture">
-                            <img src="<?php echo STANDART_DIR; ?>img/upload/product-photo-6.jpg" alt="" class="product-card__photo">
-                        </div>
-                        <div class="product-card__name title title--medium title--black-low title--w-black">
-                            Прыжок 1
-                        </div>
-                        <div class="product-card__author title title--small title--black-low title--w-normal">
-                            Алла Рой
-                        </div>
-                        <div class="product-card__price title title--medium title--black-low title--w-black">
-                            23 000 ₽
-                        </div>
-                    </a>
-                </div>
+            <?php
+
+                $args = array(
+                    'post_type' => 'paintings',
+                    'posts_per_page' => 8,
+                    'orderby'     => 'date',
+                    'order'       => 'DESC',
+                    'suppress_filters' => true
+                );
+
+                $wp_query = new WP_Query( $args );
+
+
+                if( have_posts() ) : 
+                    while( have_posts() ) : the_post(); ?>
+                    <div class="product-slider__swiper-slide swiper-slide">
+                        <a href="<?php the_permalink(); ?>" class="product-card product-card--slider">
+                            <div class="product-card__picture">
+                                <?php
+                                    $default_attr = [
+                                        'class'	=> "product-card__photo",
+                                        'alt'   => get_the_title()
+                                    ];
+                                                
+                                    echo get_the_post_thumbnail( $post->ID, 'medium', $default_attr ) ?>
+                            </div>
+                            <div class="product-card__name title title--medium title--black-low title--w-black">
+                                <?php the_title(); ?>
+                            </div>
+                            <div class="product-card__author title title--small title--black-low title--w-normal">
+                                <?php echo get_field('product-card_artist'); ?>
+                            </div>
+                            <div class="product-card__price title title--medium title--black-low title--w-black">
+                                <?php echo get_field('product-card_price'); ?> ₽
+                            </div>
+                        </a>
+                    </div>
+                    <?php endwhile; ?>
+                <?php endif; ?>
+                <?php wp_reset_postdata(); ?>
             </div>
         </div>
     </div>
