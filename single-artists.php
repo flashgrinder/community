@@ -59,8 +59,8 @@
                 if( have_posts() ) : 
                     while( have_posts() ) : the_post(); ?>
                     <div class="product-slider__swiper-slide swiper-slide">
-                        <a href="<?php the_permalink(); ?>" class="product-card product-card--slider">
-                            <div class="product-card__picture">
+                        <div class="product-card product-card--slider">
+                            <a href="<?php the_permalink(); ?>" class="product-card__picture product-card__link">
                                 <?php
                                     $default_attr = [
                                         'class'	=> "product-card__photo",
@@ -68,22 +68,26 @@
                                     ];
                                                 
                                     echo get_the_post_thumbnail( $post->ID, 'medium', $default_attr ) ?>
-                            </div>
-                            <div class="product-card__name title title--medium title--black-low title--w-black">
-                                <?php the_title(); ?>
-                            </div>
+                            </a>
+                            <h3 class="product-card__name">
+                                <a href="<?php the_permalink(); ?>" class="product-card__link title title--medium title--black-low title--w-black">
+                                    <?php the_title(); ?>
+                                </a> 
+                            </h3>
                             <?php
                                 $idPost = get_the_ID();  
                                 $artist_post = get_field( 'product-card_artist', $idPost );
                                 $artist_link = get_permalink($artist_post);
                             ?>
-                            <a href="<?php echo $artist_link; ?>" class="product-card__author title title--small title--black-low title--w-normal">
+                            <a href="<?php echo $artist_link; ?>" class="product-card__author title title--small title--black-low title--w-normal product-card__link">
                                 <?php echo $artist_post->post_title; ?>
                             </a>
                             <div class="product-card__price title title--medium title--black-low title--w-black">
-                                <?php echo get_field('product-card_price'); ?> ₽
+                                <?php
+                                    $product_card_price = get_field('product-card_price', $idPost);
+                                    echo $product_card_price; ?> ₽
                             </div>
-                        </a>
+                        </div>
                     </div>
                     <?php endwhile; ?>
                 <?php endif; ?>
