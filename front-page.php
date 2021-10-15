@@ -255,7 +255,7 @@
                                 $artist_post = get_field( 'product-card_artist', $idPost );
                                 $artist_link = get_permalink($artist_post);
                             ?>
-                            <a href="<?php echo $artist_link; ?>" class="product-card__author title title--small title--white title--w-normal">
+                            <a href="<?php echo $artist_link; ?>" class="product-card__author product-card__link title title--small title--white title--w-normal">
                                 <?php echo $artist_post->post_title; ?>
                             </a>
                             <div class="product-card__price title title--medium title--white title--w-black">
