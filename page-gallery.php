@@ -21,7 +21,7 @@
             if( have_posts() ) : 
                 while( have_posts() ) : the_post(); ?>
                     <div class="product-card gs-reveal">
-                        <a href="<?php the_permalink(); ?>" class="product-card__picture">
+                        <a href="<?php the_permalink(); ?>" class="product-card__picture product-card__link">
                             <?php
                                 $default_attr = [
                                     'class'	=> "product-card__photo",
