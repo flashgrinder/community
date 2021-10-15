@@ -46,6 +46,7 @@
 
                 $args = array(
                     'post_type' => 'paintings',
+                    'post_parent'=>$post->ID,
                     'posts_per_page' => 8,
                     'orderby'     => 'date',
                     'order'       => 'DESC',
@@ -54,7 +55,7 @@
 
                 $wp_query = new WP_Query( $args );
 
-
+                $artist_name = get_posts(['post_type' => 'artists']);
                 if( have_posts() ) : 
                     while( have_posts() ) : the_post(); ?>
                     <div class="product-slider__swiper-slide swiper-slide">
@@ -71,9 +72,14 @@
                             <div class="product-card__name title title--medium title--black-low title--w-black">
                                 <?php the_title(); ?>
                             </div>
-                            <div class="product-card__author title title--small title--black-low title--w-normal">
-                                <?php echo get_field('product-card_artist'); ?>
-                            </div>
+                            <?php
+                                $idPost = get_the_ID();  
+                                $artist_post = get_field( 'product-card_artist', $idPost );
+                                $artist_link = get_permalink($artist_post);
+                            ?>
+                            <a href="<?php echo $artist_link; ?>" class="product-card__author title title--small title--black-low title--w-normal">
+                                <?php echo $artist_post->post_title; ?>
+                            </a>
                             <div class="product-card__price title title--medium title--black-low title--w-black">
                                 <?php echo get_field('product-card_price'); ?> ₽
                             </div>

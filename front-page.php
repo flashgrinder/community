@@ -248,9 +248,14 @@
                             <div class="product-card__name title title--medium title--white title--w-black">
                                 <?php the_title(); ?>
                             </div>
-                            <div class="product-card__author title title--small title--white title--w-normal">
-                                <?php echo get_field('product-card_artist'); ?>
-                            </div>
+                            <?php
+                                $idPost = get_the_ID();  
+                                $artist_post = get_field( 'product-card_artist', $idPost );
+                                $artist_link = get_permalink($artist_post);
+                            ?>
+                            <a href="<?php echo $artist_link; ?>" class="product-card__author title title--small title--white title--w-normal">
+                                <?php echo $artist_post->post_title; ?>
+                            </a>
                             <div class="product-card__price title title--medium title--white title--w-black">
                                 <?php echo get_field('product-card_price'); ?> ₽
                             </div>
