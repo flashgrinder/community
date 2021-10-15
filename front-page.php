@@ -315,7 +315,7 @@
                                             <?php the_excerpt(); ?>
                                         </div>
                                         <div class="news-slider__date text text--normal text--black-low text--w-regular">
-                                            Год: <?php the_date('Y'); ?>
+                                            Год: <?php echo get_the_date('Y'); ?>
                                         </div>
                                     </div>
                                     <div class="news-slider__pic">
@@ -377,7 +377,7 @@
                                             <?php the_excerpt(); ?>
                                         </div>
                                         <div class="news-slider__date text text--normal text--black-low text--w-regular">
-                                            Год: <?php the_date('Y'); ?>
+                                            Год: <?php echo get_the_date('Y'); ?>
                                         </div>
                                     </div>
                                     <div class="news-slider__pic">
