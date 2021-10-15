@@ -42,6 +42,33 @@
             "prepend": "",
             "append": "",
             "maxlength": ""
+        },
+        {
+            "key": "field_6169781ca52e3",
+            "label": "Слайдер продукта",
+            "name": "about-product_slides",
+            "type": "gallery",
+            "instructions": "Добавьте несколько изображений продукта.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "full",
+            "insert": "append",
+            "library": "all",
+            "min": 4,
+            "max": 10,
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
         }
     ],
     "location": [
@@ -61,5 +88,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1634297256
+    "modified": 1634302283
 }

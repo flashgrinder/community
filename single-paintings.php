@@ -8,26 +8,17 @@
             <div class="about-product__gallery">
                 <div class="about-product__swiper-full swiper-container gs-reveal gs-reveal--from-left">
                     <div class="about-product__swiper-wrapper swiper-wrapper">
-                        <div class="about-product__swiper-slide swiper-slide">
-                            <div class="about-product__swiper-zoom-container swiper-zoom-container">
-                                <img src="<?php echo STANDART_DIR; ?>img/upload/about-product-1.jpg" alt="" class="about-product__slide-photo">
+                    <?php 
+                        $about_product_slides = get_field('about-product_slides');
+                        if( $about_product_slides ): ?>
+                        <?php foreach( $about_product_slides as $about_product_slide ): ?>
+                            <div class="about-product__swiper-slide swiper-slide">
+                                <div class="about-product__swiper-zoom-container swiper-zoom-container">
+                                    <img src="<?php echo $about_product_slide['url']; ?>" alt="<?php echo esc_attr($about_product_slide['alt']); ?>" class="about-product__slide-photo">
+                                </div>
                             </div>
-                        </div>
-                        <div class="about-product__swiper-slide swiper-slide">
-                            <div class="about-product__swiper-zoom-container swiper-zoom-container">
-                                <img src="<?php echo STANDART_DIR; ?>img/upload/product-photo-1.jpg" alt="" class="about-product__slide-photo">
-                            </div>
-                        </div>
-                        <div class="about-product__swiper-slide swiper-slide">
-                            <div class="about-product__swiper-zoom-container swiper-zoom-container">
-                                <img src="<?php echo STANDART_DIR; ?>img/upload/product-photo-2.jpg" alt="" class="about-product__slide-photo">
-                            </div>
-                        </div>
-                        <div class="about-product__swiper-slide swiper-slide">
-                            <div class="about-product__swiper-zoom-container swiper-zoom-container">
-                                <img src="<?php echo STANDART_DIR; ?>img/upload/about-author-1.jpg" alt="" class="about-product__slide-photo">
-                            </div>
-                        </div>
+                        <?php endforeach; ?>
+                    <?php endif; ?>
                     </div>
                     <div class="about-product__zoom">
                         <svg class="about-product__zoom-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -37,18 +28,15 @@
                 </div>
                 <div class="about-product__swiper-thumb swiper-container gs-reveal gs-reveal--from-left" thumbsSlider="">
                     <div class="about-product__swiper-wrapper-thumb swiper-wrapper">
-                        <div class="about-product__swiper-slide-thumb swiper-slide">
-                            <img src="<?php echo STANDART_DIR; ?>img/upload/about-product-1.jpg" alt="" class="about-product__slide-photo-thumb">
-                        </div>
-                        <div class="about-product__swiper-slide-thumb swiper-slide">
-                            <img src="<?php echo STANDART_DIR; ?>img/upload/product-photo-1.jpg" alt="" class="about-product__slide-photo-thumb">
-                        </div>
-                        <div class="about-product__swiper-slide-thumb swiper-slide">
-                            <img src="<?php echo STANDART_DIR; ?>img/upload/product-photo-2.jpg" alt="" class="about-product__slide-photo-thumb">
-                        </div>
-                        <div class="about-product__swiper-slide-thumb swiper-slide">
-                            <img src="<?php echo STANDART_DIR; ?>img/upload/about-author-1.jpg" alt="" class="about-product__slide-photo-thumb">
-                        </div>
+                    <?php 
+                        $about_product_slides = get_field('about-product_slides');
+                        if( $about_product_slides ): ?>
+                        <?php foreach( $about_product_slides as $about_product_slide ): ?>
+                            <div class="about-product__swiper-slide-thumb swiper-slide">
+                                <img src="<?php echo $about_product_slide['sizes']['thumbnail']; ?>" alt="<?php echo esc_attr($about_product_slide['alt']); ?>" class="about-product__slide-photo-thumb">
+                            </div>
+                        <?php endforeach; ?>
+                    <?php endif; ?>
                     </div>
                 </div>
             </div>
