@@ -1704,6 +1704,7 @@ img {
   top: -15px;
   bottom: -15px;
   transition: ease 0.3s;
+  z-index: -1;
 }
 
 .product-card:hover:before {
