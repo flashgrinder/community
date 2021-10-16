@@ -3089,6 +3089,10 @@ img {
             align-self: flex-end;
   }
 
+  * {
+    cursor: auto;
+  }
+
   .cursor {
     display: none;
   }

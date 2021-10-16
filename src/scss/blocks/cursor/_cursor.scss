@@ -1,4 +1,7 @@
-* {cursor: none;}
+* {
+    cursor: none;
+    @include tablet(cursor, auto);
+}
 
 .cursor{
     position: fixed;
