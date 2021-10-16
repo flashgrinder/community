@@ -11,11 +11,3 @@
 .product-slider__navigation {
     margin-bottom: 20px;
 }
-
-.product-slider .product-card__photo {
-    min-height: 318px;
-    @include mobile(min-height, 245px);
-    @include mobileXS(min-height, 200px);
-    @include mobileXSS(min-height, 180px);
-    @include to(360px){min-height: 160px;}
-}

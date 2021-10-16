@@ -36,8 +36,8 @@
 .product-card__picture {
     max-width: 306px;
     max-height: 318px;
+    max-width: 100%;
     width: 100%;
-    height: 100%;
     overflow: hidden;
 }
 
@@ -47,6 +47,11 @@
     width: 100%;
     object-fit: cover;
     object-position: center;
+    min-height: 318px;
+    @include mobile(min-height, 245px);
+    @include mobileXS(min-height, 200px);
+    @include mobileXSS(min-height, 180px);
+    @include to(360px){min-height: 160px;}
 }
 
 .product-card__name {
