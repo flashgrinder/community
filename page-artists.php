@@ -41,6 +41,11 @@
             <?php endif; ?>
             <?php wp_reset_postdata(); ?>
         </div>
+        <div class="authors__actions">
+            <a href="javascript:;" class="button button--black">
+                Показать еще
+            </a>
+        </div>
     </div>
 </section>
 <!-- /. Authors -->
