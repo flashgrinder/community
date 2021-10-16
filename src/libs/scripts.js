@@ -1,3 +1,4 @@
+import gsap from 'gsap';
 import cursor from '../libs/modules/cursor.js';
 import burgerMenu from '../libs/modules/burger-menu.js';
 import mainScreenSlider from '../libs/modules/mainScreenSlider.js';
@@ -8,11 +9,12 @@ import postSlider from '../libs/modules/postSlider.js';
 import modal from '../libs/modules/modal.js';
 import gsReveal from '../libs/modules/gsReveal.js';
 import indexAnimation from '../libs/modules/index-animation.js';
-import animationHeader from './modules/animationHeader.js';
 
 document.addEventListener('DOMContentLoaded', function(e) {
 
-    const indexAnimationTrue = document.querySelector('.js-index-slider');
+    gsap.config({
+        nullTargetWarn: false
+    });
     
     cursor.init();
     burgerMenu.init();
@@ -23,7 +25,6 @@ document.addEventListener('DOMContentLoaded', function(e) {
     aboutProductSlider.init();
     postSlider.init();
     gsReveal.init();
-    animationHeader.init();
-    indexAnimationTrue ? indexAnimation.init() : false;
+    indexAnimation.init();
     
 });

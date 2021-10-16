@@ -61,7 +61,7 @@ function init(container = document) {
     tl.fromTo(firstWords, {clipPath: 'polygon(110% 110%, 110% 110%, 110% -10%, 110% -10%)', x: '-100%'}, {clipPath: 'polygon(0% 110%, 110% 110%, 110% -10%, -10% -10%)', x: 0})
         .fromTo(secondWords, {clipPath: 'polygon(110% 110%, 110% 110%, 110% -10%, 110% -10%)', x: '-100%'}, {clipPath: 'polygon(-10% 110%, 110% 110%, 110% -10%, -10% -10%)', x: 0}, 0.1)
         .fromTo(thirdWords, {clipPath: 'polygon(-10% 110%, 110% 110%, 110% 110%, -10% 110%)', y: '-100%'}, {clipPath: 'polygon(-10% 110%, 110% 110%, 110% -10%, -10%  -10%)', y: 0}, 0.2)
-        // .from(header, {y: '-100%', duration: 0.4})
+        .from(header, {y: '-100%', duration: 0.4})
         .from(indexSlider, {opacity: 0, duration: 0.6}, '-=0.4')
         .to(indexLetters, {fill: 'transparent', stroke: 'white', duration: 0.4}, '-=0.6')
         .from(indexDescr, {opacity: 0, y: 20}, '-=0.2')
