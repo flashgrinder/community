@@ -1,31 +1,30 @@
-.cursor {
-    width: 20px;
-    height: 20px;
-    border: 1px solid yellow;
+* {cursor: none;}
+
+.cursor{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 5px;
     border-radius: 50%;
-    position: absolute;
-    transition-duration: 200ms;
-    transition-timing-function: ease-out;
-    animation: cursorAnim 1s infinite alternate;
+    background-color: rgb(216, 216, 216);
+    z-index: 99999;
+    user-select: none;
     pointer-events: none;
-    z-index: 10000;
     @include tablet(display, none);
 }
 
-.cursor::after {
-    content: "";
-    width: 20px;
-    height: 20px;
-    position: absolute;
-    border: 8px solid gray;
+.follower{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    border: 2px solid rgb(238, 255, 0);
     border-radius: 50%;
-    opacity: .5;
-    top: -9px;
-    left: -9px;
-    animation: cursorAnim2 1s infinite alternate;
-}
-
-.expand {
-    animation: cursorAnim3 .5s forwards;
-    border: 1px solid var(--color-yellow);
+    opacity: 0.9;
+    z-index: 9999;
+    user-select: none;
+    pointer-events: none;
+    @include tablet(display, none);
 }

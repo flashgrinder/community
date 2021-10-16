@@ -1,24 +1,16 @@
+import gsap from 'gsap';
 
 function init() {
 
-    const cursor = document.querySelector(".cursor");
+    gsap.set('.follower',{xPercent:-50,yPercent:-50});
+    gsap.set('.cursor',{xPercent:-50,yPercent:-50});
 
-    document.addEventListener("mousemove", (e) => {
+    var follow = document.querySelector('.follower');
+    var cur = document.querySelector('.cursor');
 
-        cursor.setAttribute(
-            "style",
-            "top: " + (e.pageY - 10) + "px; left: " + (e.pageX - 10) + "px;"
-        );
-
-    });
-
-    document.addEventListener("click", () => {
-        cursor.classList.add("expand");
-
-        setTimeout(() => {
-            cursor.classList.remove("expand");
-        }, 500);
-
+    window.addEventListener('mousemove',e => {
+        gsap.to(cur,0.2,{x:e.clientX,y:e.clientY});
+        gsap.to(follow,0.9,{x:e.clientX,y:e.clientY});
     });
 
 }
