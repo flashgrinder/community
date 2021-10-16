@@ -555,7 +555,7 @@ img {
   width: 100%;
   margin: 0 auto;
   overflow: hidden;
-  height: calc(100vh - 167px);
+  min-height: calc(100vh - 167px);
 }
 
 /* Modals */
