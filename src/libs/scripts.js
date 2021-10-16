@@ -8,8 +8,11 @@ import postSlider from '../libs/modules/postSlider.js';
 import modal from '../libs/modules/modal.js';
 import gsReveal from '../libs/modules/gsReveal.js';
 import indexAnimation from '../libs/modules/index-animation.js';
+import animationHeader from './modules/animationHeader.js';
 
 document.addEventListener('DOMContentLoaded', function(e) {
+
+    const indexAnimationTrue = document.querySelector('.js-index-slider');
     
     cursor.init();
     burgerMenu.init();
@@ -20,6 +23,7 @@ document.addEventListener('DOMContentLoaded', function(e) {
     aboutProductSlider.init();
     postSlider.init();
     gsReveal.init();
-    indexAnimation.init();
+    animationHeader.init();
+    indexAnimationTrue ? indexAnimation.init() : false;
     
 });
