@@ -7,7 +7,7 @@
         <h2 class="authors__heading title title--big title--black-low title--w-black title--indent gs-reveal gs-reveal--from-left">
             Художники
         </h2>
-        <div class="authors__list">
+        <div class="authors__list" id="artist-posts">
         <?php
 
             $args = array(

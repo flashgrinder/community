@@ -4,7 +4,7 @@
 <!-- Gallery -->
 <section class="gallery bg--white block-padding">
     <div class="gallery__body container">
-        <div class="gallery__cards">
+        <div class="gallery__cards" id="gallery-posts">
         <?php
 
             $args = array(

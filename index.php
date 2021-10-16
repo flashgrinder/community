@@ -6,7 +6,7 @@
         <h2 class="articles__heading title title--big title--black-low title--w-black title--indent gs-reveal gs-reveal--from-left">
             Новости
         </h2>
-        <div class="articles__posts">
+        <div class="articles__posts" id="articles-posts">
         <?php
 
             $args = array(
