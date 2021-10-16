@@ -15,6 +15,8 @@
     include_once(__DIR__ . '/inc/post-type_paintings.php');
     /* Post Type Artists */
     include_once(__DIR__ . '/inc/post-type_artists.php');
+    /* Loadmore btn */
+    include_once(__DIR__ . '/inc/loadmore_btn.php');
 
     // Добавим метабокс выбора автора картины
     add_action('add_meta_boxes', function () {

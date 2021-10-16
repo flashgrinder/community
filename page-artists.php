@@ -12,7 +12,7 @@
 
             $args = array(
                 'post_type' => 'artists',
-                'posts_per_page' => 8,
+                'posts_per_page' => 4,
                 'orderby'     => 'date',
                 'order'       => 'DESC',
                 'suppress_filters' => true
@@ -41,11 +41,19 @@
             <?php endif; ?>
             <?php wp_reset_postdata(); ?>
         </div>
-        <div class="authors__actions">
-            <a href="javascript:;" class="button button--black">
-                Показать еще
-            </a>
-        </div>
+        <?php if ($wp_query->max_num_pages > 1) : ?>
+            <script>
+                var ajaxurl = '<?php echo site_url(); ?>/wp-admin/admin-ajax.php';
+                var posts_vars = '<?php echo serialize($wp_query->query_vars); ?>';
+                var current_page = <?php echo (get_query_var('paged')) ? get_query_var('paged') : 1; ?>;
+                var max_pages = '<?php echo $wp_query->max_num_pages; ?>';
+            </script>
+            <div class="authors__actions">
+                <a href="javascript:;" class="button button--black" id="loadmore-artist">
+                    Показать еще
+                </a>
+            </div>
+        <?php endif; ?>
     </div>
 </section>
 <!-- /. Authors -->
