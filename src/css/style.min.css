@@ -867,7 +867,6 @@ img {
   top: 0;
   left: 0;
   background: var(--color-white);
-  padding: 12px 0;
   z-index: 1001;
 }
 
@@ -936,6 +935,11 @@ img {
   list-style: none;
 }
 
+.menu__item {
+  position: relative;
+  padding: 34px 0 33px;
+}
+
 .menu__item ~ .menu__item {
   margin-left: 30px;
 }
@@ -946,10 +950,42 @@ img {
   padding-bottom: 2px;
   border-bottom: 2px solid transparent;
   transition: ease 0.3s;
+  cursor: pointer;
 }
 
 .menu__link:hover {
   border-bottom: 2px solid var(--color-yellow);
+}
+
+.menu__sub-menu {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  padding: 0;
+  list-style: none;
+  top: 100%;
+  left: -100%;
+  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.3);
+  transition: visibility 0.3s ease-in, opacity 0.3s ease-in-out;
+}
+
+.menu__list > .menu__item:focus-within > .menu__sub-menu,
+.menu__list > .menu__item:focus > .menu__sub-menu,
+.menu__list > .menu__item:hover > .menu__sub-menu {
+  visibility: visible;
+  opacity: 1;
+}
+
+.menu__sub-menu > .menu__item {
+  margin-left: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.menu__sub-menu > .menu__item .menu__link {
+  display: block;
+  padding: 30px 48px;
+  background: var(--color-white);
 }
 
 /* Burger-menu */
