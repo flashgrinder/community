@@ -1685,6 +1685,11 @@ img {
   grid-gap: 60px 50px;
 }
 
+.gallery__actions {
+  margin-top: 60px;
+  text-align: center;
+}
+
 /* Product-card */
 
 .product-card {
@@ -1831,6 +1836,11 @@ img {
 
 .authors__name {
   margin-top: 14px;
+}
+
+.authors__actions {
+  margin-top: 60px;
+  text-align: center;
 }
 
 /* About-author */
