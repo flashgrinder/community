@@ -2898,6 +2898,10 @@ img {
     display: none !important;
   }
 
+  .header {
+    padding: 8px 0 4px;
+  }
+
   .header__menu {
     position: absolute;
     top: 100%;
@@ -2974,6 +2978,28 @@ img {
   .header__search.is-open {
     opacity: 1;
     visibility: visible;
+  }
+
+  .menu__item {
+    padding: 0;
+  }
+
+  .menu__sub-menu {
+    position: static;
+    top: auto;
+    left: auto;
+    max-height: 0;
+    transition: visibility 0.3s ease-in, opacity 0.3s ease-in-out, max-height 0.3s ease-in-out;
+  }
+
+  .menu__list > .menu__item:focus-within > .menu__sub-menu,
+  .menu__list > .menu__item:focus > .menu__sub-menu,
+  .menu__list > .menu__item:hover > .menu__sub-menu {
+    max-height: 20em;
+  }
+
+  .menu__sub-menu > .menu__item .menu__link {
+    background: transparent;
   }
 
   .burger-menu {
@@ -3137,10 +3163,6 @@ img {
   .modal__actions.modal__actions--search {
     margin-left: 0;
     margin-top: 20px;
-  }
-
-  .header {
-    padding: 8px 0 4px;
   }
 
   .header__logo {

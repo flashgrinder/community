@@ -3,9 +3,8 @@
     top: 0;
     left: 0;
     background: var(--color-white);
-    // padding: 12px 0;
     z-index: 1001;
-    @include mobile-block {
+    @include tablet-block {
         padding: 8px 0 4px;
     }
 }
