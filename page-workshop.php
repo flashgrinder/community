@@ -123,7 +123,7 @@
             </div>
             <div class="workshop__item workshop__item--pos">
                 <div class="workshop__content-action workshop__content-action--main">
-                    <a href="javascript:;" class="workshop__content-action-btn button button--yellow gs-reveal gs-reveal--from-right">
+                    <a href="https://community-print.ru/galereya/" class="workshop__content-action-btn button button--yellow gs-reveal gs-reveal--from-right">
                         Галерея
                     </a>
                 </div>

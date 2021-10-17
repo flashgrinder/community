@@ -181,7 +181,7 @@
         <div class="workshop__content workshop__content--right">
             <div class="workshop__item workshop__item--pos">
                 <div class="workshop__content-action workshop__content-action--main">
-                    <a href="" class="workshop__content-action-btn button button--yellow gs-reveal gs-reveal--from-right">
+                    <a href="https://community-print.ru/galereya/" class="workshop__content-action-btn button button--yellow gs-reveal gs-reveal--from-right">
                         Экспозиция
                     </a>
                 </div>
@@ -191,7 +191,7 @@
             </div>
             <div class="workshop__item workshop__item--pos">
                 <div class="workshop__content-action workshop__content-action--main">
-                    <a href="./page-authors.html" class="button button--yellow gs-reveal gs-reveal--from-right">
+                    <a href="https://community-print.ru/hudozhniki/" class="button button--yellow gs-reveal gs-reveal--from-right">
                         Художники
                     </a>
                 </div>
