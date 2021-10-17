@@ -879,6 +879,10 @@ img {
           align-items: center;
 }
 
+.header__logo-img {
+  cursor: pointer;
+}
+
 .header__menu {
   display: -webkit-flex;
   display: flex;
@@ -894,6 +898,7 @@ img {
 .header__search-svg {
   fill: var(--color-black-low);
   transition: fill 0.2s ease;
+  cursor: pointer;
 }
 
 .header__basket-svg:hover,
@@ -904,6 +909,7 @@ img {
 .header__basket,
 .header__phone,
 .header__search {
+  cursor: pointer;
   margin-left: 30px;
 }
 
@@ -1340,6 +1346,15 @@ img {
   padding: 50px 0 0;
 }
 
+.news-slider__title {
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.news-slider__title:hover {
+  color: var(--color-yellow);
+}
+
 .news-slider__text {
   position: relative;
   z-index: 101;
@@ -1687,6 +1702,7 @@ img {
 .contacts__email:hover .contacts__text-email,
 .contacts__phone:hover .contacts__text-number {
   color: var(--color-yellow);
+  cursor: pointer;
 }
 
 .contacts__text-email,
@@ -1775,10 +1791,16 @@ img {
   -o-object-position: center;
      object-position: center;
   min-height: 318px;
+  cursor: pointer;
 }
 
 .product-card__name {
   margin-top: 15px;
+  cursor: pointer;
+}
+
+.product-card__author {
+  cursor: pointer;
 }
 
 .product-card__author,
@@ -2292,6 +2314,12 @@ img {
   text-decoration: none;
 }
 
+.post-card__img,
+.post-card__title,
+.post-card__more {
+  cursor: pointer;
+}
+
 .post-card__figure {
   margin: 0;
   height: 260px;
@@ -2488,6 +2516,10 @@ img {
           align-items: center;
 }
 
+.footer__logo-img {
+  cursor: pointer;
+}
+
 .footer__actions {
   display: -webkit-flex;
   display: flex;
@@ -2505,6 +2537,7 @@ img {
 
 .footer__basket-svg,
 .footer__search-svg {
+  cursor: pointer;
   fill: var(--color-white);
   transition: fill 0.2s ease;
 }
@@ -2517,6 +2550,7 @@ img {
 .footer__basket,
 .footer__phone,
 .footer__search {
+  cursor: pointer;
   margin-left: 30px;
 }
 

@@ -21,6 +21,7 @@
 .contacts__email:hover .contacts__text-email,
 .contacts__phone:hover .contacts__text-number {
     color: var(--color-yellow);
+    cursor: pointer;
 }
 
 .contacts__text-email,

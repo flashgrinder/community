@@ -2,6 +2,12 @@
     text-decoration: none;
 }
 
+.post-card__img,
+.post-card__title,
+.post-card__more {
+    cursor: pointer;
+}
+
 .post-card__figure {
     margin: 0;
     height: 260px;

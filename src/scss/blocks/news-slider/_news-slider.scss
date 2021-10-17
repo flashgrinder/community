@@ -91,6 +91,15 @@
     }
 }
 
+.news-slider__title {
+    cursor: pointer;
+    transition: color .2s ease;
+}
+
+.news-slider__title:hover {
+    color: var(--color-yellow);
+}
+
 .news-slider__text {
     position: relative;
     z-index: 101;

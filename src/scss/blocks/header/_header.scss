@@ -22,6 +22,10 @@
     }
 }
 
+.header__logo-img {
+    cursor: pointer;
+}
+
 .header__menu {
     display: flex;
     align-items: center;
@@ -92,6 +96,7 @@
 .header__search-svg {
     fill: var(--color-black-low);
     transition: fill .2s ease;
+    cursor: pointer;
     @include tablet(fill, var(--color-white));
 }
 
@@ -103,6 +108,7 @@
 .header__basket,
 .header__phone,
 .header__search {
+    cursor: pointer;
     margin-left: 30px;
 }
 

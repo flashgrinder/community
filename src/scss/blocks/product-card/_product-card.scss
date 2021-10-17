@@ -48,6 +48,7 @@
     object-fit: cover;
     object-position: center;
     min-height: 318px;
+    cursor: pointer;
     @include mobile(min-height, 245px);
     @include mobileXS(min-height, 200px);
     @include mobileXSS(min-height, 180px);
@@ -56,6 +57,11 @@
 
 .product-card__name {
     margin-top: 15px;
+    cursor: pointer;
+}
+
+.product-card__author {
+    cursor: pointer;
 }
 
 .product-card__author,
