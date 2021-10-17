@@ -57,9 +57,7 @@
 .menu__list > .menu__item:hover > .menu__sub-menu {
     visibility: visible;
     opacity: 1;
-    @include tablet-block {
-        max-height: 20em;
-    }
+    @include tablet(max-height, 30em);
 }
 
 .menu__sub-menu > .menu__item {
@@ -75,7 +73,7 @@
 .menu__list > .menu__item:focus-within > .menu__sub-menu .menu__item, 
 .menu__list > .menu__item:focus > .menu__sub-menu .menu__item, 
 .menu__list > .menu__item:hover > .menu__sub-menu .menu__item {
-    margin-top: 20px;
+    @include tablet(margin-top, 20px);
 }
 
 .menu__sub-menu > .menu__item .menu__link {

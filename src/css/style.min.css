@@ -982,12 +982,6 @@ img {
   text-align: center;
 }
 
-.menu__list > .menu__item:focus-within > .menu__sub-menu .menu__item,
-.menu__list > .menu__item:focus > .menu__sub-menu .menu__item,
-.menu__list > .menu__item:hover > .menu__sub-menu .menu__item {
-  margin-top: 20px;
-}
-
 .menu__sub-menu > .menu__item .menu__link {
   display: block;
   padding: 30px 48px;
@@ -3001,12 +2995,18 @@ img {
   .menu__list > .menu__item:focus-within > .menu__sub-menu,
   .menu__list > .menu__item:focus > .menu__sub-menu,
   .menu__list > .menu__item:hover > .menu__sub-menu {
-    max-height: 20em;
+    max-height: 30em;
   }
 
   .menu__sub-menu > .menu__item {
     margin-top: 0px;
     transition: margin-top 0.1s ease-in-out;
+  }
+
+  .menu__list > .menu__item:focus-within > .menu__sub-menu .menu__item,
+  .menu__list > .menu__item:focus > .menu__sub-menu .menu__item,
+  .menu__list > .menu__item:hover > .menu__sub-menu .menu__item {
+    margin-top: 20px;
   }
 
   .menu__sub-menu > .menu__item .menu__link {
