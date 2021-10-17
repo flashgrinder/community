@@ -86,3 +86,11 @@
         return $atts;
 
     }, 10, 3);
+
+    add_filter( 'nav_menu_submenu_css_class', function() {
+
+        $classes[] = 'menu__sub-menu';
+
+        return $classes;
+
+    }, 10, 3 );
