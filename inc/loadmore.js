@@ -14,6 +14,8 @@ jQuery(function($){
                 if(data) {
                     $('#loadmore-news').text('Показать ещё');
                     $('#articles-posts').append(data);
+                    const container = document.querySelector('#articles-posts');
+                    window.revealInit(container);
                     current_page++;
                     if (current_page == max_pages) $("#loadmore-news").remove();
                 } else {
@@ -38,6 +40,8 @@ jQuery(function($){
                 if(data) {
                     $('#loadmore-gallery').text('Показать ещё');
                     $('#gallery-posts').append(data);
+                    const container = document.querySelector('#gallery-posts');
+                    window.revealInit(container);
                     current_page++;
                     if (current_page == max_pages) $("#loadmore-gallery").remove();
                 } else {
