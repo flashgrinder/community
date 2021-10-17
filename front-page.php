@@ -429,6 +429,7 @@
             Мы в соцсетях
         </h2>
         <!-- Instafeed -->
+        <div id="instafeed"></div>
         <!-- /. Instafeed -->
         <div class="contacts__info">
             <div class="contacts__wrapp">

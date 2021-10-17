@@ -9,6 +9,7 @@ import postSlider from '../libs/modules/postSlider.js';
 import modal from '../libs/modules/modal.js';
 import gsReveal from '../libs/modules/gsReveal.js';
 import indexAnimation from '../libs/modules/index-animation.js';
+import instafeed from '../libs/modules/instafeed.js';
 
 document.addEventListener('DOMContentLoaded', function(e) {
 
@@ -26,5 +27,6 @@ document.addEventListener('DOMContentLoaded', function(e) {
     postSlider.init();
     gsReveal.init();
     indexAnimation.init();
+    instafeed.init();
     
 });
