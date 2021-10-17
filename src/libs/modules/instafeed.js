@@ -9,9 +9,11 @@ function init() {
                 accessToken: data.Token,
                 target: 'instafeed',
                 limit: 4,
-                template: '<a href="{{link}}"><img class="image__img  pulse1" title="{{caption}}" src="{{image}}" /><div class="image__overlay"><div class="image__title">{{caption}}</div></div></a>',
+                template: '<a class="instafeed__link" href="{{link}}" target="_blank"><img class="instafeed__img" title="{{caption}}" src="{{image}}" /><div class="instafeed__overlay"><div class="instafeed__title">{{caption}}</div></div></a>',
             });
+
             feed.run();
+
         });
 
 }

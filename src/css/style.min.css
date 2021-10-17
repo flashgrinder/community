@@ -1722,6 +1722,53 @@ img {
   margin-top: 25px;
 }
 
+/* Instafeed */
+
+.instafeed {
+  display: -ms-grid;
+  display: grid;
+  grid-auto-rows: 1fr;
+  -ms-grid-columns: minmax(200px, 320px) 30px minmax(200px, 320px) 30px minmax(200px, 320px) 30px minmax(200px, 320px);
+  grid-template-columns: repeat(4, minmax(200px, 320px));
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+  -webkit-align-items: baseline;
+          align-items: baseline;
+  grid-gap: 30px;
+}
+
+.instafeed__link {
+  color: var(--color-dark-low);
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+.instafeed__link:hover {
+  color: var(--color-yellow);
+}
+
+.instafeed__link,
+.instafeed__img,
+.instafeed__title {
+  display: block;
+  cursor: pointer;
+}
+
+.instafeed__img {
+  height: 100%;
+  max-height: 320px;
+  width: 100%;
+  max-width: 320px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.instafeed__title {
+  margin-top: 10px;
+}
+
 /* Gallery */
 
 .gallery {
@@ -2877,6 +2924,10 @@ img {
   .feedback__bg-decor {
     right: 8%;
   }
+
+  .instafeed {
+    grid-gap: 30px;
+  }
 }
 
 @media screen and (max-width: 1200px) {
@@ -3124,6 +3175,10 @@ img {
     bottom: 24%;
   }
 
+  .instafeed {
+    grid-gap: 15px;
+  }
+
   .gallery__cards {
     -ms-grid-columns: minmax(200px, 350px) 50px minmax(200px, 350px) 50px minmax(200px, 350px);
     grid-template-columns: repeat(3, minmax(200px, 350px));
@@ -3356,6 +3411,19 @@ img {
     margin-top: 20px;
   }
 
+  .instafeed {
+    -ms-grid-columns: minmax(200px, 0.5fr) 15px minmax(200px, 0.5fr);
+    grid-template-columns: repeat(2, minmax(200px, 0.5fr));
+    -webkit-justify-content: space-around;
+            justify-content: space-around;
+    grid-gap: 15px;
+  }
+
+  .instafeed__img {
+    max-height: 100%;
+    max-width: 100%;
+  }
+
   .gallery__cards {
     -ms-grid-columns: minmax(200px, 1fr) 20px minmax(200px, 1fr) 20px minmax(200px, 1fr);
     grid-template-columns: repeat(3, minmax(200px, 1fr));
@@ -3572,6 +3640,13 @@ img {
 
   .form__actions .wpcf7-spinner {
     margin: 0 10px;
+  }
+
+  .instafeed {
+    -ms-grid-columns: minmax(124px, 1fr);
+    grid-template-columns: repeat(1, minmax(124px, 1fr));
+    -webkit-justify-content: flex-start;
+            justify-content: flex-start;
   }
 
   .gallery__cards {
