@@ -14,6 +14,8 @@ import instafeed from '../libs/modules/instafeed.js';
 
 document.addEventListener('DOMContentLoaded', function(e) {
 
+    const instafeedTrue = document.querySelector('#instafeed');
+
     gsap.config({
         nullTargetWarn: false
     });
@@ -29,6 +31,5 @@ document.addEventListener('DOMContentLoaded', function(e) {
     gsReveal.init();
     reveal.init();
     indexAnimation.init();
-    instafeed.init();
-    
+    instafeedTrue ? instafeed.init() : false;    
 });
