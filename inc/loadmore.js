@@ -66,6 +66,8 @@ jQuery(function($){
                 if(data) {
                     $('#loadmore-artist').text('Показать ещё');
                     $('#artist-posts').append(data);
+                    const container = document.querySelector('#artist-posts');
+                    window.revealInit(container);
                     current_page++;
                     if (current_page == max_pages) $("#loadmore-artist").remove();
                 } else {

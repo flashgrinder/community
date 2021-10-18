@@ -43,4 +43,14 @@
     opacity: 0;
     visibility: hidden;
     will-change: transform, opacity;
-  }
+}
+
+.a-reveal {
+    transform: translate3d(0, 100px, 0);
+    opacity: 0;
+    transition: transform ease-in-out 0.5s .250s, opacity 0.5s ease-in-out .5s;
+    &.is-revealed {
+        transform: translate3d(0,0,0);
+        opacity: 1;
+    }
+}

@@ -8,6 +8,7 @@ import aboutProductSlider from '../libs/modules/aboutProductSlider.js';
 import postSlider from '../libs/modules/postSlider.js';
 import modal from '../libs/modules/modal.js';
 import gsReveal from '../libs/modules/gsReveal.js';
+import reveal from '../libs/modules/reveal';
 import indexAnimation from '../libs/modules/index-animation.js';
 import instafeed from '../libs/modules/instafeed.js';
 
@@ -26,6 +27,7 @@ document.addEventListener('DOMContentLoaded', function(e) {
     aboutProductSlider.init();
     postSlider.init();
     gsReveal.init();
+    reveal.init();
     indexAnimation.init();
     instafeed.init();
     

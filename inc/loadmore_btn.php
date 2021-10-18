@@ -15,7 +15,7 @@ function loadmore_get_posts(){
     if(have_posts()) :
         while(have_posts()): the_post(); ?>
         <!-- Post-card -->
-        <article class="post-card load-post-news">
+        <article class="post-card load-post-news js-reveal a-reveal">
             <aside class="post-card__aside">
                 <a href="<?php the_permalink(); ?>" class="post-card__link">
                     <figure class="post-card__figure">
@@ -78,7 +78,7 @@ function loadmore_get_gallery(){
 
         <!-- gallery-card start -->
 
-        <div class="product-card load-post-gallery">
+        <div class="product-card js-reveal a-reveal">
             <a href="<?php the_permalink(); ?>" class="product-card__picture product-card__link">
                 <?php
                     $default_attr = [
@@ -134,7 +134,7 @@ function loadmore_get_artist(){
         while(have_posts()): the_post(); ?>
 
         <!-- artist start -->
-        <a href="<?php the_permalink(); ?>" class="authors__item load-post-artist">
+        <a href="<?php the_permalink(); ?>" class="authors__item js-reveal a-reveal">
             <div class="authors__picture">
                 <?php
                     $default_attr = [
