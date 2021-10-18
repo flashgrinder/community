@@ -9,8 +9,8 @@ function init() {
     var cur = document.querySelector('.cursor');
 
     window.addEventListener('mousemove',e => {
-        gsap.to(cur,0.2,{x:e.clientX,y:e.clientY});
-        gsap.to(follow,0.9,{x:e.clientX,y:e.clientY});
+        gsap.to(cur,0.1,{x:e.clientX,y:e.clientY});
+        gsap.to(follow,0.2,{x:e.clientX,y:e.clientY});
     });
 
 }
