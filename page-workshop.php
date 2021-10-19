@@ -110,10 +110,10 @@
                     <h3 class="workshop__tagline title title--medium title--yellow title--w-black hide-large gs-reveal gs-reveal--from-right">
                         Заказать мерч
                     </h3>
-                    <a href="javascript:;" class="workshop__content-action-btn button button--yellow gs-reveal gs-reveal--from-right" data-modal-trigger="modal-form">
+                    <a href="#textile-printing" class="workshop__content-action-btn button button--yellow gs-reveal gs-reveal--from-right">
                         Печать на текстиле
                     </a>
-                    <a href="javascript:;" class="workshop__content-action-btn button button--yellow gs-reveal gs-reveal--from-right" data-modal-trigger="modal-form">
+                    <a href="#pos-printing" class="workshop__content-action-btn button button--yellow gs-reveal gs-reveal--from-right">
                         POS-материалы
                     </a>
                 </div>
@@ -336,7 +336,7 @@
                 </p>
             </div>
         </div>
-        <div class="price-workshop__content price-workshop__content--second gs-reveal gs-reveal--from-left">
+        <div class="price-workshop__content price-workshop__content--second gs-reveal gs-reveal--from-left" id="textile-printing">
             <h3 class="price-workshop__headline title title--medium title--yellow title--w-black">
                 Печать на текстиле
             </h3>
@@ -476,7 +476,7 @@
                 </p>
             </div>
         </div>
-        <div class="price-workshop__content price-workshop__content--third gs-reveal gs-reveal--from-left">
+        <div class="price-workshop__content price-workshop__content--third gs-reveal gs-reveal--from-left" id="pos-printing">
             <h3 class="price-workshop__headline title title--medium title--yellow title--w-black">
                 Печать POS-материалов
             </h3>
