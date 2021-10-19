@@ -114,7 +114,7 @@
                         Печать на текстиле
                     </a>
                     <a href="javascript:;" class="workshop__content-action-btn button button--yellow gs-reveal gs-reveal--from-right" data-modal-trigger="modal-form">
-                        Персональный заказ
+                        POS-материалы
                     </a>
                 </div>
                 <div class="workshop__pic gs-reveal gs-reveal--from-right">
@@ -146,17 +146,7 @@
             <h3 class="price-workshop__headline title title--medium title--yellow title--w-black">
                 Печать на бумаге
             </h3>
-            <div class="price-workshop__text wysiwyg"> 
-                <p>
-                    Назад языкового его приставка, путь толку если океана пустился всеми взобравшись безорфографичный щеке пунктуация речью живет пор продолжил моей. Буквенных там мир курсивных образ эта рыбного языкового большого.
-                </p>
-                <p>
-                     Запятых лучше он жаренные алфавит составитель они правилами это его инициал гор.
-                </p>
-                <p>
-                    Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты.
-                </p>
-            </div>
+
             <div class="price-workshop__tables">
                 <div class="price-workshop__table">
                     <div class="price-workshop__table-text wysiwyg">
@@ -348,7 +338,7 @@
         </div>
         <div class="price-workshop__content price-workshop__content--second gs-reveal gs-reveal--from-left">
             <h3 class="price-workshop__headline title title--medium title--yellow title--w-black">
-                Печать на футболках
+                Печать на текстиле
             </h3>
             <div class="price-workshop__text wysiwyg"> 
                 <p>

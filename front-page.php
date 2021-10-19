@@ -114,7 +114,7 @@
                     Первая в стране непроизводственная шелкографская мастерская, где печатаются художественные произведения и репродукции ограниченным тиражом. Трафаретная ручная печать и совместный подход к творческому процессу. 
                 </p>
                 <div class="workshop__action gs-reveal gs-reveal--from-left">
-                    <a href="" class="button button--yellow">
+                    <a href="https://community-print.ru/masterskaya/" class="button button--yellow">
                         Мастерская
                     </a>
                 </div>
