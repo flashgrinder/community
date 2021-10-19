@@ -423,7 +423,7 @@
 <!-- /. Form-page -->
 
 <!-- Contacts -->
-<section class="contacts bg--white block-padding" id="contacts">
+<section class="contacts bg--white block-padding">
     <div class="contacts__body container">
         <h2 class="contacts__heading title title--big title--black-low title--w-black title--indent gs-reveal gs-reveal--from-left">
             Мы в соцсетях
@@ -431,7 +431,7 @@
         <!-- Instafeed -->
         <div class="instafeed gs-reveal" id="instafeed"></div>
         <!-- /. Instafeed -->
-        <div class="contacts__info">
+        <div class="contacts__info" id="contacts">
             <div class="contacts__wrapp">
                 <a href="tel:+7 499 380 7997" class="contacts__phone gs-reveal gs-reveal--from-left">
                     <div class="contacts__icon">
