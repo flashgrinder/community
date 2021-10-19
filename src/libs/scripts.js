@@ -1,5 +1,4 @@
 import gsap from 'gsap';
-import cursor from '../libs/modules/cursor.js';
 import burgerMenu from '../libs/modules/burger-menu.js';
 import mainScreenSlider from '../libs/modules/mainScreenSlider.js';
 import productSlider from '../libs/modules/productSlider.js';
@@ -20,7 +19,6 @@ document.addEventListener('DOMContentLoaded', function(e) {
         nullTargetWarn: false
     });
     
-    cursor.init();
     burgerMenu.init();
     modal.init();
     mainScreenSlider.init();
