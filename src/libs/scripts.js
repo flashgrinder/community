@@ -5,6 +5,7 @@ import productSlider from '../libs/modules/productSlider.js';
 import newsSlider from '../libs/modules/newsSlider.js';
 import aboutProductSlider from '../libs/modules/aboutProductSlider.js';
 import postSlider from '../libs/modules/postSlider.js';
+import printingSlider from '../libs/modules/printingSlider.js';
 import modal from '../libs/modules/modal.js';
 import gsReveal from '../libs/modules/gsReveal.js';
 import reveal from '../libs/modules/reveal';
@@ -26,6 +27,7 @@ document.addEventListener('DOMContentLoaded', function(e) {
     newsSlider.init();
     aboutProductSlider.init();
     postSlider.init();
+    printingSlider.init();
     gsReveal.init();
     reveal.init();
     indexAnimation.init();
