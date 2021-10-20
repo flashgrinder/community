@@ -140,7 +140,7 @@
 <section class="printing-slider bg--black block-padding">
     <div class="printing-slider__body container">
         <h2 class="printing-slider__heading title title--big title--yellow title--w-black title--indent gs-reveal gs-reveal--from-left">
-            Виды материалов
+            Наши работы
         </h2>
         <div class="printing-slider__navigation slider-nav gs-reveal">
             <div class="printing-slider__arrow printing-slider__arrow--prev slider-nav__arrow slider-nav__arrow--prev slider-nav__arrow--prev-white"></div>
@@ -149,38 +149,20 @@
         <div class="printing-slider__inner gs-reveal gs-reveal--from-right">
             <div class="printing-slider__swiper swiper-container">
                 <div class="printing-slider__swiper-wrapper swiper-wrapper">
-                    <div class="printing-slider__swiper-slide swiper-slide">
-                        <figure class="printing-slider__figure">
-                            <img src="<?php echo STANDART_DIR; ?>img/workshop/workshop-photo-3.jpg" alt="" class="printing-slider__img">
-                            <figcaption class="printing-slider__figcaption text text--white text--normal text--w-light">
-                                Материал 1
-                            </figcaption>
-                        </figure>
-                    </div>
-                    <div class="printing-slider__swiper-slide swiper-slide">
-                        <figure class="printing-slider__figure">
-                            <img src="<?php echo STANDART_DIR; ?>img/workshop/workshop-photo-2.jpg" alt="" class="printing-slider__img">
-                            <figcaption class="printing-slider__figcaption text text--white text--normal text--w-light">
-                                Материал 2
-                            </figcaption>
-                        </figure>
-                    </div>
-                    <div class="printing-slider__swiper-slide swiper-slide">
-                        <figure class="printing-slider__figure">
-                            <img src="<?php echo STANDART_DIR; ?>img/workshop/workshop-photo-1.jpg" alt="" class="printing-slider__img">
-                            <figcaption class="printing-slider__figcaption text text--white text--normal text--w-light">
-                                Материал 3
-                            </figcaption>
-                        </figure>
-                    </div>
-                    <div class="printing-slider__swiper-slide swiper-slide">
-                        <figure class="printing-slider__figure">
-                            <img src="<?php echo STANDART_DIR; ?>img/workshop/workshop-photo-4.jpg" alt="" class="printing-slider__img">
-                            <figcaption class="printing-slider__figcaption text text--white text--normal text--w-light">
-                                Материал 4
-                            </figcaption>
-                        </figure>
-                    </div>
+                <?php 
+                    $printing_slider = get_field('printing-slider');
+                    if( $printing_slider ): ?>
+                        <?php foreach( $printing_slider as $printing_slider_slide ): ?>
+                            <div class="printing-slider__swiper-slide swiper-slide">
+                                <figure class="printing-slider__figure">
+                                    <img src="<?php echo $printing_slider_slide['url']; ?>" alt="<?php echo esc_attr($printing_slider_slide['alt']); ?>" class="printing-slider__img">
+                                    <figcaption class="printing-slider__figcaption text text--white text--normal text--w-light">
+                                        <?php echo esc_html($printing_slider_slide['caption']); ?>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        <?php endforeach; ?>
+                    <?php endif; ?>
                 </div>
             </div>
         </div>
