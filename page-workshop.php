@@ -185,7 +185,7 @@
                 <div class="price-workshop__table">
                     <div class="price-workshop__table-text wysiwyg">
                         <p>
-                            Базовая стоимость печати шелкографией на бумаге CMYK (полноцвет) 
+                            Базовая стоимость печати шелкографией на бумаге в 1 цвет*
                         </p>
                     </div>
                     <!-- Table-workshop -->
@@ -196,69 +196,63 @@
                                     Формат**
                                 </td>
                                 <td class="table-workshop__td">
-                                    до 35х50 см
+                                    10 шт.
                                 </td>
                                 <td class="table-workshop__td">
-                                    от 35х50 см
-                                    <br>
-                                    до 70х100 см
+                                    20 шт.
+                                </td>
+                                <td class="table-workshop__td">
+                                    30 шт.
+                                </td>
+                                <td class="table-workshop__td">
+                                    40 шт.
+                                </td>
+                                <td class="table-workshop__td">
+                                    50 шт.
                                 </td>
                             </tr>
                         </thead>
                         <tbody class="table-workshop__tbody">
                             <tr class="table-workshop__tr">
                                 <td class="table-workshop__td">
-                                    10 шт.
+                                    до 35х50 см
                                 </td>
                                 <td class="table-workshop__td"> 
-                                    2 500 ₽
+                                    3 000 ₽
                                 </td>
                                 <td class="table-workshop__td">
-                                    3 000 ₽
+                                    4 500 ₽
+                                </td>
+                                <td class="table-workshop__td">
+                                    6 750 ₽
+                                </td>
+                                <td class="table-workshop__td">
+                                    10 125 ₽
+                                </td>
+                                <td class="table-workshop__td">
+                                    15 190 ₽
                                 </td>
                             </tr>
                             <tr class="table-workshop__tr">
                                 <td class="table-workshop__td">
-                                    20 шт.
+                                    от 35х50 см
+                                    <br>
+                                    до 70х100 см
                                 </td>
                                 <td class="table-workshop__td">
-                                    2 500 ₽
+                                    4 500 ₽
                                 </td>
                                 <td class="table-workshop__td">
-                                    3 000 ₽
-                                </td>
-                            </tr>
-                            <tr class="table-workshop__tr">
-                                <td class="table-workshop__td">
-                                    30 шт.
+                                    6 750 ₽
                                 </td>
                                 <td class="table-workshop__td">
-                                    2 500 ₽
+                                    10 125 ₽
                                 </td>
                                 <td class="table-workshop__td">
-                                    3 000 ₽
-                                </td>
-                            </tr>
-                            <tr class="table-workshop__tr">
-                                <td class="table-workshop__td">
-                                    40 шт.
+                                    15 190 ₽
                                 </td>
                                 <td class="table-workshop__td">
-                                    2 500 ₽
-                                </td>
-                                <td class="table-workshop__td">
-                                    3 000 ₽
-                                </td>
-                            </tr>
-                            <tr class="table-workshop__tr">
-                                <td class="table-workshop__td">
-                                    50 шт.
-                                </td>
-                                <td class="table-workshop__td">
-                                    2 500 ₽
-                                </td>
-                                <td class="table-workshop__td">
-                                    3 000 ₽
+                                    22 785 ₽
                                 </td>
                             </tr>
                         </tbody>
@@ -279,69 +273,63 @@
                                     Формат**
                                 </td>
                                 <td class="table-workshop__td">
-                                    до 35х50 см
+                                    10 шт.
                                 </td>
                                 <td class="table-workshop__td">
-                                    от 35х50 см
-                                    <br>
-                                    до 70х100 см
+                                    20 шт.
+                                </td>
+                                <td class="table-workshop__td">
+                                    30 шт.
+                                </td>
+                                <td class="table-workshop__td">
+                                    40 шт.
+                                </td>
+                                <td class="table-workshop__td">
+                                    50 шт.
                                 </td>
                             </tr>
                         </thead>
                         <tbody class="table-workshop__tbody">
                             <tr class="table-workshop__tr">
                                 <td class="table-workshop__td">
-                                    10 шт.
+                                    до 35х50 см
                                 </td>
                                 <td class="table-workshop__td"> 
-                                    2 500 ₽
+                                    11 500 ₽
                                 </td>
                                 <td class="table-workshop__td">
-                                    3 000 ₽
-                                </td>
-                            </tr>
-                            <tr class="table-workshop__tr">
-                                <td class="table-workshop__td">
-                                    20 шт.
+                                    13 500 ₽
                                 </td>
                                 <td class="table-workshop__td">
-                                    2 500 ₽
+                                    15 500 ₽
                                 </td>
                                 <td class="table-workshop__td">
-                                    3 000 ₽
+                                    18 500 ₽
+                                </td>
+                                <td class="table-workshop__td">
+                                    23 000 ₽
                                 </td>
                             </tr>
                             <tr class="table-workshop__tr">
                                 <td class="table-workshop__td">
-                                    30 шт.
+                                    от 35х50 см
+                                    <br>
+                                    до 70х100 см
                                 </td>
                                 <td class="table-workshop__td">
-                                    2 500 ₽
+                                    13 500 ₽
                                 </td>
                                 <td class="table-workshop__td">
-                                    3 000 ₽
-                                </td>
-                            </tr>
-                            <tr class="table-workshop__tr">
-                                <td class="table-workshop__td">
-                                    40 шт.
+                                    15 500 ₽
                                 </td>
                                 <td class="table-workshop__td">
-                                    2 500 ₽
+                                    18 500 ₽
                                 </td>
                                 <td class="table-workshop__td">
-                                    3 000 ₽
-                                </td>
-                            </tr>
-                            <tr class="table-workshop__tr">
-                                <td class="table-workshop__td">
-                                    50 шт.
+                                    23 000 ₽
                                 </td>
                                 <td class="table-workshop__td">
-                                    2 500 ₽
-                                </td>
-                                <td class="table-workshop__td">
-                                    3 000 ₽
+                                    29 000 ₽
                                 </td>
                             </tr>
                         </tbody>
@@ -360,19 +348,19 @@
                     При небольшой площади печати цена может быт уменьшена				
                 </p>
                 <p>
-                    При большой площади заливки цена может быть увеличена из за повышенного расхода краски 
+                    При большой площади заливки цена может быть увеличена из-за повышенного расхода краски 
                 </p>
                 <p>
                     При печати одного цвета с нескольких матриц изготовление новой матрицы - 600 руб.
                 </p>	
                 <p>
-                    Создание макета, цветоотделение, растрирование оплачивается отдельно, печать кальки входит в стоимость одного цвета.
+                    Создание макета, цветоотделение, растрирование, оплачивается отдельно, печать кальки входит в стоимость одного цвета.
                 </p>
             </div>
         </div>
         <div class="price-workshop__content price-workshop__content--second gs-reveal gs-reveal--from-left" id="textile-printing">
             <h3 class="price-workshop__headline title title--medium title--yellow title--w-black">
-                Печать на текстиле
+                Печать шелкографии на текстиле
             </h3>
             <div class="price-workshop__text wysiwyg"> 
                 <p>
@@ -389,7 +377,7 @@
                         <thead class="table-workshop__thead">
                             <tr class="table-workshop__tr">
                                 <td class="table-workshop__td">
-                                    Цвет/Тираж
+                                    Количество
                                 </td>
                                 <td class="table-workshop__td">
                                     10 шт.
@@ -423,10 +411,28 @@
                                     1 цвет
                                 </td>
                                 <td class="table-workshop__td"> 
-                                    2 500 ₽
+                                    305 ₽
                                 </td>
                                 <td class="table-workshop__td">
-                                    3 000 ₽
+                                    210 ₽
+                                </td>
+                                <td class="table-workshop__td">
+                                    140 ₽
+                                </td>
+                                <td class="table-workshop__td">
+                                    105 ₽
+                                </td>
+                                <td class="table-workshop__td">
+                                    85 ₽
+                                </td>
+                                <td class="table-workshop__td">
+                                    55 ₽
+                                </td>
+                                <td class="table-workshop__td">
+                                    45 ₽
+                                </td>
+                                <td class="table-workshop__td">
+                                    35 ₽
                                 </td>
                             </tr>
                             <tr class="table-workshop__tr">
@@ -434,10 +440,28 @@
                                     2 цвета
                                 </td>
                                 <td class="table-workshop__td">
-                                    2 500 ₽
+                                    405 ₽
                                 </td>
                                 <td class="table-workshop__td">
-                                    3 000 ₽
+                                    255 ₽
+                                </td>
+                                <td class="table-workshop__td">
+                                    170 ₽
+                                </td>
+                                <td class="table-workshop__td">
+                                    130 ₽
+                                </td>
+                                <td class="table-workshop__td">
+                                    105 ₽
+                                </td>
+                                <td class="table-workshop__td">
+                                    75 ₽
+                                </td>
+                                <td class="table-workshop__td">
+                                    55 ₽
+                                </td>
+                                <td class="table-workshop__td">
+                                    45 ₽
                                 </td>
                             </tr>
                             <tr class="table-workshop__tr">
@@ -445,10 +469,28 @@
                                     3 цвета
                                 </td>
                                 <td class="table-workshop__td">
-                                    2 500 ₽
+                                    505 ₽
                                 </td>
                                 <td class="table-workshop__td">
-                                    3 000 ₽
+                                    300 ₽
+                                </td>
+                                <td class="table-workshop__td">
+                                    200 ₽
+                                </td>
+                                <td class="table-workshop__td">
+                                    155 ₽
+                                </td>
+                                <td class="table-workshop__td">
+                                    125 ₽
+                                </td>
+                                <td class="table-workshop__td">
+                                    90 ₽
+                                </td>
+                                <td class="table-workshop__td">
+                                    70 ₽
+                                </td>
+                                <td class="table-workshop__td">
+                                    60 ₽
                                 </td>
                             </tr>
                             <tr class="table-workshop__tr">
@@ -456,10 +498,28 @@
                                     4 цвета
                                 </td>
                                 <td class="table-workshop__td">
-                                    2 500 ₽
+                                    605 ₽
                                 </td>
                                 <td class="table-workshop__td">
-                                    3 000 ₽
+                                    345 ₽
+                                </td>
+                                <td class="table-workshop__td">
+                                    230 ₽
+                                </td>
+                                <td class="table-workshop__td">
+                                    180 ₽
+                                </td>
+                                <td class="table-workshop__td">
+                                    145 ₽
+                                </td>
+                                <td class="table-workshop__td">
+                                    105 ₽
+                                </td>
+                                <td class="table-workshop__td">
+                                    80 ₽
+                                </td>
+                                <td class="table-workshop__td">
+                                    70 ₽
                                 </td>
                             </tr>
                             <tr class="table-workshop__tr">
@@ -467,10 +527,57 @@
                                     5 цветов
                                 </td>
                                 <td class="table-workshop__td">
-                                    2 500 ₽
+                                    705 ₽
                                 </td>
                                 <td class="table-workshop__td">
-                                    3 000 ₽
+                                    390 ₽
+                                </td>
+                                <td class="table-workshop__td">
+                                    260 ₽
+                                </td>
+                                <td class="table-workshop__td">
+                                    205 ₽
+                                </td>
+                                <td class="table-workshop__td">
+                                    165 ₽
+                                </td>
+                                <td class="table-workshop__td">
+                                    125 ₽
+                                </td>
+                                <td class="table-workshop__td">
+                                    95 ₽
+                                </td>
+                                <td class="table-workshop__td">
+                                    80 ₽
+                                </td>
+                            </tr>
+                            <tr class="table-workshop__tr">
+                                <td class="table-workshop__td">
+                                    6 цветов
+                                </td>
+                                <td class="table-workshop__td">
+                                    805 ₽
+                                </td>
+                                <td class="table-workshop__td">
+                                    435 ₽
+                                </td>
+                                <td class="table-workshop__td">
+                                    290 ₽
+                                </td>
+                                <td class="table-workshop__td">
+                                    230 ₽
+                                </td>
+                                <td class="table-workshop__td">
+                                    185 ₽
+                                </td>
+                                <td class="table-workshop__td">
+                                    140 ₽
+                                </td>
+                                <td class="table-workshop__td">
+                                    105 ₽
+                                </td>
+                                <td class="table-workshop__td">
+                                    90 ₽
                                 </td>
                             </tr>
                             <tr class="table-workshop__tr">
@@ -478,36 +585,34 @@
                                     CMYK (полноцвет)
                                 </td>
                                 <td class="table-workshop__td">
-                                    2 500 ₽
+                                    1 200 ₽
                                 </td>
                                 <td class="table-workshop__td">
-                                    3 000 ₽
+                                    610 ₽
+                                </td>
+                                <td class="table-workshop__td">
+                                    405 ₽
+                                </td>
+                                <td class="table-workshop__td">
+                                    305 ₽
+                                </td>
+                                <td class="table-workshop__td">
+                                    245 ₽
+                                </td>
+                                <td class="table-workshop__td">
+                                    180 ₽
+                                </td>
+                                <td class="table-workshop__td">
+                                    135 ₽
+                                </td>
+                                <td class="table-workshop__td">
+                                    120 ₽
                                 </td>
                             </tr>
                         </tbody>
                     </table>
                     <!-- /. Table-workshop -->
                 </div>
-            </div>
-            <div class="price-workshop__text wysiwyg">
-                <p>
-                    <b>Особенности:</b>
-                </p>
-                <p>
-                    Подборка красок по пантону +10%		
-                </p>
-                <p>
-                    При небольшой площади печати цена может быт уменьшена				
-                </p>
-                <p>
-                    При большой площади заливки цена может быть увеличена из за повышенного расхода краски 
-                </p>
-                <p>
-                    При печати одного цвета с нескольких матриц изготовление новой матрицы - 600 руб.
-                </p>	
-                <p>
-                    Создание макета, цветоотделение, растрирование оплачивается отдельно, печать кальки входит в стоимость одного цвета.
-                </p>
             </div>
         </div>
         <div class="price-workshop__content price-workshop__content--third gs-reveal gs-reveal--from-left" id="pos-printing">
@@ -522,14 +627,31 @@
             <div class="price-workshop__tables">
                 <div class="price-workshop__table">
                     <div class="price-workshop__table-text wysiwyg">
-                        
+                        <p>
+                            Формат заготовки 150x250 мм
+                        </p>
                     </div>
                     <!-- Table-workshop -->
                     <table class="table-workshop">
                         <thead class="table-workshop__thead">
                             <tr class="table-workshop__tr">
                                 <td class="table-workshop__td">
-                                    Формат заготовки 150x250 мм
+                                    Цвет/Тираж
+                                </td>
+                                <td class="table-workshop__td">
+                                    100 шт.
+                                </td>
+                                <td class="table-workshop__td">
+                                    200 шт.
+                                </td>
+                                <td class="table-workshop__td">
+                                    300 шт.
+                                </td>
+                                <td class="table-workshop__td">
+                                    500 шт.
+                                </td>
+                                <td class="table-workshop__td">
+                                    1 000 шт.
                                 </td>
                             </tr>
                         </thead>
@@ -539,16 +661,19 @@
                                     1 цвет
                                 </td>
                                 <td class="table-workshop__td"> 
-                                    2 500 ₽
+                                    1 500 ₽
                                 </td>
                                 <td class="table-workshop__td">
-                                    3 000 ₽
+                                    2 100 ₽
                                 </td>
                                 <td class="table-workshop__td">
-                                    3 000 ₽
+                                    2 700 ₽
                                 </td>
                                 <td class="table-workshop__td">
-                                    3 000 ₽
+                                    3 300 ₽
+                                </td>
+                                <td class="table-workshop__td">
+                                    4 900 ₽
                                 </td>
                             </tr>
                             <tr class="table-workshop__tr">
@@ -556,16 +681,19 @@
                                     2 цвета
                                 </td>
                                 <td class="table-workshop__td">
-                                    2 500 ₽
+                                    2 200 ₽
                                 </td>
                                 <td class="table-workshop__td">
-                                    3 000 ₽
+                                    3 200 ₽
                                 </td>
                                 <td class="table-workshop__td">
-                                    3 000 ₽
+                                    4 000 ₽
                                 </td>
                                 <td class="table-workshop__td">
-                                    3 000 ₽
+                                    4 900 ₽
+                                </td>
+                                <td class="table-workshop__td">
+                                    7 300 ₽
                                 </td>
                             </tr>
                             <tr class="table-workshop__tr">
@@ -573,16 +701,19 @@
                                     3 цвета
                                 </td>
                                 <td class="table-workshop__td">
-                                    2 500 ₽
+                                    2 900 ₽
                                 </td>
                                 <td class="table-workshop__td">
-                                    3 000 ₽
+                                    4 200 ₽
                                 </td>
                                 <td class="table-workshop__td">
-                                    3 000 ₽
+                                    5 300 ₽
                                 </td>
                                 <td class="table-workshop__td">
-                                    3 000 ₽
+                                    6 200 ₽
+                                </td>
+                                <td class="table-workshop__td">
+                                    9 700 ₽
                                 </td>
                             </tr>
                             <tr class="table-workshop__tr">
@@ -590,16 +721,19 @@
                                     4 цвета
                                 </td>
                                 <td class="table-workshop__td">
-                                    2 500 ₽
+                                    3 600 ₽
                                 </td>
                                 <td class="table-workshop__td">
-                                    3 000 ₽
+                                    5 200 ₽
                                 </td>
                                 <td class="table-workshop__td">
-                                    3 000 ₽
+                                    6 600 ₽
                                 </td>
                                 <td class="table-workshop__td">
-                                    3 000 ₽
+                                    7 600 ₽
+                                </td>
+                                <td class="table-workshop__td">
+                                    12 100 ₽
                                 </td>
                             </tr>
                             <tr class="table-workshop__tr">
@@ -607,16 +741,19 @@
                                     5 цветов
                                 </td>
                                 <td class="table-workshop__td">
-                                    2 500 ₽
+                                    4 300 ₽
                                 </td>
                                 <td class="table-workshop__td">
-                                    3 000 ₽
+                                    6 200 ₽
                                 </td>
                                 <td class="table-workshop__td">
-                                    3 000 ₽
+                                    7 900 ₽
                                 </td>
                                 <td class="table-workshop__td">
-                                    3 000 ₽
+                                    9 000 ₽
+                                </td>
+                                <td class="table-workshop__td">
+                                    14 500 ₽
                                 </td>
                             </tr>
                             <tr class="table-workshop__tr">
@@ -624,16 +761,19 @@
                                     6 цветов
                                 </td>
                                 <td class="table-workshop__td">
-                                    2 500 ₽
+                                    5 000 ₽
                                 </td>
                                 <td class="table-workshop__td">
-                                    3 000 ₽
+                                    7 200 ₽
                                 </td>
                                 <td class="table-workshop__td">
-                                    3 000 ₽
+                                    9 200 ₽
                                 </td>
                                 <td class="table-workshop__td">
-                                    3 000 ₽
+                                    10 400 ₽
+                                </td>
+                                <td class="table-workshop__td">
+                                    16 900 ₽
                                 </td>
                             </tr>
                         </tbody>
@@ -642,14 +782,31 @@
                 </div>
                 <div class="price-workshop__table">
                     <div class="price-workshop__table-text wysiwyg">
-                        
+                        <p>
+                            Формат заготовки 250x350 мм
+                        </p>
                     </div>
                     <!-- Table-workshop -->
                     <table class="table-workshop">
                         <thead class="table-workshop__thead">
                             <tr class="table-workshop__tr">
                                 <td class="table-workshop__td">
-                                    Формат заготовки 150x250 мм
+                                    Цвет/Тираж
+                                </td>
+                                <td class="table-workshop__td">
+                                    100 шт.
+                                </td>
+                                <td class="table-workshop__td">
+                                    200 шт.
+                                </td>
+                                <td class="table-workshop__td">
+                                    300 шт.
+                                </td>
+                                <td class="table-workshop__td">
+                                    500 шт.
+                                </td>
+                                <td class="table-workshop__td">
+                                    1 000 шт.
                                 </td>
                             </tr>
                         </thead>
@@ -659,16 +816,19 @@
                                     1 цвет
                                 </td>
                                 <td class="table-workshop__td"> 
-                                    2 500 ₽
+                                    2 200 ₽
                                 </td>
                                 <td class="table-workshop__td">
-                                    3 000 ₽
+                                    3 100 ₽
                                 </td>
                                 <td class="table-workshop__td">
-                                    3 000 ₽
+                                    4 000 ₽
                                 </td>
                                 <td class="table-workshop__td">
-                                    3 000 ₽
+                                    4 800 ₽
+                                </td>
+                                <td class="table-workshop__td">
+                                    7 300 ₽
                                 </td>
                             </tr>
                             <tr class="table-workshop__tr">
@@ -676,16 +836,19 @@
                                     2 цвета
                                 </td>
                                 <td class="table-workshop__td">
-                                    2 500 ₽
+                                    3 200 ₽
                                 </td>
                                 <td class="table-workshop__td">
-                                    3 000 ₽
+                                    4 200 ₽
                                 </td>
                                 <td class="table-workshop__td">
-                                    3 000 ₽
+                                    5 300 ₽
                                 </td>
                                 <td class="table-workshop__td">
-                                    3 000 ₽
+                                    6 200 ₽
+                                </td>
+                                <td class="table-workshop__td">
+                                    9 700 ₽
                                 </td>
                             </tr>
                             <tr class="table-workshop__tr">
@@ -693,16 +856,19 @@
                                     3 цвета
                                 </td>
                                 <td class="table-workshop__td">
-                                    2 500 ₽
+                                    4 200 ₽
                                 </td>
                                 <td class="table-workshop__td">
-                                    3 000 ₽
+                                    5 200 ₽
                                 </td>
                                 <td class="table-workshop__td">
-                                    3 000 ₽
+                                    6 600 ₽
                                 </td>
                                 <td class="table-workshop__td">
-                                    3 000 ₽
+                                    7 600 ₽
+                                </td>
+                                <td class="table-workshop__td">
+                                    12 100 ₽
                                 </td>
                             </tr>
                             <tr class="table-workshop__tr">
@@ -710,16 +876,19 @@
                                     4 цвета
                                 </td>
                                 <td class="table-workshop__td">
-                                    2 500 ₽
+                                    5 200 ₽
                                 </td>
                                 <td class="table-workshop__td">
-                                    3 000 ₽
+                                    6 200 ₽
                                 </td>
                                 <td class="table-workshop__td">
-                                    3 000 ₽
+                                    7 900 ₽
                                 </td>
                                 <td class="table-workshop__td">
-                                    3 000 ₽
+                                    9 000 ₽
+                                </td>
+                                <td class="table-workshop__td">
+                                    14 500 ₽
                                 </td>
                             </tr>
                             <tr class="table-workshop__tr">
@@ -727,16 +896,19 @@
                                     5 цветов
                                 </td>
                                 <td class="table-workshop__td">
-                                    2 500 ₽
+                                    6 200 ₽
                                 </td>
                                 <td class="table-workshop__td">
-                                    3 000 ₽
+                                    7 200 ₽
                                 </td>
                                 <td class="table-workshop__td">
-                                    3 000 ₽
+                                    9 200 ₽
                                 </td>
                                 <td class="table-workshop__td">
-                                    3 000 ₽
+                                    10 400 ₽
+                                </td>
+                                <td class="table-workshop__td">
+                                    16 900 ₽
                                 </td>
                             </tr>
                             <tr class="table-workshop__tr">
@@ -744,16 +916,19 @@
                                     6 цветов
                                 </td>
                                 <td class="table-workshop__td">
-                                    2 500 ₽
+                                    7 200 ₽
                                 </td>
                                 <td class="table-workshop__td">
-                                    3 000 ₽
+                                    8 200 ₽
                                 </td>
                                 <td class="table-workshop__td">
-                                    3 000 ₽
+                                    10 500 ₽
                                 </td>
                                 <td class="table-workshop__td">
-                                    3 000 ₽
+                                    11 800 ₽
+                                </td>
+                                <td class="table-workshop__td">
+                                    19 300 ₽
                                 </td>
                             </tr>
                         </tbody>
@@ -762,14 +937,31 @@
                 </div>
                 <div class="price-workshop__table">
                     <div class="price-workshop__table-text wysiwyg">
-                        
+                        <p>
+                            Формат заготовки 350x500 мм
+                        </p>
                     </div>
                     <!-- Table-workshop -->
                     <table class="table-workshop">
                         <thead class="table-workshop__thead">
                             <tr class="table-workshop__tr">
                                 <td class="table-workshop__td">
-                                    Формат заготовки 150x250 мм
+                                    Цвет/Тираж
+                                </td>
+                                <td class="table-workshop__td">
+                                    100 шт.
+                                </td>
+                                <td class="table-workshop__td">
+                                    200 шт.
+                                </td>
+                                <td class="table-workshop__td">
+                                    300 шт.
+                                </td>
+                                <td class="table-workshop__td">
+                                    500 шт.
+                                </td>
+                                <td class="table-workshop__td">
+                                    1 000 шт.
                                 </td>
                             </tr>
                         </thead>
@@ -779,16 +971,19 @@
                                     1 цвет
                                 </td>
                                 <td class="table-workshop__td"> 
-                                    2 500 ₽
+                                    3 600 ₽
                                 </td>
                                 <td class="table-workshop__td">
-                                    3 000 ₽
+                                    5 200 ₽
                                 </td>
                                 <td class="table-workshop__td">
-                                    3 000 ₽
+                                    6 800 ₽
                                 </td>
                                 <td class="table-workshop__td">
-                                    3 000 ₽
+                                    8 400 ₽
+                                </td>
+                                <td class="table-workshop__td">
+                                    12 600 ₽
                                 </td>
                             </tr>
                             <tr class="table-workshop__tr">
@@ -796,16 +991,19 @@
                                     2 цвета
                                 </td>
                                 <td class="table-workshop__td">
-                                    2 500 ₽
+                                    5 700 ₽
                                 </td>
                                 <td class="table-workshop__td">
-                                    3 000 ₽
+                                    8 400 ₽
                                 </td>
                                 <td class="table-workshop__td">
-                                    3 000 ₽
+                                    9 900 ₽
                                 </td>
                                 <td class="table-workshop__td">
-                                    3 000 ₽
+                                    13 400 ₽
+                                </td>
+                                <td class="table-workshop__td">
+                                    19 900 ₽
                                 </td>
                             </tr>
                             <tr class="table-workshop__tr">
@@ -813,16 +1011,19 @@
                                     3 цвета
                                 </td>
                                 <td class="table-workshop__td">
-                                    2 500 ₽
+                                    8 600 ₽
                                 </td>
                                 <td class="table-workshop__td">
-                                    3 000 ₽
+                                    10 800 ₽
                                 </td>
                                 <td class="table-workshop__td">
-                                    3 000 ₽
+                                    12 400 ₽
                                 </td>
                                 <td class="table-workshop__td">
-                                    3 000 ₽
+                                    13 400 ₽
+                                </td>
+                                <td class="table-workshop__td">
+                                    37 800 ₽
                                 </td>
                             </tr>
                             <tr class="table-workshop__tr">
@@ -830,16 +1031,19 @@
                                     4 цвета
                                 </td>
                                 <td class="table-workshop__td">
-                                    2 500 ₽
+                                    11 500 ₽
                                 </td>
                                 <td class="table-workshop__td">
-                                    3 000 ₽
+                                    16 500 ₽
                                 </td>
                                 <td class="table-workshop__td">
-                                    3 000 ₽
+                                    21 750 ₽
                                 </td>
                                 <td class="table-workshop__td">
-                                    3 000 ₽
+                                    26 800 ₽
+                                </td>
+                                <td class="table-workshop__td">
+                                    49 900 ₽
                                 </td>
                             </tr>
                             <tr class="table-workshop__tr">
@@ -847,16 +1051,19 @@
                                     5 цветов
                                 </td>
                                 <td class="table-workshop__td">
-                                    2 500 ₽
+                                    14 400 ₽
                                 </td>
                                 <td class="table-workshop__td">
-                                    3 000 ₽
+                                    19 900 ₽
                                 </td>
                                 <td class="table-workshop__td">
-                                    3 000 ₽
+                                    27 200 ₽
                                 </td>
                                 <td class="table-workshop__td">
-                                    3 000 ₽
+                                    33 600 ₽
+                                </td>
+                                <td class="table-workshop__td">
+                                    62 900 ₽
                                 </td>
                             </tr>
                             <tr class="table-workshop__tr">
@@ -864,16 +1071,19 @@
                                     6 цветов
                                 </td>
                                 <td class="table-workshop__td">
-                                    2 500 ₽
+                                    17 200 ₽
                                 </td>
                                 <td class="table-workshop__td">
-                                    3 000 ₽
+                                    24 900 ₽
                                 </td>
                                 <td class="table-workshop__td">
-                                    3 000 ₽
+                                    32 600 ₽
                                 </td>
                                 <td class="table-workshop__td">
-                                    3 000 ₽
+                                    39 900 ₽
+                                </td>
+                                <td class="table-workshop__td">
+                                    59 000 ₽
                                 </td>
                             </tr>
                         </tbody>
@@ -882,14 +1092,31 @@
                 </div>
                 <div class="price-workshop__table">
                     <div class="price-workshop__table-text wysiwyg">
-                        
+                        <p>
+                            Формат заготовки 500x700 мм
+                        </p>
                     </div>
                     <!-- Table-workshop -->
                     <table class="table-workshop">
                         <thead class="table-workshop__thead">
                             <tr class="table-workshop__tr">
                                 <td class="table-workshop__td">
-                                    Формат заготовки 150x250 мм
+                                    Цвет/Тираж
+                                </td>
+                                <td class="table-workshop__td">
+                                    100 шт.
+                                </td>
+                                <td class="table-workshop__td">
+                                    200 шт.
+                                </td>
+                                <td class="table-workshop__td">
+                                    300 шт.
+                                </td>
+                                <td class="table-workshop__td">
+                                    500 шт.
+                                </td>
+                                <td class="table-workshop__td">
+                                    1 000 шт.
                                 </td>
                             </tr>
                         </thead>
@@ -899,16 +1126,19 @@
                                     1 цвет
                                 </td>
                                 <td class="table-workshop__td"> 
-                                    2 500 ₽
+                                    5 800 ₽
                                 </td>
                                 <td class="table-workshop__td">
-                                    3 000 ₽
+                                    7 500 ₽
                                 </td>
                                 <td class="table-workshop__td">
-                                    3 000 ₽
+                                    9 200 ₽
                                 </td>
                                 <td class="table-workshop__td">
-                                    3 000 ₽
+                                    11 500 ₽
+                                </td>
+                                <td class="table-workshop__td">
+                                    17 250 ₽
                                 </td>
                             </tr>
                             <tr class="table-workshop__tr">
@@ -916,16 +1146,19 @@
                                     2 цвета
                                 </td>
                                 <td class="table-workshop__td">
-                                    2 500 ₽
+                                    9 300 ₽
                                 </td>
                                 <td class="table-workshop__td">
-                                    3 000 ₽
+                                    12 000 ₽
                                 </td>
                                 <td class="table-workshop__td">
-                                    3 000 ₽
+                                    14 700 ₽
                                 </td>
                                 <td class="table-workshop__td">
-                                    3 000 ₽
+                                    18 300 ₽
+                                </td>
+                                <td class="table-workshop__td">
+                                    27 400 ₽
                                 </td>
                             </tr>
                             <tr class="table-workshop__tr">
@@ -933,16 +1166,19 @@
                                     3 цвета
                                 </td>
                                 <td class="table-workshop__td">
-                                    2 500 ₽
+                                    12 800 ₽
                                 </td>
                                 <td class="table-workshop__td">
-                                    3 000 ₽
+                                    16 600 ₽
                                 </td>
                                 <td class="table-workshop__td">
-                                    3 000 ₽
+                                    20 400 ₽
                                 </td>
                                 <td class="table-workshop__td">
-                                    3 000 ₽
+                                    25 500 ₽
+                                </td>
+                                <td class="table-workshop__td">
+                                    38 250 ₽
                                 </td>
                             </tr>
                             <tr class="table-workshop__tr">
@@ -950,16 +1186,19 @@
                                     4 цвета
                                 </td>
                                 <td class="table-workshop__td">
-                                    2 500 ₽
+                                    16 300 ₽
                                 </td>
                                 <td class="table-workshop__td">
-                                    3 000 ₽
+                                    21 200 ₽
                                 </td>
                                 <td class="table-workshop__td">
-                                    3 000 ₽
+                                    26 100 ₽
                                 </td>
                                 <td class="table-workshop__td">
-                                    3 000 ₽
+                                    32 600 ₽
+                                </td>
+                                <td class="table-workshop__td">
+                                    48 900 ₽
                                 </td>
                             </tr>
                             <tr class="table-workshop__tr">
@@ -967,16 +1206,19 @@
                                     5 цветов
                                 </td>
                                 <td class="table-workshop__td">
-                                    2 500 ₽
+                                    19 800 ₽
                                 </td>
                                 <td class="table-workshop__td">
-                                    3 000 ₽
+                                    25 750 ₽
                                 </td>
                                 <td class="table-workshop__td">
-                                    3 000 ₽
+                                    31 700 ₽
                                 </td>
                                 <td class="table-workshop__td">
-                                    3 000 ₽
+                                    37 650 ₽
+                                </td>
+                                <td class="table-workshop__td">
+                                    56 500 ₽
                                 </td>
                             </tr>
                             <tr class="table-workshop__tr">
@@ -984,42 +1226,25 @@
                                     6 цветов
                                 </td>
                                 <td class="table-workshop__td">
-                                    2 500 ₽
+                                    23 300 ₽
                                 </td>
                                 <td class="table-workshop__td">
-                                    3 000 ₽
+                                    30 400 ₽
                                 </td>
                                 <td class="table-workshop__td">
-                                    3 000 ₽
+                                    37 400 ₽
                                 </td>
                                 <td class="table-workshop__td">
-                                    3 000 ₽
+                                    44 400 ₽
+                                </td>
+                                <td class="table-workshop__td">
+                                    66 500 ₽
                                 </td>
                             </tr>
                         </tbody>
                     </table>
                     <!-- /. Table-workshop -->
                 </div>
-            </div>
-            <div class="price-workshop__text wysiwyg">
-                <p>
-                    <b>Особенности:</b>
-                </p>
-                <p>
-                    Подборка красок по пантону +10%		
-                </p>
-                <p>
-                    При небольшой площади печати цена может быт уменьшена				
-                </p>
-                <p>
-                    При большой площади заливки цена может быть увеличена из за повышенного расхода краски 
-                </p>
-                <p>
-                    При печати одного цвета с нескольких матриц изготовление новой матрицы - 600 руб.
-                </p>	
-                <p>
-                    Создание макета, цветоотделение, растрирование оплачивается отдельно, печать кальки входит в стоимость одного цвета.
-                </p>
             </div>
         </div>
         <div class="price-workshop__content price-workshop__content--four gs-reveal gs-reveal--from-left">
@@ -1041,111 +1266,72 @@
                         <thead class="table-workshop__thead">
                             <tr class="table-workshop__tr">
                                 <td class="table-workshop__td">
-                                    Формат заготовки 150x250 мм
+                                    Формат*
+                                </td>
+                                <td class="table-workshop__td">
+                                    Ч/Б вариант
+                                </td>
+                                <td class="table-workshop__td">
+                                    Цветной вариант
                                 </td>
                             </tr>
                         </thead>
                         <tbody class="table-workshop__tbody">
                             <tr class="table-workshop__tr">
                                 <td class="table-workshop__td">
-                                    1 цвет
+                                    Индивидуальный
+                                    <br>
+                                    размер м/кв
                                 </td>
                                 <td class="table-workshop__td"> 
-                                    2 500 ₽
+                                    225 ₽
                                 </td>
                                 <td class="table-workshop__td">
-                                    3 000 ₽
-                                </td>
-                                <td class="table-workshop__td">
-                                    3 000 ₽
-                                </td>
-                                <td class="table-workshop__td">
-                                    3 000 ₽
+                                    350 ₽
                                 </td>
                             </tr>
                             <tr class="table-workshop__tr">
                                 <td class="table-workshop__td">
-                                    2 цвета
+                                    A0
                                 </td>
                                 <td class="table-workshop__td">
-                                    2 500 ₽
+                                    202 ₽
                                 </td>
                                 <td class="table-workshop__td">
-                                    3 000 ₽
-                                </td>
-                                <td class="table-workshop__td">
-                                    3 000 ₽
-                                </td>
-                                <td class="table-workshop__td">
-                                    3 000 ₽
+                                    290 ₽
                                 </td>
                             </tr>
                             <tr class="table-workshop__tr">
                                 <td class="table-workshop__td">
-                                    3 цвета
+                                    A1
                                 </td>
                                 <td class="table-workshop__td">
-                                    2 500 ₽
+                                    125 ₽
                                 </td>
                                 <td class="table-workshop__td">
-                                    3 000 ₽
-                                </td>
-                                <td class="table-workshop__td">
-                                    3 000 ₽
-                                </td>
-                                <td class="table-workshop__td">
-                                    3 000 ₽
+                                    167 ₽
                                 </td>
                             </tr>
                             <tr class="table-workshop__tr">
                                 <td class="table-workshop__td">
-                                    4 цвета
+                                    A2
                                 </td>
                                 <td class="table-workshop__td">
-                                    2 500 ₽
+                                    80 ₽
                                 </td>
                                 <td class="table-workshop__td">
-                                    3 000 ₽
-                                </td>
-                                <td class="table-workshop__td">
-                                    3 000 ₽
-                                </td>
-                                <td class="table-workshop__td">
-                                    3 000 ₽
+                                    105 ₽
                                 </td>
                             </tr>
                             <tr class="table-workshop__tr">
                                 <td class="table-workshop__td">
-                                    5 цветов
+                                    A3
                                 </td>
                                 <td class="table-workshop__td">
-                                    2 500 ₽
+                                    17 ₽
                                 </td>
                                 <td class="table-workshop__td">
-                                    3 000 ₽
-                                </td>
-                                <td class="table-workshop__td">
-                                    3 000 ₽
-                                </td>
-                                <td class="table-workshop__td">
-                                    3 000 ₽
-                                </td>
-                            </tr>
-                            <tr class="table-workshop__tr">
-                                <td class="table-workshop__td">
-                                    6 цветов
-                                </td>
-                                <td class="table-workshop__td">
-                                    2 500 ₽
-                                </td>
-                                <td class="table-workshop__td">
-                                    3 000 ₽
-                                </td>
-                                <td class="table-workshop__td">
-                                    3 000 ₽
-                                </td>
-                                <td class="table-workshop__td">
-                                    3 000 ₽
+                                    62 ₽
                                 </td>
                             </tr>
                         </tbody>
