@@ -11,12 +11,17 @@
 .price-workshop__tables {
     display: flex;
     flex-wrap: wrap;
+    @include tablet(overflow-x, auto);
 }
 
 .price-workshop__table {
     margin-top: 25px;
     margin-right: 50px;
     margin-bottom: 25px;
+    @include tablet-block {
+        margin: 25px 0px;
+        touch-action: cross-slide-y;
+    }
 }
 
 .price-workshop__footer {

@@ -2397,7 +2397,7 @@ img {
 .table-workshop__thead .table-workshop__td,
 .table-workshop__tbody .table-workshop__td {
   padding: 20px 30px;
-  min-width: 100px;
+  min-width: 130px;
 }
 
 /* Articles */
@@ -3219,6 +3219,20 @@ img {
     -ms-grid-columns: minmax(0, 400px) 50px minmax(0, 676px);
     grid-template-columns: minmax(0, 400px) minmax(0, 676px);
     grid-gap: 50px;
+  }
+
+  .price-workshop__tables {
+    overflow-x: auto;
+  }
+
+  .price-workshop__table {
+    margin: 25px 0px;
+    touch-action: cross-slide-y;
+  }
+
+  .table-workshop {
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    box-shadow: none;
   }
 
   .footer__inner {
