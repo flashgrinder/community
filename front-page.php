@@ -429,7 +429,15 @@
             Мы в соцсетях
         </h2>
         <!-- Instafeed -->
-        <div class="instafeed gs-reveal" id="instafeed"></div>
+        <div class="instafeed-slider">
+            <div class="instafeed-slider__navigation slider-nav gs-reveal">
+                <div class="instafeed-slider__arrow--prev slider-nav__arrow slider-nav__arrow--prev slider-nav__arrow--prev-black"></div>
+                <div class="instafeed-slider__arrow--next slider-nav__arrow slider-nav__arrow--next slider-nav__arrow--next-black"></div>
+            </div>
+            <div class="instafeed-slider__swiper swiper-container gs-reveal">
+                <div class="instafeed-slider__swiper-wrapper swiper-wrapper" id="instafeed"></div>
+            </div>
+        </div>
         <!-- /. Instafeed -->
         <div class="contacts__info" id="contacts">
             <div class="contacts__wrapp">
