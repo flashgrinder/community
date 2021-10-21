@@ -12,7 +12,7 @@
                         $about_product_slides = get_field('about-product_slides');
                         if( $about_product_slides ): ?>
                         <?php foreach( $about_product_slides as $about_product_slide ): ?>
-                            <div class="about-product__swiper-slide swiper-slide">
+                            <div class="about-product__swiper-slide about-product__swiper-slide--full swiper-slide">
                                 <div class="about-product__swiper-zoom-container swiper-zoom-container">
                                     <img src="<?php echo $about_product_slide['url']; ?>" alt="<?php echo esc_attr($about_product_slide['alt']); ?>" class="about-product__slide-photo">
                                 </div>

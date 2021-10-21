@@ -19,7 +19,13 @@ function init() {
 
     const aboutProductSliderFull = new Swiper(".about-product__swiper-full", {
         loop: true,
-        zoom: true,
+        zoom: {
+            toggle: true,
+            maxRatio: 3,
+            minRatio: 1,
+        },
+        edgeSwipeThreshold: 150,
+        edgeSwipeThreshold: 150,
         effect: 'fade',
         fadeEffect: {
             crossFade: true
@@ -28,6 +34,19 @@ function init() {
             swiper: aboutProductSliderThumb
         }
     });
+
+    let swiperSlide = document.querySelectorAll('.about-product__swiper-slide--full');
+
+    for(let i = 0; i< swiperSlide.length; i++){
+
+        swiperSlide[i].addEventListener('click',function(e){
+            aboutProductSliderFull.zoom.in();
+        })
+
+        swiperSlide[i].addEventListener('mouseout',function(e){
+            aboutProductSliderFull.zoom.out();
+        })
+    }
 
 }
 
