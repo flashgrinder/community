@@ -3701,6 +3701,12 @@ img {
     padding: 0;
   }
 
+  .table-workshop__thead .table-workshop__td,
+  .table-workshop__tbody .table-workshop__td {
+    padding: 15px 10px;
+    min-width: 100px;
+  }
+
   .post__info {
     padding: 15px;
   }
@@ -3772,6 +3778,12 @@ img {
 
   .about-product__action {
     margin-top: 20px;
+  }
+
+  .table-workshop__thead .table-workshop__td,
+  .table-workshop__tbody .table-workshop__td {
+    padding: 15px 10px;
+    min-width: 80px;
   }
 }
 
