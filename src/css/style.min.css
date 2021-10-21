@@ -1694,6 +1694,19 @@ img {
 
 /* Contacts */
 
+.contacts__soc-icon {
+  display: inline-block;
+  margin: -5px 0 0 0;
+  line-height: 1;
+  vertical-align: middle;
+}
+
+.contacts__icon-svg {
+  line-height: 1;
+  width: 38px;
+  height: 38px;
+}
+
 .contacts__info {
   margin-top: 60px;
 }
@@ -3640,6 +3653,11 @@ img {
     margin: 0 10px;
   }
 
+  .contacts__icon-svg {
+    width: 30px;
+    height: 30px;
+  }
+
   .gallery__cards {
     -ms-grid-columns: minmax(124px, 1fr) 20px minmax(124px, 1fr);
     grid-template-columns: repeat(2, minmax(124px, 1fr));
@@ -3735,6 +3753,11 @@ img {
 
   .form__actions .wpcf7-spinner {
     margin: 0 4px;
+  }
+
+  .contacts__icon-svg {
+    width: 24px;
+    height: 24px;
   }
 
   .product-card__photo {

@@ -1,3 +1,24 @@
+.contacts__soc-icon {
+    display: inline-block;
+    margin: -5px 0 0 0;
+    line-height: 1;
+    vertical-align: middle;
+}
+
+.contacts__icon-svg {
+    line-height: 1;
+    width: 38px;
+    height: 38px;
+    @include mobileXS-block {
+        width: 30px;
+        height: 30px;
+    }
+    @include mobileXSS-block {
+        width: 24px;
+        height: 24px;
+    }
+}
+
 .contacts__info {
     margin-top: 60px;
 }
