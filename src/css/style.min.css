@@ -138,6 +138,7 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 80px;
 }
 
 img {
@@ -3278,6 +3279,10 @@ img {
 }
 
 @media screen and (max-width: 768px) {
+  html {
+    scroll-padding-top: 50px;
+  }
+
   .container {
     padding-left: 15px;
     padding-right: 15px;
