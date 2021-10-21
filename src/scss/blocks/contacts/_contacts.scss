@@ -21,6 +21,7 @@
 
 .contacts__info {
     margin-top: 60px;
+    @include mobile(margin-top, 30px);
 }
 
 .contacts__wrapp {

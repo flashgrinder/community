@@ -3443,6 +3443,10 @@ img {
     bottom: 17%;
   }
 
+  .contacts__info {
+    margin-top: 30px;
+  }
+
   .contacts__wrapp {
     -webkit-flex-direction: column;
             flex-direction: column;
