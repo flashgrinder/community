@@ -138,9 +138,23 @@
     font-size: 12px;
     font-weight: 400;
     color: var(--color-white);
-    text-decoration: underline;
+    text-decoration: none;
     display: flex;
     justify-content: center;
+}
+
+.form__agree-text .wpcf7-acceptance .wpcf7-list-item:hover {
+    text-decoration: underline;
+}
+
+.form__agree-text .modal__link {
+    color: var(--color-white);
+    text-decoration: none;
+}
+
+.form__agree-text .wpcf7-acceptance .wpcf7-list-item:hover .modal__link {
+    text-decoration: underline;
+    color: var(--color-yellow);
 }
 
 .form__agree-text .wpcf7-acceptance label {
