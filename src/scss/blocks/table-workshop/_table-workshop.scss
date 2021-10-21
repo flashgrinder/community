@@ -22,6 +22,7 @@
 .table-workshop__tbody .table-workshop__td {
     padding: 20px 30px;
     min-width: 130px;
+    text-align: center;
     @include mobileXS-block {
         padding: 15px 10px;
         min-width: 100px;
