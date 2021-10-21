@@ -35,17 +35,6 @@ const modalService = () => {
                         
                     }, 400);
                 } )
-
-                modal.addEventListener('click', () => {
-    
-                    tl.reverse();
-    
-                    setTimeout(() => {
-    
-                        modal.classList.remove('is-open');
-    
-                    }, 400);
-                } )
                 
                 body.addEventListener('keydown', (e) => {
 
