@@ -557,7 +557,6 @@ img {
 /* Page */
 
 .page {
-  position: relative;
   margin: 0;
   font-family: var(--font-roboto);
   font-size: 16px;
@@ -2643,6 +2642,8 @@ img {
   background: var(--color-black);
   padding: 12px 0;
   z-index: 997;
+  -webkit-flex-shrink: 0;
+          flex-shrink: 0;
 }
 
 .footer__body {
