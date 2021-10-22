@@ -8,6 +8,11 @@ html {
     @include mobile(scroll-padding-top, 50px);
 }
 
+html,
+body {
+    height: 100%;
+}
+
 img {
     max-width: 100%;
 }

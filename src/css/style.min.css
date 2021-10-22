@@ -141,6 +141,11 @@ html {
   scroll-padding-top: 80px;
 }
 
+html,
+body {
+  height: 100%;
+}
+
 img {
   max-width: 100%;
 }
@@ -564,14 +569,14 @@ img {
           flex-direction: column;
   -webkit-align-items: stretch;
           align-items: stretch;
-  min-height: 100vh;
 }
 
 .page__container {
   width: 100%;
   margin: 0 auto;
   overflow: hidden;
-  min-height: calc(100vh - 167px);
+  -webkit-flex: 1 0 auto;
+          flex: 1 0 auto;
 }
 
 /* Modals */
