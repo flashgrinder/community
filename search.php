@@ -19,7 +19,7 @@
                     <?php the_excerpt(); ?>
                 </p>
                 <div class="search-page__result-date text text--normal text--dark text--w-regular">
-                    Дата добавления: <?php the_date('d.m.Y', $before); ?>
+                    Дата добавления: <?php echo get_the_date('d.m.Y', $before); ?>
                 </div>
             </div>
         <?php endwhile; ?>
