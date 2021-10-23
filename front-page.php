@@ -34,10 +34,10 @@
             </div>
         </div>
         <div class="main-screen__inner container">
-            <p class="main-screen__slogan title title--large title--white title--w-medium js-index-descr">
-                Сообщество российских художников, работающих методом шелкографии. Современная печатная мастерская и галерея художественных работ.
-            </p>
             <div class="main-screen__animation-block">
+                <p class="main-screen__slogan title title--large title--white title--w-medium js-index-descr">
+                    Сообщество российских художников, работающих методом шелкографии. Современная печатная мастерская и галерея художественных работ.
+                </p>
                 <div class="main-screen__index-screen">
                     <svg class="main-screen__index-screen-svg" width="1075" height="712" viewBox="0 0 1075 712" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g class="js-words-first">
