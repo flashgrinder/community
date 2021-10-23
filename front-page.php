@@ -111,7 +111,7 @@
                     Искусство каждому
                 </h3>
                 <p class="workshop__text text text--normal text--white text--w-regular gs-reveal gs-reveal--from-left">
-                    Первая в стране непроизводственная шелкографская мастерская, где печатаются художественные произведения и репродукции ограниченным тиражом. Трафаретная ручная печать и совместный подход к творческому процессу. 
+                    Первая в Санкт-Петербурге непроизводственная шелкографская мастерская, где печатаются художественные произведения и репродукции ограниченным тиражом. Трафаретная ручная печать и совместный подход к творческому процессу. 
                 </p>
                 <div class="workshop__action gs-reveal gs-reveal--from-left">
                     <a href="https://community-print.ru/masterskaya/" class="button button--yellow">
@@ -494,7 +494,7 @@
             <address class="contact__address title title--medium title--black-low title--w-normal text--uppercase center gs-reveal">
                 Санкт-Петербург, 2-я линия В.О., 35 Б (вход со двора)
                 <br>
-                Открыты ежедневно с 10:00 до 19:00                
+                Открыты ПН-ПТ с 10:00 до 19:00              
             </address>
         </div>
     </div>
