@@ -29,12 +29,12 @@
 .main-screen__slogan {
     position: absolute;
     bottom: 130px;
-    left: auto;
+    left: 13%;
     z-index: 10;
     max-width: 636px;
-    // @include to(1440px) {
-    //     left: 10%;
-    // }
+    @include to(1440px) {
+        left: 30px;
+    }
     // @include to(1366px) {
     //     left: 5%;
     // }
@@ -49,7 +49,7 @@
         max-width: 400px;
         bottom: 100px;
     }
-    @include mobile(left, 2%);
+    @include mobile(left, 20px);
     @include mobileXS-block {
         width: 100%;
         max-width: 320px;

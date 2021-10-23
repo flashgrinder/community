@@ -1155,7 +1155,7 @@ img {
 .main-screen__slogan {
   position: absolute;
   bottom: 130px;
-  left: auto;
+  left: 13%;
   z-index: 10;
   max-width: 636px;
 }
@@ -2958,6 +2958,12 @@ img {
   }
 }
 
+@media screen and (max-width: 1440px) {
+  .main-screen__slogan {
+    left: 30px;
+  }
+}
+
 @media screen and (max-width: 1366px) {
   .workshop--page .workshop__body {
     -ms-grid-columns: 1fr 60px 1fr;
@@ -3336,7 +3342,7 @@ img {
   }
 
   .main-screen__slogan {
-    left: 2%;
+    left: 20px;
   }
 
   .main-screen__index-screen {
