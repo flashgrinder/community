@@ -1129,6 +1129,7 @@ img {
 
 .main-screen {
   position: relative;
+  height: calc(100vh - 83px);
 }
 
 .main-screen__slide-pic {
@@ -1154,33 +1155,32 @@ img {
 .main-screen__slogan {
   position: absolute;
   bottom: 130px;
-  left: 18%;
+  left: auto;
   z-index: 10;
   max-width: 636px;
 }
 
 .main-screen__animation-block {
   position: absolute;
-  top: 43%;
-  z-index: 10;
-  left: 50%;
-  -webkit-transform: translate(-50%, -43%);
-          transform: translate(-50%, -43%);
-}
-
-.main-screen__index-screen {
-  width: 60vw;
-  height: 0;
-  padding-top: 66%;
-  position: relative;
-}
-
-.main-screen__index-screen-svg {
-  position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
+}
+
+.main-screen__index-screen {
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 100vw;
+  height: 100%;
+  padding: 30px;
+}
+
+.main-screen__index-screen-svg {
   width: 100%;
   max-width: 100%;
   height: 100%;
@@ -2958,17 +2958,7 @@ img {
   }
 }
 
-@media screen and (max-width: 1440px) {
-  .main-screen__index-screen {
-    width: 75vw;
-  }
-}
-
 @media screen and (max-width: 1366px) {
-  .main-screen__slogan {
-    left: 13%;
-  }
-
   .workshop--page .workshop__body {
     -ms-grid-columns: 1fr 60px 1fr;
     grid-template-columns: 1fr 1fr;
@@ -3161,12 +3151,19 @@ img {
     display: flex;
   }
 
-  .main-screen__slogan {
-    left: 3%;
+  .main-screen {
+    height: calc(100vh - 71px);
   }
 
-  .main-screen__index-screen {
-    width: 85vw;
+  .main-screen__slide-img {
+    height: calc(100vh - 71px);
+  }
+
+  .main-screen__slogan {
+    font-size: 16px;
+    width: 100%;
+    max-width: 400px;
+    bottom: 100px;
   }
 
   .workshop--page .workshop__body {
@@ -3330,12 +3327,20 @@ img {
     max-width: 160px;
   }
 
+  .main-screen {
+    height: calc(100vh - 56px);
+  }
+
+  .main-screen__slide-img {
+    height: calc(100vh - 56px);
+  }
+
   .main-screen__slogan {
     left: 2%;
   }
 
   .main-screen__index-screen {
-    width: 90vw;
+    padding: 30px 15px;
   }
 
   .workshop {
@@ -3594,19 +3599,10 @@ img {
     margin: 0 10px;
   }
 
-  .main-screen__slide-img {
-    height: calc(100vh - 56px);
-  }
-
   .main-screen__slogan {
     width: 100%;
     max-width: 320px;
     bottom: 30px;
-    font-size: 16px;
-  }
-
-  .main-screen__index-screen {
-    width: 95vw;
   }
 
   .workshop__item {
@@ -3838,5 +3834,11 @@ img {
 
   .product-card__photo {
     min-height: 160px;
+  }
+}
+
+@media (max-height: 680px) {
+  .main-screen__slogan {
+    bottom: 30px;
   }
 }

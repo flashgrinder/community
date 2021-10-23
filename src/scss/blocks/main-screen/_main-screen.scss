@@ -1,5 +1,8 @@
 .main-screen {
     position: relative;
+    height: calc(100vh - 83px);
+    @include tablet(height, calc(100vh - 71px));
+    @include mobile(height, calc(100vh - 56px));
 }
 
 .main-screen__slide-pic {
@@ -19,58 +22,96 @@
     width: 100%;
     display: block;
     object-fit: cover;
-    @include mobileXS(height, calc(100vh - 56px));
+    @include tablet(height, calc(100vh - 71px));
+    @include mobile(height, calc(100vh - 56px));
 }
 
 .main-screen__slogan {
     position: absolute;
     bottom: 130px;
-    left: 18%;
+    left: auto;
     z-index: 10;
     max-width: 636px;
-    @include to(1366px) {
-        left: 13%;
+    // @include to(1440px) {
+    //     left: 10%;
+    // }
+    // @include to(1366px) {
+    //     left: 5%;
+    // }
+    @media (max-height: 680px) {
+        bottom: 30px;
     }
     @include large(max-width, 600px);
-    @include tablet(left, 3%);
+    @include tablet-block {
+        font-size: 16px;
+        // left: 3%;
+        width: 100%;
+        max-width: 400px;
+        bottom: 100px;
+    }
     @include mobile(left, 2%);
     @include mobileXS-block {
         width: 100%;
         max-width: 320px;
         bottom: 30px;
-        font-size: 16px;
     }
 }
+
+// .main-screen__animation-block {
+//     position: absolute;
+//     top: 43%;
+//     z-index: 10;
+//     left: 50%;
+//     transform: translate(-50%, -43%);
+// }
 
 .main-screen__animation-block {
-    position: absolute;
-    top: 43%;
-    z-index: 10;
-    left: 50%;
-    transform: translate(-50%, -43%);
-}
-
-.main-screen__index-screen {
-    width: 60vw;
-    height: 0;
-    padding-top: 66%;
-    position: relative;
-    @include to(1440px) {
-        width: 75vw;
-    }
-    @include tablet(width, 85vw);
-    @include mobile(width, 90vw);
-    @include mobileXS(width, 95vw);
-}
-
-.main-screen__index-screen-svg {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
+}
+
+.main-screen__index-screen {
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100vw;
+    height: 100%;
+    padding: 30px;
+    @include mobile(padding, 30px 15px);
+}
+
+.main-screen__index-screen-svg {
     width: 100%;
     max-width: 100%;
     height: 100%;
     max-height: 100%;
 }
+// .main-screen__index-screen {
+//     width: 60vw;
+//     height: 0;
+//     padding-top: 66%;
+//     position: relative;
+//     @include to(1440px) {
+//         width: 75vw;
+//     }
+//     @include tablet(width, 85vw);
+//     @include mobile(width, 90vw);
+//     @include mobileXS(width, 95vw);
+// }
+
+// .main-screen__index-screen-svg {
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     right: 0;
+//     bottom: 0;
+//     width: 100%;
+//     max-width: 100%;
+//     height: 100%;
+//     max-height: 100%;
+// }
