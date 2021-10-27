@@ -3514,6 +3514,7 @@ img {
 
   .product-card__photo {
     min-height: 245px;
+    max-height: 245px;
   }
 
   .authors__list {
@@ -3734,6 +3735,7 @@ img {
 
   .product-card__photo {
     min-height: 200px;
+    max-height: 200px;
   }
 
   .authors__list {
@@ -3830,6 +3832,7 @@ img {
 
   .product-card__photo {
     min-height: 180px;
+    max-height: 180px;
   }
 
   .about-product__footer {
@@ -3856,6 +3859,7 @@ img {
 
   .product-card__photo {
     min-height: 160px;
+    max-height: 160px;
   }
 }
 
