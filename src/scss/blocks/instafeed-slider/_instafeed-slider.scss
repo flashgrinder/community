@@ -36,6 +36,10 @@
         max-height: 320px;
     }
     @include mobileXS-block {
+        min-height: 370px;
+        max-height: 370px;
+    }
+    @include mobileXSS-block {
         max-height: 300px;
     }
 }

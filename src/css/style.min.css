@@ -3718,7 +3718,8 @@ img {
 
   .instafeed-slider__link,
   .instafeed-slider__img {
-    max-height: 300px;
+    min-height: 370px;
+    max-height: 370px;
   }
 
   .gallery__cards {
@@ -3828,6 +3829,11 @@ img {
   .contacts__icon-svg {
     width: 24px;
     height: 24px;
+  }
+
+  .instafeed-slider__link,
+  .instafeed-slider__img {
+    max-height: 300px;
   }
 
   .product-card__photo {
