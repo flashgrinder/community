@@ -16,21 +16,6 @@
                         <img src="<?php echo STANDART_DIR; ?>img/main-screen/main-screen-slide-2.jpg" alt="" class="main-screen__slide-img">
                     </div>
                 </div>
-                <div class="main-screen__swiper-slide swiper-slide">
-                    <div class="main-screen__slide-pic">
-                        <img src="<?php echo STANDART_DIR; ?>img/main-screen/main-screen-slide-3.jpg" alt="" class="main-screen__slide-img">
-                    </div>
-                </div>
-                <div class="main-screen__swiper-slide swiper-slide">
-                    <div class="main-screen__slide-pic">
-                        <img src="<?php echo STANDART_DIR; ?>img/main-screen/main-screen-slide-4.jpg" alt="" class="main-screen__slide-img">
-                    </div>
-                </div>
-                <div class="main-screen__swiper-slide swiper-slide">
-                    <div class="main-screen__slide-pic">
-                        <img src="<?php echo STANDART_DIR; ?>img/main-screen/main-screen-slide-5.jpg" alt="" class="main-screen__slide-img">
-                    </div>
-                </div>
             </div>
         </div>
         <div class="main-screen__inner container">
@@ -134,7 +119,7 @@
                     </h3>
                 </div>
                 <div class="workshop__pic gs-reveal gs-reveal--from-right">
-                    <img src="<?php echo STANDART_DIR; ?>img/workshop/main-workshop-photo-1.jpg" alt="" class="workshop__photo">
+                    <img src="<?php echo STANDART_DIR; ?>img/workshop/workshop-photo-1.jpg" alt="" class="workshop__photo">
                 </div>
             </div>
             <div class="workshop__item">
@@ -144,7 +129,7 @@
                     </h3>
                 </div>
                 <div class="workshop__pic gs-reveal gs-reveal--from-right">
-                    <img src="<?php echo STANDART_DIR; ?>img/workshop/main-workshop-photo-2.jpg" alt="" class="workshop__photo">
+                    <img src="<?php echo STANDART_DIR; ?>img/workshop/workshop-photo-2.jpg" alt="" class="workshop__photo">
                 </div>
             </div>
             <div class="workshop__item">
@@ -154,7 +139,7 @@
                     </h3>
                 </div>
                 <div class="workshop__pic gs-reveal gs-reveal--from-right">
-                    <img src="<?php echo STANDART_DIR; ?>img/workshop/main-workshop-photo-3.jpg" alt="" class="workshop__photo">
+                    <img src="<?php echo STANDART_DIR; ?>img/workshop/workshop-photo-3.jpg" alt="" class="workshop__photo">
                 </div>
             </div>
         </div>
@@ -186,7 +171,7 @@
                     </a>
                 </div>
                 <div class="workshop__pic gs-reveal--from-right">
-                    <img src="<?php echo STANDART_DIR; ?>img/workshop/main-workshop-photo-4.jpg" alt="" class="workshop__photo">
+                    <img src="<?php echo STANDART_DIR; ?>img/workshop/workshop-photo-4.jpg" alt="" class="workshop__photo">
                 </div>
             </div>
             <div class="workshop__item workshop__item--pos">
@@ -196,7 +181,7 @@
                     </a>
                 </div>
                 <div class="workshop__pic gs-reveal gs-reveal--from-right">
-                    <img src="<?php echo STANDART_DIR; ?>img/workshop/main-workshop-photo-5.jpg" alt="" class="workshop__photo">
+                    <img src="<?php echo STANDART_DIR; ?>img/workshop/workshop-photo-5.jpg" alt="" class="workshop__photo">
                 </div>
             </div>
             <div class="workshop__decor workshop__decor--rectangle gs-reveal">

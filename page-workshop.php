@@ -54,7 +54,7 @@
                     </p>
                 </div>
                 <div class="workshop__pic gs-reveal gs-reveal--from-right">
-                    <img src="<?php echo STANDART_DIR; ?>img/workshop/workshop-photo-1.jpg" alt="" class="workshop__photo">
+                    <img src="<?php echo STANDART_DIR; ?>img/workshop/workshop-photo-6.jpg" alt="" class="workshop__photo">
                 </div>
             </div>
             <div class="workshop__item">
@@ -67,7 +67,7 @@
                     </p>
                 </div>
                 <div class="workshop__pic gs-reveal gs-reveal--from-right">
-                    <img src="<?php echo STANDART_DIR; ?>img/workshop/workshop-photo-2.jpg" alt="" class="workshop__photo">
+                    <img src="<?php echo STANDART_DIR; ?>img/workshop/workshop-photo-7.jpg" alt="" class="workshop__photo">
                 </div>
             </div>
         </div>
@@ -118,7 +118,7 @@
                     </a>
                 </div>
                 <div class="workshop__pic gs-reveal gs-reveal--from-right">
-                    <img src="<?php echo STANDART_DIR; ?>img/workshop/workshop-photo-3.jpg" alt="" class="workshop__photo">
+                    <img src="<?php echo STANDART_DIR; ?>img/workshop/workshop-photo-8.jpg" alt="" class="workshop__photo">
                 </div>
             </div>
             <div class="workshop__item workshop__item--pos">
@@ -128,7 +128,7 @@
                     </a>
                 </div>
                 <div class="workshop__pic gs-reveal gs-reveal--from-right">
-                    <img src="<?php echo STANDART_DIR; ?>img/workshop/workshop-photo-4.jpg" alt="" class="workshop__photo">
+                    <img src="<?php echo STANDART_DIR; ?>img/workshop/workshop-photo-9.jpg" alt="" class="workshop__photo">
                 </div>
             </div>
         </div>
