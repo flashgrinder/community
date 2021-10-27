@@ -1735,9 +1735,10 @@ img {
 }
 
 .contacts__icon-svg {
+  display: block;
   line-height: 1;
-  width: 38px;
-  height: 38px;
+  width: 30px;
+  height: 30px;
 }
 
 .contacts__info {
@@ -3697,11 +3698,6 @@ img {
 
   .form__actions .wpcf7-spinner {
     margin: 0 10px;
-  }
-
-  .contacts__icon-svg {
-    width: 30px;
-    height: 30px;
   }
 
   .gallery__cards {
