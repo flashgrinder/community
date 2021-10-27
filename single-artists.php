@@ -85,7 +85,7 @@
                             <div class="product-card__price title title--medium title--black-low title--w-black">
                                 <?php
                                     $product_card_price = get_field('product-card_price', $idPost);
-                                    echo $product_card_price; ?> ₽
+                                    if( !empty($product_card_price) ) { echo "{$product_card_price} ₽"; } else { echo ""; } ?> 
                             </div>
                         </div>
                     </div>

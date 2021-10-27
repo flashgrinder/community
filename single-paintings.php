@@ -58,7 +58,7 @@
                     <div class="about-product__price title title--medium title--black-low title--w-black">
                         <?php
                             $product_card_price = get_field('product-card_price', $idPost);
-                            echo $product_card_price; ?> ₽
+                            if( !empty($product_card_price) ) { echo "{$product_card_price} ₽"; } else { echo ""; } ?> 
                     </div>
                     <div class="about-product__action gs-reveal gs-reveal--from-right">
                         <a href="javascript:;" class="about-product__button button button--black" data-modal-trigger="modal-form">
@@ -127,7 +127,7 @@
                             <div class="product-card__price title title--medium title--black-low title--w-black">
                                 <?php
                                     $product_card_price = get_field('product-card_price', $idPost);
-                                    echo $product_card_price; ?> ₽
+                                    if( !empty($product_card_price) ) { echo "{$product_card_price} ₽"; } else { echo ""; } ?> 
                             </div>
                         </div>
                     </div>
