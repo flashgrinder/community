@@ -2981,6 +2981,12 @@ img {
   .feedback__bg-decor {
     right: 8%;
   }
+
+  .instafeed-slider__link,
+  .instafeed-slider__img {
+    max-height: 270px;
+    max-width: 100%;
+  }
 }
 
 @media screen and (max-width: 1200px) {
@@ -3014,6 +3020,11 @@ img {
   .workshop__pic {
     min-width: 385px;
     max-width: 385px;
+  }
+
+  .instafeed-slider__link,
+  .instafeed-slider__img {
+    max-height: 240px;
   }
 
   .about-product__content {
@@ -3233,6 +3244,11 @@ img {
     top: auto;
     right: 26%;
     bottom: 24%;
+  }
+
+  .instafeed-slider__link,
+  .instafeed-slider__img {
+    max-height: 300px;
   }
 
   .gallery__cards {
@@ -3487,8 +3503,7 @@ img {
 
   .instafeed-slider__link,
   .instafeed-slider__img {
-    max-height: 100%;
-    max-width: 100%;
+    max-height: 320px;
   }
 
   .gallery__cards {
@@ -3698,6 +3713,11 @@ img {
 
   .form__actions .wpcf7-spinner {
     margin: 0 10px;
+  }
+
+  .instafeed-slider__link,
+  .instafeed-slider__img {
+    max-height: 300px;
   }
 
   .gallery__cards {

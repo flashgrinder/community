@@ -22,9 +22,21 @@
     max-height: 320px;
     width: 100%;
     max-width: 320px;
-    @include mobile-block {
-        max-height: 100%;
+    @include to(1366px) {
+        max-height: 270px;
         max-width: 100%;
+    }
+    @include large-block {
+        max-height: 240px;
+    }
+    @include tablet-block {
+        max-height: 300px;
+    }
+    @include mobile-block {
+        max-height: 320px;
+    }
+    @include mobileXS-block {
+        max-height: 300px;
     }
 }
 
