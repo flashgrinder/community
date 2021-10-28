@@ -10,7 +10,7 @@
             $args = array(
                 'post_type' => 'paintings',
                 'posts_per_page' => 12,
-                'orderby'     => 'date',
+                'orderby'     => 'title',
                 'order'       => 'DESC',
                 'suppress_filters' => true
             );
