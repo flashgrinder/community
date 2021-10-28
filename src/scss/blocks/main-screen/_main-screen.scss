@@ -1,6 +1,8 @@
 .main-screen {
     position: relative;
-    height: 100vh;
+    height: calc(100vh - 80px);
+    @include tablet(height, calc(100vh - 70px));
+    @include mobile(height, calc(100vh - 55px));
 }
 
 .main-screen__slide-pic {
@@ -16,10 +18,12 @@
 }
 
 .main-screen__slide-img {
-    height: 100vh;
+    height: calc(100vh - 80px);
     width: 100%;
     display: block;
     object-fit: cover;
+    @include tablet(height, calc(100vh - 70px));
+    @include mobile(height, calc(100vh - 55px));
 }
 
 .main-screen__slogan {
@@ -65,7 +69,7 @@
     transform: translate(-50%, -50%);
     width: 100vw;
     height: 100%;
-    padding: 100px 30px 30px 30px;
+    padding: 30px 30px 30px 30px;
     @include mobile(padding, 70px 15px 30px 15px);
 }
 
