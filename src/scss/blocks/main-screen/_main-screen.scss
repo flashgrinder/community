@@ -1,8 +1,6 @@
 .main-screen {
     position: relative;
-    height: calc(100vh - 83px);
-    @include tablet(height, calc(100vh - 71px));
-    @include mobile(height, calc(100vh - 56px));
+    height: 100vh;
 }
 
 .main-screen__slide-pic {
@@ -18,12 +16,10 @@
 }
 
 .main-screen__slide-img {
-    height: calc(100vh - 83px);
+    height: 100vh;
     width: 100%;
     display: block;
     object-fit: cover;
-    @include tablet(height, calc(100vh - 71px));
-    @include mobile(height, calc(100vh - 56px));
 }
 
 .main-screen__slogan {
@@ -69,8 +65,8 @@
     transform: translate(-50%, -50%);
     width: 100vw;
     height: 100%;
-    padding: 30px;
-    @include mobile(padding, 30px 15px);
+    padding: 100px 30px 30px 30px;
+    @include mobile(padding, 70px 15px 30px 15px);
 }
 
 .main-screen__index-screen-svg {
