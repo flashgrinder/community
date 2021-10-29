@@ -19,20 +19,25 @@
     display: block;
     cursor: pointer;
     height: 100%;
+    min-height: 320px;
     max-height: 320px;
     width: 100%;
     max-width: 320px;
     @include to(1366px) {
+        min-height: 270px;
         max-height: 270px;
         max-width: 100%;
     }
     @include large-block {
+        min-height: 240px;
         max-height: 240px;
     }
     @include tablet-block {
+        min-height: 300px;
         max-height: 300px;
     }
     @include mobile-block {
+        min-height: 320px;
         max-height: 320px;
     }
     @include mobileXS-block {
