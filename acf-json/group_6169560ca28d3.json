@@ -61,7 +61,7 @@
             "insert": "append",
             "library": "all",
             "min": "",
-            "max": 10,
+            "max": "",
             "min_width": "",
             "min_height": "",
             "min_size": "",
@@ -88,5 +88,6 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1634627007
+    "show_in_rest": 0,
+    "modified": 1637584330
 }
