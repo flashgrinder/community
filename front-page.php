@@ -6,16 +6,17 @@
     <div class="main-screen__body">
         <div class="main-screen__swiper swiper-container js-index-slider">
             <div class="main-screen__swiper-wrapper swiper-wrapper">
-                <div class="main-screen__swiper-slide swiper-slide">
-                    <div class="main-screen__slide-pic">
-                        <img src="<?php echo STANDART_DIR; ?>img/main-screen/main-screen-slide-1.jpg" alt="" class="main-screen__slide-img">
-                    </div>
-                </div>
-                <div class="main-screen__swiper-slide swiper-slide">
-                    <div class="main-screen__slide-pic">
-                        <img src="<?php echo STANDART_DIR; ?>img/main-screen/main-screen-slide-2.jpg" alt="" class="main-screen__slide-img">
-                    </div>
-                </div>
+                <?php 
+                    $main_screen_slider = get_field('main-screen_slider');
+                    if( $main_screen_slider ): ?>
+                    <?php foreach( $main_screen_slider as $main_screen_slide ): ?>
+                        <div class="main-screen__swiper-slide swiper-slide">
+                            <div class="main-screen__slide-pic">
+                                <img src="<?php echo $main_screen_slide['url']; ?>" alt="<?php echo esc_attr($main_screen_slide['alt']); ?>" class="main-screen__slide-img">
+                            </div>
+                        </div>
+                    <?php endforeach; ?>
+                <?php endif; ?>
             </div>
         </div>
         <div class="main-screen__inner container">
