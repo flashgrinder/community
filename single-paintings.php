@@ -88,7 +88,7 @@
 
                 $args = array(
                     'post_type' => 'paintings',
-                    'posts_per_page' => 8,
+                    'posts_per_page' => 9999,
                     'post_parent' => $post->post_parent,
                     'orderby'     => 'date',
                     'order'       => 'DESC',
