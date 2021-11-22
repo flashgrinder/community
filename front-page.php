@@ -208,7 +208,7 @@
 
                 $args = array(
                     'post_type' => 'paintings',
-                    'posts_per_page' => 8,
+                    'posts_per_page' => 16,
                     'orderby'     => 'date',
                     'order'       => 'DESC',
                     'suppress_filters' => true
