@@ -25,7 +25,7 @@
             'has_archive'        => false,
             // 'taxonomies'          => ['stories'],
             'hierarchical'        => false,
-            'rewrite'             => array('slug' => 'paintings', 'with_front' => false),
+            'rewrite'             => array('slug' => 'galereya', 'with_front' => false),
             'query_var'           => true
         ]);
     

@@ -25,7 +25,7 @@
             'has_archive'        => false,
             // 'taxonomies'          => ['stories'],
             'hierarchical'        => false,
-            'rewrite'             => array('slug' => 'artists', 'with_front' => false),
+            'rewrite'             => array('slug' => 'hudozhniki', 'with_front' => false),
             'query_var'           => true
         ]);
     
