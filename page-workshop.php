@@ -3,6 +3,11 @@
 
 <!-- Workshop -->
 <section class="workshop bg--black workshop--one-block workshop--page">
+    <div class="workshop__before-text container">
+        <h1 class="workshop__title title title--big title--white title--w-black title--indent gs-reveal gs-reveal--from-left">
+            Мастерская художественной печати шелкографией
+        </h1>
+    </div>
     <div class="workshop__body workshop__body--one container">
         <div class="workshop__content workshop__content--left">
             <h2 class="workshop__heading title title--big title--yellow title--w-black title--indent gs-reveal gs-reveal--from-left">

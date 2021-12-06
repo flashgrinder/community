@@ -1161,6 +1161,10 @@ img {
   max-width: 636px;
 }
 
+.main-screen__heading {
+  margin-bottom: 20px;
+}
+
 .main-screen__animation-block {
   position: absolute;
   top: 0;
