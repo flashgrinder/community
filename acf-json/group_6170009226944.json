@@ -226,9 +226,26 @@
                                     "collapsed": "",
                                     "min": 0,
                                     "max": 0,
-                                    "layout": "table",
-                                    "button_label": "",
+                                    "layout": "block",
+                                    "button_label": "Добавить ячейку",
                                     "sub_fields": [
+                                        {
+                                            "key": "field_61b748239110c",
+                                            "label": "Ячейка таблицы",
+                                            "name": "",
+                                            "type": "accordion",
+                                            "instructions": "",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "open": 0,
+                                            "multi_expand": 0,
+                                            "endpoint": 0
+                                        },
                                         {
                                             "key": "field_61b71747272a4",
                                             "label": "Ячейка таблицы",
@@ -284,8 +301,25 @@
                                     "min": 0,
                                     "max": 0,
                                     "layout": "block",
-                                    "button_label": "",
+                                    "button_label": "Добавить строку",
                                     "sub_fields": [
+                                        {
+                                            "key": "field_61b748549110d",
+                                            "label": "Строка таблицы",
+                                            "name": "",
+                                            "type": "accordion",
+                                            "instructions": "",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "open": 0,
+                                            "multi_expand": 0,
+                                            "endpoint": 0
+                                        },
                                         {
                                             "key": "field_61b71766272a5",
                                             "label": "Строка таблицы",
@@ -303,7 +337,7 @@
                                             "min": 0,
                                             "max": 0,
                                             "layout": "block",
-                                            "button_label": "",
+                                            "button_label": "Добавить ячейку",
                                             "sub_fields": [
                                                 {
                                                     "key": "field_61b71785272a6",
@@ -412,5 +446,5 @@
     "active": true,
     "description": "Параметры страницы - Мастерская",
     "show_in_rest": 0,
-    "modified": 1639399007
+    "modified": 1639401782
 }
