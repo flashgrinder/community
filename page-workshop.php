@@ -300,16 +300,16 @@
                                     11 500 ₽
                                 </td>
                                 <td class="table-workshop__td">
-                                    13 500 ₽
+                                    17 250 ₽
                                 </td>
                                 <td class="table-workshop__td">
-                                    15 500 ₽
+                                    25 875 ₽
                                 </td>
                                 <td class="table-workshop__td">
-                                    18 500 ₽
+                                    38 800 ₽
                                 </td>
                                 <td class="table-workshop__td">
-                                    23 000 ₽
+                                    58 200 ₽
                                 </td>
                             </tr>
                             <tr class="table-workshop__tr">
@@ -322,16 +322,16 @@
                                     13 500 ₽
                                 </td>
                                 <td class="table-workshop__td">
-                                    15 500 ₽
+                                    20 250 ₽
                                 </td>
                                 <td class="table-workshop__td">
-                                    18 500 ₽
+                                    30 375 ₽
                                 </td>
                                 <td class="table-workshop__td">
-                                    23 000 ₽
+                                    45 560 ₽
                                 </td>
                                 <td class="table-workshop__td">
-                                    29 000 ₽
+                                    68 340 ₽
                                 </td>
                             </tr>
                         </tbody>
@@ -630,7 +630,7 @@
                     Печать флуоресцентными и металлизированными красками + 40%
                 </p>	
 				 <p>
-                    Изготовление цвета по пантону + 10
+                    Изготовление цвета по пантону + 10%
                 </p>
                 <p>
                     Печать фотовывода (кальки) входит в стоимость печати одного цвета
@@ -1306,10 +1306,10 @@
                                     размер м/кв
                                 </td>
                                 <td class="table-workshop__td"> 
-                                    225 ₽
+                                    490 ₽
                                 </td>
                                 <td class="table-workshop__td">
-                                    350 ₽
+                                    730 ₽
                                 </td>
                             </tr>
                             <tr class="table-workshop__tr">
@@ -1317,10 +1317,10 @@
                                     A0
                                 </td>
                                 <td class="table-workshop__td">
-                                    202 ₽
+                                    430 ₽
                                 </td>
                                 <td class="table-workshop__td">
-                                    290 ₽
+                                    600 ₽
                                 </td>
                             </tr>
                             <tr class="table-workshop__tr">
@@ -1328,10 +1328,10 @@
                                     A1
                                 </td>
                                 <td class="table-workshop__td">
-                                    125 ₽
+                                    250 ₽
                                 </td>
                                 <td class="table-workshop__td">
-                                    167 ₽
+                                    340 ₽
                                 </td>
                             </tr>
                             <tr class="table-workshop__tr">
@@ -1339,10 +1339,10 @@
                                     A2
                                 </td>
                                 <td class="table-workshop__td">
-                                    80 ₽
+                                    160 ₽
                                 </td>
                                 <td class="table-workshop__td">
-                                    105 ₽
+                                    220 ₽
                                 </td>
                             </tr>
                             <tr class="table-workshop__tr">
@@ -1350,10 +1350,10 @@
                                     A3
                                 </td>
                                 <td class="table-workshop__td">
-                                    17 ₽
+                                    20 ₽
                                 </td>
                                 <td class="table-workshop__td">
-                                    62 ₽
+                                    65 ₽
                                 </td>
                             </tr>
                         </tbody>
