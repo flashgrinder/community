@@ -1,4 +1,4 @@
-<?php /* Template Name: Шаблон: Карта сайта */?>
+<?php /* Template Name: Карта сайта */?>
 <?php get_header(); ?>
 
 <?php the_post(); ?>
