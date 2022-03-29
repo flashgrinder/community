@@ -1732,20 +1732,6 @@ img {
 
 /* Contacts */
 
-.contacts__soc-icon {
-  display: inline-block;
-  margin: -5px 0 0 0;
-  line-height: 1;
-  vertical-align: middle;
-}
-
-.contacts__icon-svg {
-  display: block;
-  line-height: 1;
-  width: 30px;
-  height: 30px;
-}
-
 .contacts__info {
   margin-top: 60px;
 }
@@ -1757,8 +1743,7 @@ img {
           justify-content: center;
 }
 
-.contacts__phone,
-.contacts__email {
+.contacts__social {
   display: -webkit-flex;
   display: flex;
   -webkit-align-items: center;
@@ -1766,19 +1751,17 @@ img {
   text-decoration: none;
 }
 
-.contacts__email:hover .contacts__text-email,
-.contacts__phone:hover .contacts__text-number {
+.contacts__social ~ .contacts__social {
+  margin-left: 50px;
+}
+
+.contacts__social:hover .contacts__text {
   color: var(--color-yellow);
   cursor: pointer;
 }
 
-.contacts__text-email,
-.contacts__text-number {
+.contacts__text {
   transition: color 0.3s ease;
-}
-
-.contacts__phone {
-  margin-right: 90px;
 }
 
 .contacts__icon {
@@ -1787,45 +1770,6 @@ img {
 
 .contact__address {
   margin-top: 25px;
-}
-
-/* Instafeed */
-
-.instafeed-slider__navigation {
-  margin-bottom: 20px;
-}
-
-.instafeed-slider__link {
-  cursor: pointer;
-  color: var(--color-dark-low);
-  text-decoration: none;
-  transition: color 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
-  transition: color 0.2s ease-in-out, transform 0.2s ease-in-out;
-  transition: color 0.2s ease-in-out, transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
-}
-
-.instafeed-slider__link:hover {
-  color: var(--color-yellow);
-  -webkit-transform: translateY(-10px);
-          transform: translateY(-10px);
-}
-
-.instafeed-slider__link,
-.instafeed-slider__img {
-  display: block;
-  cursor: pointer;
-  height: 100%;
-  min-height: 320px;
-  max-height: 320px;
-  width: 100%;
-  max-width: 320px;
-}
-
-.instafeed-slider__img {
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
 }
 
 /* Gallery */
@@ -2987,13 +2931,6 @@ img {
   .feedback__bg-decor {
     right: 8%;
   }
-
-  .instafeed-slider__link,
-  .instafeed-slider__img {
-    min-height: 270px;
-    max-height: 270px;
-    max-width: 100%;
-  }
 }
 
 @media screen and (max-width: 1200px) {
@@ -3027,12 +2964,6 @@ img {
   .workshop__pic {
     min-width: 385px;
     max-width: 385px;
-  }
-
-  .instafeed-slider__link,
-  .instafeed-slider__img {
-    min-height: 240px;
-    max-height: 240px;
   }
 
   .about-product__content {
@@ -3256,12 +3187,6 @@ img {
     top: auto;
     right: 26%;
     bottom: 24%;
-  }
-
-  .instafeed-slider__link,
-  .instafeed-slider__img {
-    min-height: 300px;
-    max-height: 300px;
   }
 
   .gallery__cards {
@@ -3510,18 +3435,13 @@ img {
             align-items: center;
   }
 
-  .contacts__phone {
-    margin-right: 0;
+  .contacts__social ~ .contacts__social {
+    margin-left: 0;
   }
 
-  .contacts__email {
-    margin-top: 20px;
-  }
-
-  .instafeed-slider__link,
-  .instafeed-slider__img {
-    min-height: 320px;
-    max-height: 320px;
+  .contacts__social ~ .contacts__social {
+    margin-left: 0;
+    margin-top: 25px;
   }
 
   .gallery__cards {
@@ -3734,12 +3654,6 @@ img {
     margin: 0 10px;
   }
 
-  .instafeed-slider__link,
-  .instafeed-slider__img {
-    min-height: 370px;
-    max-height: 370px;
-  }
-
   .gallery__cards {
     -ms-grid-columns: minmax(124px, 1fr) 20px minmax(124px, 1fr);
     grid-template-columns: repeat(2, minmax(124px, 1fr));
@@ -3842,16 +3756,6 @@ img {
 
   .form__actions .wpcf7-spinner {
     margin: 0 4px;
-  }
-
-  .contacts__icon-svg {
-    width: 24px;
-    height: 24px;
-  }
-
-  .instafeed-slider__link,
-  .instafeed-slider__img {
-    max-height: 300px;
   }
 
   .product-card__photo {
