@@ -10,11 +10,8 @@ import modal from '../libs/modules/modal.js';
 import gsReveal from '../libs/modules/gsReveal.js';
 import reveal from '../libs/modules/reveal';
 import indexAnimation from '../libs/modules/index-animation.js';
-import instafeedSlider from '../libs/modules/instafeedSlider.js';
 
 document.addEventListener('DOMContentLoaded', function(e) {
-
-    const instafeedSliderTrue = document.querySelector('.instafeed-slider');
 
     gsap.config({
         nullTargetWarn: false
@@ -31,5 +28,5 @@ document.addEventListener('DOMContentLoaded', function(e) {
     gsReveal.init();
     reveal.init();
     indexAnimation.init();
-    instafeedSliderTrue ? instafeedSlider.init() : false;    
+        
 });

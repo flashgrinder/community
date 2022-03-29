@@ -40,7 +40,7 @@ function init() {
 
     }
 
-    fetch('https://ig.instant-tokens.com/users/bc4339ba-6e2d-4a4b-bfe1-dcbf8efaec6a/instagram/17841449477240552/token?userSecret=p2hcjf3vacg1d55bga0pq')
+    fetch('https://ig.instant-tokens.com/users/bc4339ba-6e2d-4a4b-bfe1-dcbf8efaec6a/instagram/17841449477240552/token?userSecret=0jdb30xolohod664fof0ydt')
     .then(resp => resp.json())
     .then(data => {
             let feed = new Instafeed({
