@@ -421,7 +421,7 @@
         </h2>
         <div class="contacts__info" id="contacts">
             <div class="contacts__wrapp">
-                <a href="tel:+7 499 380 7997" class="contacts__social gs-reveal gs-reveal--from-left">
+                <a href="tel:+79958896169" class="contacts__social gs-reveal gs-reveal--from-left">
                     <div class="contacts__icon">
                         <svg class="contacts__icon-svg" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <mask id="path-1-inside-1_1587:457" fill="white">
@@ -432,7 +432,7 @@
                         </svg>
                     </div>
                     <span class="contacts__text title title--large title--black-low title--w-medium">
-                        +7 499 380 7997
+                        +7 995 889 6169
                     </span>
                 </a>
                 <a href="mailto:info@community-print.ru" class="contacts__social gs-reveal gs-reveal--from-left">
