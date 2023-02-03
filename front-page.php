@@ -456,11 +456,25 @@
                         vk.com/community.print
                     </span>
                 </a>
+                <a href="https://t.me/communityprint" class="contacts__social gs-reveal gs-reveal--from-left" target="_blank">
+                    <div class="contacts__icon">
+                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M21.65 5.1315L3.93388 13.2774C2.72482 13.8564 2.73182 14.6606 3.71205 15.0192L8.2605 16.7111L18.7843 8.79398C19.2819 8.43298 19.7365 8.62718 19.3628 9.02274L10.8365 18.198H10.8345L10.8365 18.1992L10.5227 23.7894C10.9824 23.7894 11.1852 23.538 11.443 23.2414L13.6523 20.6798L18.2477 24.7271C19.095 25.2835 19.7036 24.9975 19.9144 23.7918L22.931 6.84003C23.2398 5.36384 22.4584 4.69544 21.65 5.1315V5.1315Z" fill="black"/>
+                            <circle cx="15" cy="15" r="14.5" stroke="black"/>
+                        </svg>
+                    </div>
+                    <span class="contacts__text title title--large title--black-low title--w-medium">
+                        t.me/communityprint
+                    </span>
+                </a>
             </div>
             <address class="contact__address title title--medium title--black-low title--w-normal text--uppercase center gs-reveal">
                 Санкт-Петербург, 2-я линия В.О., 35 Б (вход со двора)
                 <br>
-                Открыты ПН-ПТ с 10:00 до 19:00              
+                Открыты ПН-ПТ с 10:00 до 19:00
+                <br>
+                <br>
+                Заказ тиража @lizaorlova           
             </address>
         </div>
     </div>

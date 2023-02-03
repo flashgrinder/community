@@ -6,6 +6,7 @@
 .contacts__wrapp {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     @include mobile-block {
         flex-direction: column;
         align-items: center;
