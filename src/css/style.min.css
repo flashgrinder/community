@@ -275,8 +275,13 @@ img {
 /* Links */
 
 .link {
+  color: var(--color-black-low);
   text-decoration: none;
   transition: color 0.3s ease;
+}
+
+.link:hover {
+  color: var(--color-yellow);
 }
 
 /* Title */

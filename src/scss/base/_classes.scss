@@ -63,8 +63,13 @@
 /* Links */
 
 .link {
+    color: var(--color-black-low);
     text-decoration: none;
     transition: color .3s ease;
+}
+
+.link:hover {
+    color: var(--color-yellow);
 }
 
 /* Title */

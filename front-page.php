@@ -474,7 +474,7 @@
                 Открыты ПН-ПТ с 10:00 до 19:00
                 <br>
                 <br>
-                Заказ тиража @lizaorlova           
+                Заказ тиража <a class="link" href="https://t.me/lizaorlova">@lizaorlova</a>          
             </address>
         </div>
     </div>
